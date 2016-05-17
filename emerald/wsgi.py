@@ -8,9 +8,10 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 # Add to python path
-# sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)))
+sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)))
 
 
 
