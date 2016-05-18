@@ -1,1 +1,1 @@
-web: gunicorn emerald.wsgi:application --log-file -
+web: gunicorn emerald.wsgi --log-file -
