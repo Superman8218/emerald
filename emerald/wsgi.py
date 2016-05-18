@@ -8,9 +8,16 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
-from django.core.wsgi import get_wsgi_application
+# import sys
+
+# Add to python path
+# sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)))
+
+
+
+# from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emerald.settings")
-
-application = get_wsgi_application()
-
+import django.core.handlers.wsgi
+# application = get_wsgi_application()
+application = django.core.handlers.wsgi.WSGIHandler()
