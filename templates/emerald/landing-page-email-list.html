@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  {% load staticfiles %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'emerald/style.css' %}" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<style>
+
+			/* http://css-tricks.com/perfect-full-page-background-image/ */
+			html {
+				background: url({% static 'emerald/emerald-landing.svg' %}) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			body {
+				padding-top: 20px;
+				font-size: 16px;
+				font-family: "Open Sans",serif;
+				background: transparent;
+				color: white;
+			}
+
+			h1 {
+				font-family: "Abel", Arial, sans-serif;
+				font-weight: 400;
+				font-size: 40px;
+			}
+
+			/* Override B3 .panel adding a subtly transparent background */
+			.panel {
+				background-color: rgba(255, 255, 255, 0.9);
+			}
+
+			.margin-base-vertical {
+				margin: 40px 0;
+			}
+
+		</style>
+  
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class = "col-md-5 col-md-offset-3">
+  
+				<h1>Searching for Federal Goverment Opportunities?</h1>
+
+				<p>Winning a federal government contract can be hard, especially if you don't know where to look to find the opportunity.</p>
+
+				<p>EmeraldGov puts all of the FBO Opportunities base right at your fingertips in a clean and easy-to-use way</p>
+
+				<form action="/mailing-list" method="post">
+					<p class="input-group">
+						<span class="input-group-addon">@</span>
+						<input type="text" class="form-control input-lg" name="email" placeholder="noreply@example.com" />
+					</p>
+					<p class="help-block"><small>Enter your email and find opportunities today.</small></p>
+					<p>
+						<button type="submit" class="btn btn-success btn-lg">Submit</button>
+					</p>
+					</span>
+				</form>
+
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
