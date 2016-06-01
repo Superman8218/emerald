@@ -12,14 +12,31 @@
 </head>
 
 <header>
-	<div class="title-banner">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand image-fit" href="landing">
+		<img alt="Brand" src="{% static 'emerald/emerald-landing.svg' %}">
+	      </a>
+	<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Find Opportunities">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container">
 		<h1>EmeraldGov</h1>
 	</div>
 </header>
 
 <body>
 
-<div class="test">
+<div class="container">
   Welcome to the next generation of government contract searching
 </div>
 
