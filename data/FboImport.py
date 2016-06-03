@@ -29,11 +29,22 @@ def getUrlFromDate(date):
 
 def processFile(fileName):
     soup = BeautifulSoup(open(fileName), 'html.parser')
-    rec = soup.find('presol')
+    for child in soup.children:
+       processOpportunity(child) 
     testDir = '%s/test' % FBO_DIR
     text_file = open(testDir, 'w+')
     # text_file.write(rec)
     text_file.close()
+
+def processOpportunity(source):
+    master = FboMaster()
+    master.solicitation_type = source.name
+    master.date = source.date.stripped_strings.next()
+    master.year = source.year.stripped_strings.next()
+    master.agency = source.agency.stripped_strings.next()
+    master.office = source.office.stripped_strings.next()
+
+    import pdb; pdb.set_trace()
 
 if __name__ == '__main__':
     main()

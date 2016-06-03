@@ -9,8 +9,8 @@ import choices
 class FboMaster(models.Model):
 
     solicitation_type = models.CharField(max_length=20, choices=choices.SOLICITATION_TYPES)
-    date = models.DateField()
-    year = models.IntegerField()
+    date = models.CharField(max_length=4)
+    year = models.CharField(max_length=4)
     agency = models.CharField(max_length=80)
     office = models.CharField(max_length=80)
     location = models.CharField(max_length=80)
