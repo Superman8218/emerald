@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.template import RequestContext
 from data.models import FboMaster
 import data.FboImport as imp
 
@@ -12,3 +13,6 @@ def test(request):
 
 def landing(request):
     return render_to_response('emerald/landing-page-email-list.html')
+
+def displayFbo(request):
+    return render_to_response('emerald/display-Fbo.html', { 'data':FboMaster.objects.all()[:10], 'count':FboMaster.objects.count() }, RequestContext(request))

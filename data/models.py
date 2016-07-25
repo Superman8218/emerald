@@ -20,7 +20,7 @@ class FboMaster(models.Model):
     office_address = models.CharField(max_length=100)
     subject = models.CharField(max_length=200)
     solnbr = models.CharField(max_length=20)
-    response_date = models.DateField()
+    response_date = models.DateField(null=True)
     contact_name = models.CharField(max_length=50)
     contact_phone = models.CharField(max_length=15)
     contact_email = models.EmailField()
@@ -29,3 +29,6 @@ class FboMaster(models.Model):
     setaside = models.CharField(max_length=15)
     pop_country = models.CharField(max_length=50)
     pop_address = models.CharField(max_length=100)
+
+    def get_fields(self):
+        return [(field.name, field.value_to_string(self)) for field in FboMaster._meta.fields]

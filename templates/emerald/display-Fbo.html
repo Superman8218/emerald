@@ -1,0 +1,15 @@
+<table>
+    {% if data %}
+    data
+    {% else %}
+    no data
+    {% endif %}
+    {% for FboMaster in data %}
+        <tr>
+            {% for field, value in FboMaster.get_fields %}
+                <td>{{ field }} : {{ value }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+{{ count }}
