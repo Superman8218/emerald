@@ -6,34 +6,17 @@
 <head>
   {% load staticfiles %}
 
+  <!-- Reference external CSS -->
+
   <link rel="stylesheet" type="text/css" href="{% static 'emerald/style.css' %}" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand image-fit" href="landing">
-            <img alt="Brand" src="{% static 'emerald/emerald-landing.svg' %}">
-          </a>
-        <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Find Opportunities">
-      </div>
-      <button type="submit" class="btn btn-default">Search</button>
-    </form>
-	    </div>
-	  </div>
-	</nav>
+  <!-- Navbar -->
 
-	<div class="container">
-		<h1>EmeraldGov</h1>
-	</div>
-
-    <div class="container">
-      Welcome to the next generation of government contract searching
-    </div>
-
+  <div class="row">
+      <div class=col-md-12 id="main-nav"></div>
+  </div>
 </head>
 
 
