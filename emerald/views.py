@@ -8,6 +8,7 @@ def index(request):
     return render_to_response('emerald/index.html')
 
 def test(request):
+    imp.main();
     return HttpResponse("Test successful")
 
 def landing(request):

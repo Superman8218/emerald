@@ -17,7 +17,7 @@ class FboMaster(models.Model):
     zip_code = models.CharField(max_length=15)
     class_code = models.CharField(max_length=10)
     naics = models.CharField(max_length=10)
-    office_address = models.CharField(max_length=100)
+    office_address = models.CharField(max_length=255)
     subject = models.CharField(max_length=200)
     solnbr = models.CharField(max_length=20)
     response_date = models.DateField(null=True)
