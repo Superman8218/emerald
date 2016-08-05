@@ -14,16 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.conf.urls import include
+
 from django.contrib import admin
+
 from emerald.views import index
 from emerald.views import landing
 from emerald.views import test
-from emerald.views import displayFbo
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', index),
-    url(r'^landing', landing),
-    url(r'^test', test),
-    url(r'^display', displayFbo)
+        url(r'^admin/', admin.site.urls),
+        url(r'^$', index),
+        url(r'^landing', landing),
+        url(r'^test', test),
+        url(r'^data/', include('data.urls'))
 ]

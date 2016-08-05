@@ -6,7 +6,7 @@ import urllib2
 import datetime
 import re
 
-FBO_DIR = 'fbo_files'
+FBO_DIR = 'data/fbo_files'
 
 def main():
     FboMaster.objects.all().delete()
