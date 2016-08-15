@@ -1,0 +1,29 @@
+{% extends "emerald/base.html" %}
+
+{% block title %} Sign in to your account {% endblock %}
+
+<!--Don't display the login info on the login page-->
+
+{% block login_info %} {% endblock %}
+
+{% block content %}
+    <h2>Login to your account</h2>
+    <form action="/accounts/login/" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="id_username">Username:</label>    
+            <input type="text" name="username" value="" size="50"/>
+        </div>
+        
+        <div>
+            <label for="id_password">Password:</label>
+            <input type="text" name="password" value="" size="50"/>     
+        </div>
+        
+        <input type="submit" value="submit"/>
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <p>Thanks for logging in.</p>
+{% endblock %}

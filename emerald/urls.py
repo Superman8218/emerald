@@ -24,8 +24,9 @@ from emerald.views import test
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
-        url(r'^$', index),
+        url(r'^$', index, name='home'),
         url(r'^landing', landing),
         url(r'^test', test),
-        url(r'^data/', include('data.urls'))
+        url(r'^data/', include('data.urls')),
+        url(r'^accounts/', include('accounts.urls'))
 ]

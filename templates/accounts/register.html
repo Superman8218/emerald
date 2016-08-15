@@ -1,0 +1,39 @@
+{% extends "emerald/base.html" %}
+
+{% block title %}Create an account {% endblock %}
+
+{% block content %}
+    <h2>Create an Account</h2>
+    <form action="/accounts/register/" method="post">{% csrf_token %}
+        {% if form.error_dict %}
+            <p class="error">Please correct the errors below.</p>
+        {% endif %}
+
+        {% if form.username.errors %}
+            {{ form.username.html_error_list }}
+        {% endif %}     
+        <div>
+            <label for="id_username">Username:</label> {{ form.username }}
+        </div>
+
+        {% if form.password1.errors %}
+            {{ form.password1.html_error_list }}
+        {% endif %}
+        <div>
+            <label for="id_passowrd1">Password:</label> {{  form.password1 }}
+        </div>
+
+        {% if form.password2.errors %}
+            {{ form.password2.html_error_list }}
+        {% endif %}
+        <div>
+            <label for="id_password2">Password (again):</label> {{ form.password2 }}
+        </div>
+
+        <input type="submit" value="Create the account" />
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <p>Thanks for creating an account</p>
+{% endblock %}
