@@ -1,5 +1,6 @@
 Django==1.9.2
 argparse==1.2.1
+beautifulsoup4==4.3.2
 dj-database-url==0.4.0
 django-analytical==2.0.0
 django-pudb==0.1.0
