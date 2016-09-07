@@ -1,11 +1,14 @@
+from django.core.urlresolvers import reverse
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.template import RequestContext
-from django.views.generic import DetailView, ListView
+from django.views.generic import View, DetailView, ListView
 
 from models import FboMaster, Opportunity
-
 import FboImport
+
+import pdb
 
 # Create your views here.
 
@@ -22,6 +25,21 @@ class FboListView(ListView):
 
     model = FboMaster
     template_name = 'data/fbo-list.html'
+
+def FboAddView(request, pk):
+
+    # Get the information necessary to create a new opportunity
+
+    opportunityFboMaster = FboMaster.objects.get(pk=pk)
+    opportunityAccount = request.user.userprofile.account 
+
+    # Create the new opportunity
+
+    newOpportunity = Opportunity.objects.create(fbomaster=opportunityFboMaster, account=opportunityAccount)
+
+    # Go to the new opportunity record
+
+    return HttpResponseRedirect(reverse('opportunity-detail', kwargs={'pk':newOpportunity.id}))
 
 class OpportunityDetailView(DetailView):
 
