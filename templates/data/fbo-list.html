@@ -1,0 +1,10 @@
+{% extends "emerald/base.html" %}
+
+{% block content %}
+    <h2> FBO Opportunities List</h2>
+    <div>
+        {% for FboMaster in object_list %}
+            <div>{{ FboMaster.id }}</div>
+        {% endfor %}
+    </div>
+{% endblock %}
