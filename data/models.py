@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+from accounts.models import Account
 from django.db import models
 
 import choices
@@ -30,5 +31,6 @@ class FboMaster(models.Model):
     pop_country = models.CharField(max_length=50)
     pop_address = models.CharField(max_length=100)
 
-    def get_fields(self):
-        return [(field.name, field.value_to_string(self)) for field in FboMaster._meta.fields]
+class Opportunity(models.Model):
+    fbomaster = models.ForeignKey(FboMaster)
+    account = models.ForeignKey(Account)

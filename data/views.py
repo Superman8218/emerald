@@ -1,8 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import RequestContext
 from django.views.generic import DetailView, ListView
 
-from models import FboMaster
+from models import FboMaster, Opportunity
 
 import FboImport
 
@@ -17,15 +18,22 @@ class FboDetailView(DetailView):
     model = FboMaster
     template_name = 'data/fbo-detail.html'
 
-    # def get(self, request, fbo_master_id):
-        # fbo_master = FboMaster.objects.get(pk=fbo_master_id)
-        # return render(request, 'data/fbo-detail.html',
-                # {
-                    # 'fbo_master': fbo_master
-                # }
-            # )
-
 class FboListView(ListView):
 
     model = FboMaster
     template_name = 'data/fbo-list.html'
+
+class OpportunityDetailView(DetailView):
+
+    model = Opportunity
+    template_name = 'data/opportunity-detail.html'
+
+class OpportunityListView(ListView):
+
+    model = Opportunity
+    template_name = 'data/opportunity-list.html'
+
+    # Only list the opportunites that belong to the logged in user's account
+
+    def get_queryset(self):
+        return Opportunity.objects.filter(account=self.request.user.userprofile.account)

@@ -1,2 +1,1 @@
-detail page for FBO records
 adding records to watchlist

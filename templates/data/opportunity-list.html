@@ -1,0 +1,11 @@
+{% extends "emerald/base.html" %}
+
+{% block content %}
+<div>
+    {% for opportunity in object_list %}
+        <div>
+            {{ opportunity.fbomaster.id }}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
