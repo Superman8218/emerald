@@ -22,11 +22,10 @@ def register(request):
 
 class LoginView(View):
     def get(self, request):
+        args = {}
         if 'next' in request.GET:
-            next = request.GET['next']
-        else:
-            next = None
-        return render(request, 'accounts/login.html', {'next':next})
+            args['next'] = request.GET['next']
+        return render(request, 'accounts/login.html', args)
 
     def post(self, request):
         username = request.POST['username']

@@ -27,8 +27,9 @@
 
 
             <!--This is here so that we know which page we should redirect to.  If it is empty the user is redirected to the home page.-->
-
-            <input type="hidden" value="{{ next }}" name="next" />
+            {% if next %}
+                <input type="hidden" value="{{ next }}" name="next" />
+            {% endif %}
 
         </form>
     </div>
