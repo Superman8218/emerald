@@ -15,7 +15,7 @@ def register(request):
     form = EmeraldGovRegistrationForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('login'))
     return render(request, 'accounts/register.html', {
         'form': form
     })
