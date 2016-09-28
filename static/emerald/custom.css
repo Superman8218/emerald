@@ -18,6 +18,9 @@
   color: #50C878;
   border: #50C878; }
 
+.std-header {
+  color: #50C878; }
+
 input[type=text], input[type=password] {
   width: 100%;
   margin: 8px 0;
