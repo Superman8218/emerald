@@ -1,0 +1,29 @@
+.btn {
+  background-color: #50C878; }
+
+.nav-link {
+  color: white; }
+
+.navbar {
+  background-color: #50C878; }
+
+.navbar-brand {
+  color: white; }
+
+.navbar-text {
+  color: white; }
+
+.navbar-btn {
+  background-color: white;
+  color: #50C878;
+  border: #50C878; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white; }
+
+/*# sourceMappingURL=custom.css.map */

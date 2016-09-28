@@ -8,22 +8,25 @@
 
 {% block content %}
     <h2>Login to your account</h2>
-    <form action="/accounts/login/" method="post">
+    <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
-        <div>
-            <label for="id_username">Username:</label>    
-            <input type="text" name="username" value="" size="50"/>
-        </div>
+        <div class="container">
+            <label for="id_username"><b>Username:</b></label>    
+            <input type="text" class="form-control" name="username" placeholder="Enter Username" size="50" required/>
         
-        <div>
-            <label for="id_password">Password:</label>
-            <input type="text" name="password" value="" size="50"/>     
-        </div>
+            <label for="id_password"><b>Password:</b></label>
+            <input type="password" class="form-control" name="password" placeholder="Enter Password" value="" size="50" required/>     
         
-        <input type="submit" value="submit"/>
+        <button type="submit" class="btn btn-primary" value="submit"/>Login</button>
+
+        </div>
+
+        <!--This is here so that we know which page we should redirect to.  If it is empty the user is redirected to the home page.-->
+
+        <input type="hidden" value="{{ next }}" name="next" />
+
     </form>
 {% endblock %}
 
 {% block footer %}
-    <p>Thanks for logging in.</p>
 {% endblock %}

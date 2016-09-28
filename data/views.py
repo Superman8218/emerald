@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -5,7 +6,10 @@ from django.shortcuts import render
 from django.template import RequestContext
 from django.views.generic import View, DetailView, ListView
 
+from django_tables2 import SingleTableView
+
 from models import FboMaster, Opportunity
+from tables import FboMasterTable, OpportunityTable
 import FboImport
 
 import pdb
@@ -16,15 +20,16 @@ def FboImportView(request):
     FboImport.main()
     return HttpResponse("Import was successful")
 
-class FboDetailView(DetailView):
+class FboDetailView(LoginRequiredMixin, DetailView):
 
     model = FboMaster
     template_name = 'data/fbo-detail.html'
 
-class FboListView(ListView):
+class FboListView(LoginRequiredMixin, SingleTableView, ListView):
 
     model = FboMaster
     template_name = 'data/fbo-list.html'
+    table_class = FboMasterTable
 
 def FboAddView(request, pk):
 
@@ -41,15 +46,16 @@ def FboAddView(request, pk):
 
     return HttpResponseRedirect(reverse('opportunity-detail', kwargs={'pk':newOpportunity.id}))
 
-class OpportunityDetailView(DetailView):
+class OpportunityDetailView(LoginRequiredMixin, DetailView):
 
     model = Opportunity
     template_name = 'data/opportunity-detail.html'
 
-class OpportunityListView(ListView):
+class OpportunityListView(LoginRequiredMixin, SingleTableView, ListView):
 
     model = Opportunity
     template_name = 'data/opportunity-list.html'
+    table_class = OpportunityTable
 
     # Only list the opportunites that belong to the logged in user's account
 

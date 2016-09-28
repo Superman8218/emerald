@@ -1,5 +1,7 @@
 from django.conf.urls import url
 
+from models import FboMaster
+
 from views import FboDetailView, FboImportView, FboListView, FboAddView, OpportunityDetailView, OpportunityListView
 
 urlpatterns = [

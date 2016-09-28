@@ -1,0 +1,45 @@
+$emerald: #50C878;
+
+.btn
+{
+    background-color: $emerald;
+}
+
+.nav-link
+{
+    color: white;
+}
+
+.navbar
+{
+    background-color: $emerald;
+}
+
+.navbar-brand
+{
+    color: white;
+}
+
+.navbar-text
+{
+    color: white;
+}
+
+.navbar-btn
+{
+    background-color: white;
+    color: $emerald;
+    border: $emerald;
+}
+
+//Login Inputs
+
+input[type=text], input[type=password]
+{
+    width:100%;
+    margin: 8px 0;
+    display:inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: white;
+}

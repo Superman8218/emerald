@@ -20,7 +20,11 @@ def register(request):
 
 class LoginView(View):
     def get(self, request):
-        return render(request, 'accounts/login.html', {})
+        if 'next' in request.GET:
+            next = request.GET['next']
+        else:
+            next = None
+        return render(request, 'accounts/login.html', {'next':next})
 
     def post(self, request):
         username = request.POST['username']
@@ -31,7 +35,11 @@ class LoginView(View):
         if user:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect(reverse('home'))
+                if 'next' in request.POST:
+                    redirectUrl = request.POST['next']
+                else:
+                    redirectUrl = reverse('home')
+                return HttpResponseRedirect(redirectUrl)
             else:
                 return HttpResponse("Your EmeraldGov account is disabled")
         else:

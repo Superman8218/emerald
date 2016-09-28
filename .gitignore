@@ -10,3 +10,4 @@ staticfiles/*
 *.swp
 *.swo
 .git-old/
+.sass-cache/

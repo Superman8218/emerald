@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "accounts",
     'data',
+    'django_tables2',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -132,3 +133,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/'),
 )
+
+# Login
+LOGIN_URL = '/accounts/login/'
