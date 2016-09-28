@@ -11,3 +11,4 @@ staticfiles/*
 *.swo
 .git-old/
 .sass-cache/
+local_settings.py
