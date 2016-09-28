@@ -79,17 +79,9 @@ WSGI_APPLICATION = 'emerald.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'emerald',
-        'USER': 'zac',
-        'PASSWORD': 'confidence',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
 
+import dj_database_url
+DATABASES = dj_database_url.config()
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -136,3 +128,8 @@ STATICFILES_DIRS = (
 
 # Login
 LOGIN_URL = '/accounts/login/'
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
