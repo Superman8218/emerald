@@ -1,6 +1,9 @@
 .btn {
   background-color: #50C878; }
 
+.error {
+  color: red; }
+
 .nav-link {
   color: white; }
 

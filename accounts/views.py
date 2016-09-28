@@ -7,11 +7,12 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import View
 
+from forms import EmeraldGovRegistrationForm
+
 import pdb
 
 def register(request):
-    pdb.set_trace()
-    form = UserCreationForm(data=request.POST or None)
+    form = EmeraldGovRegistrationForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         form.save()
         return HttpResponseRedirect(reverse('home'))
