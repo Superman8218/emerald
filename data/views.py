@@ -10,11 +10,29 @@ from django_tables2 import SingleTableView
 
 from models import FboMaster, Opportunity
 from tables import FboMasterTable, OpportunityTable
+from forms import FboMasterFilterFormHelper
+from filters import FboMasterFilter
 import FboImport
 
 import pdb
 
 # Create your views here.
+
+# Generic filtered table view
+
+class FilteredSingleTableView(SingleTableView):
+    filter_class = None
+
+    def get_table_data(self):
+        self.filter = self.filter_class(self.request.GET, queryset=super(FilteredSingleTableView, self).get_table_data())
+        return self.filter.qs
+
+    def get_context_data(self, **kwargs):
+        context = super(FilteredSingleTableView, self).get_context_data(**kwargs)
+
+        self.filter.form.helper = self.helper_class()
+        context['filter'] = self.filter
+        return context
 
 def FboImportView(request):
     FboImport.main()
@@ -25,11 +43,13 @@ class FboDetailView(LoginRequiredMixin, DetailView):
     model = FboMaster
     template_name = 'data/fbo-detail.html'
 
-class FboListView(LoginRequiredMixin, SingleTableView, ListView):
+class FboListView(LoginRequiredMixin, FilteredSingleTableView, ListView):
 
     model = FboMaster
     template_name = 'data/fbo-list.html'
     table_class = FboMasterTable
+    filter_class = FboMasterFilter
+    helper_class = FboMasterFilterFormHelper
 
 def FboAddView(request, pk):
 

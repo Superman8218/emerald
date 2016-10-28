@@ -1,9 +1,8 @@
 {% extends "emerald/base.html" %}
-{% load render_table from django_tables2 %}
+{% load django_tables2 crispy_forms_tags %}
 
 {% block content %}
     <h2> FBO Opportunities List</h2>
-    <div>
-        {% render_table table %}
-    </div>
+    {% crispy filter.form filter.form.helper %}
+    {% render_table table %}
 {% endblock %}

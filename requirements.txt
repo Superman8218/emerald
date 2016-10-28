@@ -3,6 +3,8 @@ argparse==1.2.1
 beautifulsoup4==4.3.2
 dj-database-url==0.4.0
 django-analytical==2.0.0
+django-crispy-forms==1.6.0
+django-filter==0.15.2
 django-pudb==0.1.0
 django-tables2==1.2.6
 gunicorn==19.4.5
