@@ -2,6 +2,7 @@
 {% load django_tables2 crispy_forms_tags %}
 
 {% block content %}
-    <h2> FBO Opportunities List</h2>
+    <h2>FBO Opportunities List</h2>
+    {% render_table table "data/filtered-table.html" %}
     
 {% endblock %}

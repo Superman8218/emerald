@@ -47,6 +47,7 @@ class FboListView(LoginRequiredMixin, FilteredSingleTableView, ListView):
 
     model = FboMaster
     template_name = 'data/fbo-list.html'
+    # template_name = 'data/fbo-list-old.html'
     table_class = FboMasterTable
     filter_class = FboMasterFilter
     helper_class = FboMasterFilterFormHelper
