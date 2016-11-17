@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'data',
     'django_tables2',
     'django_filters',
+    'emerald',
     'widget_tweaks',
 ]
 
