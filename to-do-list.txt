@@ -1,1 +1,7 @@
-adding records to watchlist
+Fix the import
+Import SAM data
+
+Table Fixes:
+column sizing
+field entry length limits
+navbar doesn't extend
