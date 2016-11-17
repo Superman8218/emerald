@@ -1,10 +1,10 @@
-from django.core.management.base import NoArgsCommand, CommandError
+from django.core.management.base import BaseCommand, CommandError
 from data import FboImport
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
     help = 'Runs the Fbo Import task'
 
-    def handle(self, **options):
+    def handle(self, *args, **options):
         try:
             FboImport.main()
         except:
