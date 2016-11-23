@@ -40,10 +40,18 @@ class Importer():
         """Processing a single file"""
         raise NotImplementedError
 
+    def get_initial_file_dt():
+        """Returns the first day from which we should be getting records"""
+
 
 def do_import():
     import_model = model()
-    next_file_dt = import_model.objects.last_successful_dt() + timedelta(days=1)
+    last_successful_dt = import_model.objects.last_successful_dt()
+    next_file_dt = None
+    if last_successful_dt == None:
+       next_file_dt = import_model.get_initial_file_dt()
+    else:
+        next_file_dt = last_successful_dt + timedelta(days=1)
 
     while next_file_dt < (datetime.now() + timedelta(days=1)):
         # Download the file for the given date, process it, and then create a record of the import
