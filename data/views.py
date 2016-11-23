@@ -12,7 +12,6 @@ from models import FboMaster, Opportunity
 from tables import FboMasterTable, OpportunityTable
 from forms import FboMasterFilterFormHelper
 from filters import FboMasterFilter
-import FboImport
 
 import pdb
 
@@ -57,7 +56,7 @@ def FboAddView(request, pk):
     # Get the information necessary to create a new opportunity
 
     opportunityFboMaster = FboMaster.objects.get(pk=pk)
-    opportunityAccount = request.user.userprofile.account 
+    opportunityAccount = request.user.userprofile.account
 
     # Create the new opportunity
 

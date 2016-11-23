@@ -2,7 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import RequestContext
 from data.models import FboMaster
-import data.FboImport as imp
 
 import pdb
 

@@ -121,7 +121,7 @@ def main():
     date = datetime.date(1999, 12, 31)
     fileName = downloadFboFile(date)
     processFile(fileName)
-    
+
 def downloadFboFile(date):
     url = getUrlFromDate(date)
     response = urllib2.urlopen(url)
@@ -140,7 +140,7 @@ def getUrlFromDate(date):
 def processFile(fileName):
     soup = BeautifulSoup(open(fileName), 'html.parser')
     for child in soup.find_all():
-        processOpportunity(child) 
+        processOpportunity(child)
 
 def processOpportunity(source):
     master = FboMaster()

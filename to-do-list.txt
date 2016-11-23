@@ -1,7 +1,16 @@
 Fix the import
 Import SAM data
+Import FPDS data
 
 Table Fixes:
 column sizing
 field entry length limits
 navbar doesn't extend
+
+Ancillary activities:
+Set up (test) business email
+Develop terms and conditions
+Form an LLC
+Create a business bank account
+Get an EIN
+File 2016 taxes

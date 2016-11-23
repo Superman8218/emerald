@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_tables2',
     'django_filters',
     'emerald',
+    'sam',
     'widget_tweaks',
 ]
 
@@ -134,8 +135,3 @@ STATICFILES_DIRS = (
 
 # Login
 LOGIN_URL = '/accounts/login/'
-
-try:
-    from local_settings import *
-except ImportError:
-    pass

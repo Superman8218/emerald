@@ -18,7 +18,7 @@ sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)))
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emerald.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emerald.settings.local")
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
