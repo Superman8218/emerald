@@ -26,6 +26,6 @@ urlpatterns = [
         url(r'^admin/', admin.site.urls),
         url(r'^$', index, name='home'),
         url(r'^landing', landing, name='landing'),
-        url(r'^data/', include('data.urls')),
+        url(r'^fbo/', include('fbo.urls')),
         url(r'^accounts/', include('accounts.urls'))
 ]

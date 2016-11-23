@@ -14,8 +14,3 @@ class SamRecord(models.Model):
     is_sdb = models.BooleanField(default=False)
     is_8a = models.BooleanField(default=False)
     is_hubzone = models.BooleanField(default=False)
-
-class SamHistory(models.Model):
-
-    file_dt = models.DateField()
-    success = models.BooleanField(default=False)

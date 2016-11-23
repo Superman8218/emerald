@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('accounts', '0001_initial'),
-        ('data', '0008_auto_20160903_2341'),
+        ('fbo', '0008_auto_20160903_2341'),
     ]
 
     operations = [
@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('account', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='accounts.Account')),
-                ('fbomaster', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='data.FboMaster')),
+                ('fbomaster', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fbo.FboMaster')),
             ],
         ),
     ]
