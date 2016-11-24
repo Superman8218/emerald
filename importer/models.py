@@ -8,6 +8,7 @@ import urllib2
 from django.db import models
 
 from managers import ImportHistoryManager
+import pdb
 
 
 class ImportHistory(models.Model):
@@ -35,7 +36,13 @@ class Importer():
 
     # The methods for actually doing the import
 
-    def do_import():
+    def do_import(self):
+        """Runs the whole import"""
+
+        # Make sure storage_dir exists
+        if not os.path.exists(self.storage_dir):
+            os.makedirs(self.storage_dir)
+
         last_successful_dt = ImportHistory.objects.last_successful_dt(self.data_source)
         next_file_dt = None
         if last_successful_dt == None:
@@ -49,29 +56,26 @@ class Importer():
 
 
 
-    def download_file(file_dt):
+    def download_file(self, file_dt):
         """Download a given file so that for processing"""
         date_parameter = file_dt.strftime(self.url_date_format)
-
-        # Make sure storage_dir exists
-        if not os.path.exists(self.storage_dir):
-            os.makedirs(self.storage_dir)
-
         file_name = self.base_file_name.format(date_parameter)
-        file_path = os.join(self.storage_dir, file_name)
-        file_url = import_model.get_base_url.format(date_parameter)
-        response = urllib2.urlopen(url)
+        file_path = os.path.join(self.storage_dir, file_name)
+        file_url = self.base_url.format(date_parameter)
+        response = urllib2.urlopen(file_url)
 
         text_file = open(file_path, 'w')
         text_file.write(response.read())
         text_file.close()
+        response.close()
 
         return file_path
 
 
-    def process_single_date(file_dt):
+    def process_single_date(self, file_dt):
         """Download the file for the given date, process it, and then create a record of the import"""
-        file_path = download_file(next_file_dt)
+        pdb.set_trace()
+        file_path = self.download_file(file_dt)
         success = self.process_file(file_path)
         os.remove(file_path)
-        ImportHistory.objects.record_import(next_file_dt, data_source, success)
+        ImportHistory.objects.record_import(file_dt, data_source, success)

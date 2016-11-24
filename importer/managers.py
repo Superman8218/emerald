@@ -1,9 +1,9 @@
 from django.db import models
 from django.db.models import Max
 
-class ImportHistoryManager(models.Model):
+class ImportHistoryManager(models.Manager):
 
-    def last_successfull_dt(source):
+    def last_successfull_dt(self, source):
         max_dt = super(ImportHistoryManager, self).get_queryset().filter(data_source=source, success=True).aggregate(Max('file_dt'))
         return max_dt['file_dt__max']
 
