@@ -40,13 +40,13 @@ def FboImportView(request):
 class FboDetailView(LoginRequiredMixin, DetailView):
 
     model = FboMaster
-    template_name = 'data/fbo-detail.html'
+    template_name = 'fbo/fbo-detail.html'
 
 class FboListView(LoginRequiredMixin, FilteredSingleTableView, ListView):
 
     model = FboMaster
-    template_name = 'data/fbo-list.html'
-    # template_name = 'data/fbo-list-old.html'
+    template_name = 'fbo/fbo-list.html'
+    # template_name = 'fbo/fbo-list-old.html'
     table_class = FboMasterTable
     filter_class = FboMasterFilter
     helper_class = FboMasterFilterFormHelper
@@ -69,12 +69,12 @@ def FboAddView(request, pk):
 class OpportunityDetailView(LoginRequiredMixin, DetailView):
 
     model = Opportunity
-    template_name = 'data/opportunity-detail.html'
+    template_name = 'fbo/opportunity-detail.html'
 
 class OpportunityListView(LoginRequiredMixin, SingleTableView, ListView):
 
     model = Opportunity
-    template_name = 'data/opportunity-list.html'
+    template_name = 'fbo/opportunity-list.html'
     table_class = OpportunityTable
 
     # Only list the opportunites that belong to the logged in user's account
