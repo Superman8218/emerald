@@ -15,7 +15,6 @@ class Command(BaseCommand):
         # except:
             # raise CommandError('Fbo import failed')
         importer = FboImporter()
-        pdb.set_trace()
         import_dt = datetime.today() + timedelta(days=-2)
         importer.process_single_date(import_dt)
 

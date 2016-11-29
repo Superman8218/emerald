@@ -3,9 +3,11 @@ from __future__ import unicode_literals
 from datetime import datetime, timedelta
 from exceptions import NotImplementedError
 import os
+import pytz
 import urllib2
 
 from django.db import models
+from django.utils import timezone
 
 from managers import ImportHistoryManager
 import pdb
@@ -50,6 +52,9 @@ class Importer():
         else:
             next_file_dt = last_successful_dt + timedelta(days=1)
 
+        pdb.set_trace()
+        next_file_dt = next_file_dt.replace(tzinfo=pytz.UTC)
+
         while next_file_dt < (datetime.now() + timedelta(days=1)):
             process_single_date(next_file_dt)
             next_file_dt = next_file_dt + timedelta(days=1)
@@ -74,8 +79,8 @@ class Importer():
 
     def process_single_date(self, file_dt):
         """Download the file for the given date, process it, and then create a record of the import"""
-        pdb.set_trace()
+        file_dt = file_dt.replace(tzinfo=pytz.UTC)
         file_path = self.download_file(file_dt)
         success = self.process_file(file_path)
         os.remove(file_path)
-        ImportHistory.objects.record_import(file_dt, data_source, success)
+        ImportHistory.objects.record_import(self.data_source, file_dt, success)
