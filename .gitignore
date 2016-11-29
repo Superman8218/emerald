@@ -13,3 +13,4 @@ staticfiles/*
 .sass-cache/
 local_settings.py
 *.sw*
+emerald/staticfiles/
