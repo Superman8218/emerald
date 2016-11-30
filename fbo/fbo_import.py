@@ -1,8 +1,7 @@
-from django.utils import timezone
 from datetime import datetime
-import pytz
 
 from importer.models import Importer
+from parser import parse_file
 
 
 class FboImporter(Importer):
@@ -16,7 +15,7 @@ class FboImporter(Importer):
     data_source = 'fbo'
 
     def process_file(self, file_path):
-        print 'File Processed'
+        parse_file(file_path)
         return True
 
     # Helper methods for processing the file
