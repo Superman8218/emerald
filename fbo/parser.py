@@ -1,4 +1,6 @@
 from functools import partial
+import datetime
+import re
 
 from bs4 import BeautifulSoup
 
@@ -28,10 +30,26 @@ srcsgt_fields = [
 # Define aliases for importing fields, includeing functions used to handle complicated inputs
 
 def set_contact_data(master, text):
+    # nameRegex = re.search(r'^([^,]+)', text)
+    # phoneRegex = re.search(r'Phone ([^,]+)', text)
+    # emailRegex = re.search(r'Email ([^\s]+)', text)
+    # if nameRegex:
+        # master.contact_name = nameRegex.group(1).title()
+    # if phoneRegex:
+        # master.contact_phone = phoneRegex.group(1)
+    # if emailRegex:
+    #     master.contact_email = emailRegex.group(1)
     pass
 
 def set_respdate_data(master, text):
-    pass
+    respYear = text[4:]
+    if int(respYear) > 90:
+       respYear = int('19' + respYear)
+    else:
+        respYear = int('20' + respYear)
+    respMonth = int(text[:2])
+    respDay = int(text[2:4])
+    master.response_date = datetime.date(respYear, respMonth, respDay)
 
 field_aliases = {
     'zip' : 'zip_code',
@@ -66,7 +84,6 @@ def nonempty_tag(tag):
 def parse_file(file_path):
     """So right now this is built to only extract one type of record, but we can definitely make it extract more"""
     soup = BeautifulSoup(open(file_path))
-    collected_fields = set([]) # Debug
     records = filter(nonempty_tag, soup.children)
     for record in records:
         master = FboMaster()
@@ -75,7 +92,8 @@ def parse_file(file_path):
         for item in fields:
             text = item.find(text=True, recursive=False).encode('utf-8').strip()
             name = item.name
-            collected_fields.add(name) # Debug
+            if not text:
+                continue
             if name in field_names:
                 setattr(master, name, text)
             elif name in field_aliases_keys:
@@ -90,11 +108,9 @@ def parse_file(file_path):
                     destination(master, text)
             else:
                 print("Field name {0} not in field lists".format(name))
-            # print item.name + ': ' + text
         try:
             master.save()
         except:
             pprint.pprint(sys.exc_info()[0])
             pprint.pprint(master.__dict__)
             return
-        # print 'Collected fields: ' + str(collected_fields) # Debug
