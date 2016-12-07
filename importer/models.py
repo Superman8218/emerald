@@ -63,6 +63,7 @@ class Importer():
 
     def download_file(self, file_dt):
         """Download a given file so that for processing"""
+        pdb.set_trace()
         date_parameter = file_dt.strftime(self.url_date_format)
         file_name = self.base_file_name.format(date_parameter)
         file_path = os.path.join(self.storage_dir, file_name)
@@ -80,6 +81,7 @@ class Importer():
     def process_single_date(self, file_dt):
         """Download the file for the given date, process it, and then create a record of the import"""
         file_dt = file_dt.replace(tzinfo=pytz.UTC)
+        # pdb.set_trace()
         file_path = self.download_file(file_dt)
         success = self.process_file(file_path)
         os.remove(file_path)
