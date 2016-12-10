@@ -2,6 +2,7 @@
 from models import SamRecord
 
 import csv
+import codecs
 import pdb
 
 
@@ -56,15 +57,13 @@ legend = {
 
 
 def parse_file(file_path):
-    with open(file_path, 'r') as csvfile:
+    with open(file_path, 'rU') as csvfile:
         samreader = csv.reader(csvfile, delimiter='|', quotechar='"')
         count = 0
         for row in samreader:
             if (len(row) > 1):
                 master = SamRecord()
                 for key in legend.keys():
-                    if key == 59:
-                        pdb.set_trace()
                     setattr(master, legend[key], row[key])
                 master.save()
     return
