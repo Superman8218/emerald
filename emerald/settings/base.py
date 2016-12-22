@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'scx+7k4)*^vl7f0s25&x_ys+t#i(b^n6njilgok!kqawnkk2gw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'accounts',
     'emerald',
     'fbo',
+    'fpds',
     'importer',
     'sam',
 ]

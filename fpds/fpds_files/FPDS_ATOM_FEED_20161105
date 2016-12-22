@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>FPDS-NG search results for<![CDATA[: LAST_MODIFIED_DATE:[2016/11/04,2016/11/05]]]></title>
+  <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=LAST_MODIFIED_DATE%3A%5B2016%2F11%2F04%2C2016%2F11%2F05%5D&amp;start=0"></link>
+  <link rel="last" type="text/html" href="https://www.fpds.gov/ezsearch/FEEDS/ATOM?s=FPDS&amp;FEEDNAME=PUBLIC&amp;VERSION=1.4&amp;q=LAST_MODIFIED_DATE%3A%5B2016%2F11%2F04%2C2016%2F11%2F05%5D&amp;start=10350"></link>
+  <link rel="next" type="text/html" href="https://www.fpds.gov/ezsearch/FEEDS/ATOM?s=FPDS&amp;FEEDNAME=PUBLIC&amp;VERSION=1.4&amp;q=LAST_MODIFIED_DATE%3A%5B2016%2F11%2F04%2C2016%2F11%2F05%5D&amp;start=10"></link>
+  <modified/>
+  <author>
+    <name/>
+  </author>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0002 (15) awarded to INTEGRITY MANAGEMENT SERVICES, INC., was modified for the amount of $51,794.25]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0002+9700+"></link>
+    <modified>2016-11-04 15:25:15</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0002</ns1:PIID>
+            <ns1:modNumber>15</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>FA805213D0005</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-02-17 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-02-16 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2016-09-30 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2018-03-31 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>51794.25</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>51794.03</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>176099.69</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEPT OF THE AIR FORCE">5700</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="FA8052  773 ESS PK">FA8052</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEPT OF THE AIR FORCE">5700</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="AFMSA SGRM">F2MTAJ</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE">B</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:solicitationID>FA805212R0004</ns1:solicitationID>
+          <ns1:descriptionOfContractRequirement>IGF::OT::IGF  HAMS</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="NO">N</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="YES - SERVICE WHERE PBA IS USED.">Y</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>97</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>0130</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NO">N</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="YES">Y</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NO">N</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="HOUSEKEEPING- OTHER">S299</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="SERVICES">S1</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="JANITORIAL SERVICES">561720</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>INTEGRITY MANAGEMENT SERVICES, INC.</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>true</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>true</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="OKLAHOMA">OK</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>225</ns1:numberOfEmployees>
+              <ns1:annualRevenue>6000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>141 W DANA ST STE 100</ns1:streetAddress>
+              <ns1:city>NIPOMO</ns1:city>
+              <ns1:state name="CALIFORNIA">CA</ns1:state>
+              <ns1:ZIPCode>934449152</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>8055418834</ns1:phoneNo>
+              <ns1:faxNo>8055418835</ns1:faxNo>
+              <ns1:congressionalDistrictCode>24</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>808197594</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>934449152</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>808197594</ns1:DUNSNumber>
+              <ns1:vendorName>INTEGRITY MANAGEMENT SERVICES, INC.</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>808197594</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2001-11-21 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2013-01-09 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="TEXAS">TX</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="BEXAR" city="SAN ANTONIO">782261885</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>20</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES">D</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY">MAFO</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="SMALL BUSINESS SET ASIDE - TOTAL">SBA</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:statutoryExceptionToFairOpportunity description="FAIR OPPORTUNITY GIVEN">FAIR</ns1:statutoryExceptionToFairOpportunity>
+          <ns1:numberOfOffersReceived>8</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM">A</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="YES">Y</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>MONICA.CHRISTIE.FA8052@US.AF.MIL</ns1:createdBy>
+          <ns1:createdDate>2016-02-17 08:22:09</ns1:createdDate>
+          <ns1:lastModifiedBy>ROBERT.WIDDOSS@US.AF.MIL</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 15:25:15</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0005 (1) awarded to ADVANCED CONSTRUCTION SERVICES INC., was modified for the amount of $3,829]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0005+9700+"></link>
+    <modified>2016-11-04 14:20:42</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0005</ns1:PIID>
+            <ns1:modNumber>1</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>W912BV13D0012</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-08-17 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-08-17 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2016-09-15 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2016-09-15 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>3829.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>3829.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>3829.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEPT OF THE ARMY">2100</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="W076 ENDIST TULSA">W912BV</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY">96CE</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="Tulsa">W912BV</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="OTHER ADMINISTRATIVE ACTION">M</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:solicitationID>W912BV13R0032</ns1:solicitationID>
+          <ns1:descriptionOfContractRequirement>IGF::OT::IGF CORRECT WAGE RATES TO THE MOST CURRENT AND LINE ITEMS TO INCLUDE PROFIT, BONDING, ETC., RENOVATED OFFICES, TINKER AFB, OK.</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="UNKNOWN">U</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="YES - SERVICE WHERE PBA IS USED.">Y</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>96</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>4902</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NO">N</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NO">N</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="YES">Y</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="MAINT/REPAIR/REBUILD OF EQUIPMENT- CONSTRUCTION AND BUILDING MATERIALS">J056</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="CONSTRUCTION">C2</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="INDUSTRIAL BUILDING CONSTRUCTION">236210</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="ENERGY EFFICIENT">D</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="MEETS REQUIREMENTS">A</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>ADVANCED CONSTRUCTION SERVICES INC.</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>true</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>true</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>true</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="OKLAHOMA">OK</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>5</ns1:numberOfEmployees>
+              <ns1:annualRevenue>800000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>true</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>true</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>true</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>true</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>5601 137TH AVE</ns1:streetAddress>
+              <ns1:city>NOBLE</ns1:city>
+              <ns1:state name="OKLAHOMA">OK</ns1:state>
+              <ns1:ZIPCode>730687983</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>4058720776</ns1:phoneNo>
+              <ns1:faxNo>4058720777</ns1:faxNo>
+              <ns1:congressionalDistrictCode>04</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>808980846</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>730687983</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>808980846</ns1:DUNSNumber>
+              <ns1:vendorName>ADVANCED CONSTRUCTION SERVICES INC.</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>808980846</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2008-07-11 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2014-09-10 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="OKLAHOMA">OK</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="OKLAHOMA" city="OKLAHOMA CITY">731454526</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>04</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="NOT AVAILABLE FOR COMPETITION">B</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="ONLY ONE SOURCE">SSS</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="8(A) SOLE SOURCE ">8AN</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:reasonNotCompeted description="AUTHORIZED BY STATUTE">OTH</ns1:reasonNotCompeted>
+          <ns1:numberOfOffersReceived>1</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NOT APPLICABLE">X</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside>
+          <ns1:priceEvaluationPercentDifference>0.00</ns1:priceEvaluationPercentDifference></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>DIANE.CIANCI.W912BV@USACE.ARMY.MIL</ns1:createdBy>
+          <ns1:createdDate>2016-08-17 11:15:50</ns1:createdDate>
+          <ns1:lastModifiedBy>JEREMIE.EVANS.W912BV@SA2100.ARMY.MIL</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 14:20:42</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0007 (8) awarded to MANAGEMENT SUPPORT TECHNOLOGY INCORPORATED, was modified for the amount of $0]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0007+9700+"></link>
+    <modified>2016-11-04 11:50:29</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.3">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0007</ns1:PIID>
+            <ns1:modNumber>8</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>W74V8H04D0060</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2010-09-30 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2010-09-30 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2010-09-18 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2010-09-18 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>0.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>0.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>0.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEPT OF THE ARMY">2100</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="W6QK ADAP SPT OFF">W91WAW</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEPT OF THE ARMY">2100</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="W1YN USA MANPOWER ANALYSIS AGY">W90066</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="OTHER ADMINISTRATIVE ACTION">M</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:solicitationID>DASW0103R0036</ns1:solicitationID>
+          <ns1:costAccountingStandardsClause description="NOT APPLICABLE EXEMPT FROM CAS">X</ns1:costAccountingStandardsClause>
+          <ns1:descriptionOfContractRequirement>CONTRACTOR SUPPORT - OPTION ONE</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="NO">N</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NO - SERVICE WHERE PBA IS NOT USED.">N</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contractFinancing description="UNUSUAL PROGRESS PAYMENTS OR ADVANCE PAYMENTS">D</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NOT APPLICABLE">X</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="YES">Y</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="OTHER PROFESSIONAL SERVICES">R499</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="SERVICES">S1</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="HUMAN RESOURCES CONSULTING SERVICES (2007), HUMAN RESOURCES AND EXECUTIVE SEARCH CONSULTING SERVICES (2002)">541612</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>MANAGEMENT SUPPORT TECHNOLOGY INCORPORATED</ns1:vendorName>
+            <ns1:vendorAlternateName>M S T I</ns1:vendorAlternateName>
+            <ns1:vendorLegalOrganizationName>MANAGEMENT SUPPORT TECHNOLOGY INCORPORATED</ns1:vendorLegalOrganizationName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>true</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>true</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>true</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>true</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>false</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>false</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>false</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:numberOfEmployees>100</ns1:numberOfEmployees>
+              <ns1:annualRevenue>5493260</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>9990 LEE HWY STE 300</ns1:streetAddress>
+              <ns1:city>FAIRFAX</ns1:city>
+              <ns1:state name="VIRGINIA">VA</ns1:state>
+              <ns1:ZIPCode>220301720</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:congressionalDistrictCode>11</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>7836038140000PR</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>220301720</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>783603814</ns1:DUNSNumber>
+              <ns1:vendorName>MANAGEMENT SUPPORT TECHNOLOGY INCORPORATED</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>783603814</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:renewalDate>2006-06-15 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="VIRGINIA">VA</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="FAIRFAX" city="FORT BELVOIR">220605526</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>11</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES">D</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="SMALL BUSINESS SET ASIDE - TOTAL">SBA</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>3</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:smallBusinessCompetitivenessDemonstrationProgram>false</ns1:smallBusinessCompetitivenessDemonstrationProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NOT APPLICABLE">X</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside>
+          <ns1:priceEvaluationPercentDifference>0.00</ns1:priceEvaluationPercentDifference></ns1:competition>
+        <ns1:preferencePrograms>
+          <ns1:subcontractPlan description="PLAN NOT REQUIRED ">B</ns1:subcontractPlan></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>SHAWN.KERKES..W91WAW@HQDA.ARMY.MIL</ns1:createdBy>
+          <ns1:createdDate>2010-09-30 17:56:58</ns1:createdDate>
+          <ns1:lastModifiedBy>ARMYADMIN</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 11:50:29</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[New DELIVERY ORDER 0013 awarded to MELTON SALES & SERVICE for the amount of $9,880]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0013+9700+"></link>
+    <modified>2016-11-04 13:44:48</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0013</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>W911N213D0013</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2013-10-15 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2013-10-15 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2013-10-23 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2013-10-23 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>9880.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>9880.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>9880.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEPT OF THE ARMY">2100</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="W0L6 USA DEP LETTERKENY">W911N2</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEPT OF THE ARMY">2100</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="W0L6 USA DEP LETTERKENY">W91FVA</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:solicitationID>W911N213R0012</ns1:solicitationID>
+          <ns1:descriptionOfContractRequirement>REMANUFACTURE AND RETURN ENGINES AND POWER TRAIN COMPONENTS</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction uses GFE/GFP">Y</ns1:GFE-GFP>
+          <ns1:seaTransportation description="UNKNOWN">U</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NOT APPLICABLE">X</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>97</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>4930</ns1:mainAccountCode>
+                <ns1:subAccountCode>001</ns1:subAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NOT APPLICABLE">X</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NOT APPLICABLE">X</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="DIESEL ENGINES AND COMPONENTS">2815</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="COMBAT VEHICLES">A4A</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="OTHER ENGINE EQUIPMENT MANUFACTURING">333618</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="MFG IN U.S.">D</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>MELTON SALES &amp; SERVICE</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="NEW JERSEY">NJ</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>90</ns1:numberOfEmployees>
+              <ns1:annualRevenue>14000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>511 ELBOW LN, SUITE 100</ns1:streetAddress>
+              <ns1:city>BURLINGTON</ns1:city>
+              <ns1:state name="NEW JERSEY">NJ</ns1:state>
+              <ns1:ZIPCode>080164131</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>6096994800</ns1:phoneNo>
+              <ns1:faxNo>6092610709</ns1:faxNo>
+              <ns1:congressionalDistrictCode>03</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>808350172</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>080164131</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>808350172</ns1:DUNSNumber>
+              <ns1:vendorName>MELTON SALES &amp; SERVICE</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>808350172</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2007-11-13 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2014-01-23 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="NEW JERSEY">NJ</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="BURLINGTON" city="BURLINGTON">080164131</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>03</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES">D</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="SMALL BUSINESS SET ASIDE - TOTAL">SBA</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>4</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM">A</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NOT APPLICABLE">X</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>BOBIE.BURKETT.W911N2@US.ARMY.MIL</ns1:createdBy>
+          <ns1:createdDate>2013-10-09 14:20:40</ns1:createdDate>
+          <ns1:lastModifiedBy>IDV_CORRECT</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 13:44:48</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[New DELIVERY ORDER 0014 awarded to NATIONAL INDUSTRIES FOR THE BLIND for the amount of $1,173,517.4]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0014+9700+"></link>
+    <modified>2016-11-04 16:48:13</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0014</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>SPE1C114DB006</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-05-19 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-05-19 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2016-12-15 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2016-12-15 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>1173517.40</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>1173517.40</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>1173517.40</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DLA TROOP SUPPORT">SPE1C1</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="DLA TROOP SUPPORT">SPE1C1</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:descriptionOfContractRequirement>8503249959!CARRIER,HYDRATION S</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="UNKNOWN">U</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NOT APPLICABLE">X</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>97</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>4930</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NO">N</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NOT APPLICABLE">X</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="INDIVIDUAL EQUIPMENT">8465</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="TEXTILES, CLOTHING AND EQUIPAGE">A9</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="APPAREL ACCESSORIES AND OTHER APPAREL MANUFACTURING">315990</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="MFG IN U.S.">D</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>NATIONAL INDUSTRIES FOR THE BLIND</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>false</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>true</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>false</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>true</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>true</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="NEW YORK">NY</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>136</ns1:numberOfEmployees>
+              <ns1:annualRevenue>139000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>1310 BRADDOCK PLACE</ns1:streetAddress>
+              <ns1:city>ALEXANDRIA</ns1:city>
+              <ns1:state name="VIRGINIA">VA</ns1:state>
+              <ns1:ZIPCode>223141691</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>7033100512</ns1:phoneNo>
+              <ns1:faxNo>7033100494</ns1:faxNo>
+              <ns1:congressionalDistrictCode>08</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>001672120</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>223141691</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>001672120</ns1:DUNSNumber>
+              <ns1:vendorName>NATIONAL INDUSTRIES FOR THE BLIND</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>001672120</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2001-11-26 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2014-10-08 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="OTHER THAN SMALL BUSINESS">O</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="VIRGINIA">VA</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="ALEXANDRIA CITY" city="ALEXANDRIA">223141691</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>08</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="NOT AVAILABLE FOR COMPETITION">B</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="ONLY ONE SOURCE">SSS</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:reasonNotCompeted description="AUTHORIZED BY STATUTE">OTH</ns1:reasonNotCompeted>
+          <ns1:numberOfOffersReceived>1</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NO">N</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>EPROCUREMENT.SYSADMIN.DLA</ns1:createdBy>
+          <ns1:createdDate>2016-05-19 09:11:14</ns1:createdDate>
+          <ns1:lastModifiedBy>EPROCUREMENT.SYSADMIN.DLA</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 16:48:13</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[New DELIVERY ORDER 0016 awarded to AIRGAS USA, LLC for the amount of $9,480]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0016+9700+"></link>
+    <modified>2016-11-04 14:46:39</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0016</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>SP060011D1519</ns1:PIID>
+            <ns1:modNumber>P00003</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2013-06-28 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2013-06-28 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2013-07-31 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2013-07-31 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>9480.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>9480.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>9480.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DLA ENERGY AEROSPACE ENRGY-DLAE-M">SPE601</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="DLA ENERGY AEROSPACE ENRGY-DLAE-M">SPE601</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:descriptionOfContractRequirement>8500267756!OXYGEN,AVIATOR'S BR</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="NO">N</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NOT APPLICABLE">X</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>97</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>4930</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NO">N</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NO">N</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NO">N</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="GASES: COMPRESSED AND LIQUEFIED">6830</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="OTHER FUELS AND LUBRICANTS">A8B</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="INDUSTRIAL GAS MANUFACTURING">325120</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="MFG IN U.S.">D</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>AIRGAS USA, LLC</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>true</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="DELAWARE">DE</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>1890</ns1:numberOfEmployees>
+              <ns1:annualRevenue>18000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>3737 WORSHAM AVE</ns1:streetAddress>
+              <ns1:city>LONG BEACH</ns1:city>
+              <ns1:state name="CALIFORNIA">CA</ns1:state>
+              <ns1:ZIPCode>908081774</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>5627662091</ns1:phoneNo>
+              <ns1:faxNo>5629381482</ns1:faxNo>
+              <ns1:congressionalDistrictCode>47</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>078365846</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>90808</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>078365846</ns1:DUNSNumber>
+              <ns1:vendorName>AIRGAS USA, LLC</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>024492860</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2012-02-14 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2017-09-23 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="OTHER THAN SMALL BUSINESS">O</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="CALIFORNIA">CA</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="LOS ANGELES" city="LONG BEACH">908081774</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>47</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION">A</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>2</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM">A</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NO">N</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>EPROCUREMENT.SYSADMIN.DLA</ns1:createdBy>
+          <ns1:createdDate>2013-06-28 14:07:37</ns1:createdDate>
+          <ns1:lastModifiedBy>IDV_CORRECT</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 14:46:39</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0027 (1) awarded to AIRGAS USA, LLC, was modified for the amount of -$1,897.72]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0027+9700+"></link>
+    <modified>2016-11-04 14:46:39</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>0027</ns1:PIID>
+            <ns1:modNumber>1</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="DEPT OF DEFENSE">9700</ns1:agencyID>
+            <ns1:PIID>SP060011D1519</ns1:PIID>
+            <ns1:modNumber>P00003</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2014-10-02 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2014-10-02 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2013-10-31 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2013-10-31 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>-1897.72</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>-1897.72</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>-1897.72</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DLA ENERGY AEROSPACE ENRGY-DLAE-M">SPE601</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEFENSE LOGISTICS AGENCY">97AS</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="DLA ENERGY AEROSPACE ENRGY-DLAE-M">SPE601</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="FIRM FIXED PRICE">J</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="CLOSE OUT">K</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:descriptionOfContractRequirement>8500378444!NITROGEN</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:seaTransportation description="NO">N</ns1:seaTransportation>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NOT APPLICABLE">X</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>97</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>4930</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NO">N</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NO">N</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NO">N</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="GASES: COMPRESSED AND LIQUEFIED">6830</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:claimantProgramCode description="OTHER FUELS AND LUBRICANTS">A8B</ns1:claimantProgramCode>
+          <ns1:principalNAICSCode description="INDUSTRIAL GAS MANUFACTURING">325120</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:systemEquipmentCode description="NONE">000</ns1:systemEquipmentCode>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="MFG IN U.S.">D</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>AIRGAS USA, LLC</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>true</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="DELAWARE">DE</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>1890</ns1:numberOfEmployees>
+              <ns1:annualRevenue>18000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>3737 WORSHAM AVE</ns1:streetAddress>
+              <ns1:city>LONG BEACH</ns1:city>
+              <ns1:state name="CALIFORNIA">CA</ns1:state>
+              <ns1:ZIPCode>908081774</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>5627662091</ns1:phoneNo>
+              <ns1:faxNo>5629381482</ns1:faxNo>
+              <ns1:congressionalDistrictCode>47</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>078365846</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>90808</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>078365846</ns1:DUNSNumber>
+              <ns1:vendorName>AIRGAS USA, LLC</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>024492860</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2012-02-14 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2017-09-23 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="OTHER THAN SMALL BUSINESS">O</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="CALIFORNIA">CA</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="LOS ANGELES" city="LONG BEACH">908081774</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>47</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION">A</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>2</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM">A</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NO">N</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>EPROCUREMENT.SYSADMIN.DLA</ns1:createdBy>
+          <ns1:createdDate>2014-10-02 10:13:36</ns1:createdDate>
+          <ns1:lastModifiedBy>IDV_CORRECT</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 14:46:39</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 002 (7) awarded to ECONOMETRICA, INC, was modified for the amount of $0]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=002+8600+"></link>
+    <modified>2016-11-04 13:17:36</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF">8600</ns1:agencyID>
+            <ns1:PIID>002</ns1:PIID>
+            <ns1:modNumber>7</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF">8600</ns1:agencyID>
+            <ns1:PIID>HUDDCCHI01067</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-11-01 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-11-01 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2018-12-29 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2018-12-29 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>0.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>0.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>0.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF">8600</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DEPT HUD-CHEIF PROCUREMENT OFFICER">86544A</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF">8600</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="DEPT OF HOUSING  URBAN DEVELOPMENT">8630AX</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="LABOR HOURS">Z</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="FUNDING ONLY ACTION">C</ns1:reasonForModification>
+          <ns1:majorProgramCode>RAD EVALUATION</ns1:majorProgramCode>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:solicitationID>DU204SA-13-R-0006</ns1:solicitationID>
+          <ns1:descriptionOfContractRequirement>CONDUCT RENTAL ASSISTANCE DEMONSTRATION (RAD) EVALUATION IGF::OT::IGF</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="NO - SERVICE WHERE PBA IS NOT USED.">N</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="NO">N</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>86</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>0402</ns1:mainAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:contractFinancing description="NOT APPLICABLE">Z</ns1:contractFinancing>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NOT APPLICABLE">X</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="NOT APPLICABLE">X</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="SPECIAL STUDIES/ANALYSIS- HOUSING/COMMUNITY DEVELOPMENT">B545</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:principalNAICSCode description="RESEARCH AND DEVELOPMENT IN THE SOCIAL SCIENCES AND HUMANITIES">541720</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED">C</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:useOfEPADesignatedProducts description="NOT REQUIRED">E</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>ECONOMETRICA, INC</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>true</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>false</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="MARYLAND">MD</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>50</ns1:numberOfEmployees>
+              <ns1:annualRevenue>6108981</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>4416 EAST WEST HWY STE 215</ns1:streetAddress>
+              <ns1:city>BETHESDA</ns1:city>
+              <ns1:state name="MARYLAND">MD</ns1:state>
+              <ns1:ZIPCode>208144565</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>3016578311</ns1:phoneNo>
+              <ns1:faxNo>3016573140</ns1:faxNo>
+              <ns1:congressionalDistrictCode>08</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>196693170</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>208144565</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>196693170</ns1:DUNSNumber>
+              <ns1:vendorName>ECONOMETRICA, INC</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>196693170</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2002-03-26 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2012-09-20 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="MARYLAND">MD</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="MONTGOMERY" city="BETHESDA">208144565</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>08</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION">A</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY">MAFO</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:statutoryExceptionToFairOpportunity description="OTHER STATUTORY AUTHORITY">OSA</ns1:statutoryExceptionToFairOpportunity>
+          <ns1:numberOfOffersReceived>1</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="NOT APPLICABLE">X</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>MMBARBEE</ns1:createdBy>
+          <ns1:createdDate>2016-11-01 15:15:37</ns1:createdDate>
+          <ns1:lastModifiedBy>MMBARBEE</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 13:17:36</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0030 (1) awarded to KEYSTONE SHIPPING SERVICES, INC., was modified for the amount of -$25,000]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0030+6938+"></link>
+    <modified>2016-11-04 14:45:12</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="MARITIME ADMINISTRATION">6938</ns1:agencyID>
+            <ns1:PIID>0030</ns1:PIID>
+            <ns1:modNumber>1</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="MARITIME ADMINISTRATION">6938</ns1:agencyID>
+            <ns1:PIID>DTMA98D16006</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-11-04 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-11-04 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2017-11-03 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2017-11-03 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>-25000.00</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>-25000.00</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>-25000.00</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="MARITIME ADMINISTRATION">6938</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DOT  MARITIME ADMINISTRATION">697276</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEPT OF THE NAVY">1700</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="FIELD SUPPORT ACTIVITY BSO-11">N00011</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="COST NO FEE">S</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="CLOSE OUT">K</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:descriptionOfContractRequirement>CAPE KNOX - KEY-KNX17-1008A - FY17 SHIP SUPPORT A - 
+IGF::OT::IGF</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="YES - SERVICE WHERE PBA IS USED.">Y</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="YES">Y</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>69</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>1710</ns1:mainAccountCode>
+                <ns1:subAccountCode>000</ns1:subAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NOT APPLICABLE">X</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="YES">Y</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="OPERATION OF OTHER NON-BUILDING FACILITIES">M1PZ</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:principalNAICSCode description="DEEP SEA FREIGHT TRANSPORTATION">483111</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="FAR 52.223-4 AND FAR 52.223-9 INCLUDED">B</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="MEETS REQUIREMENTS">A</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>KEYSTONE SHIPPING SERVICES, INC.</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>true</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>false</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="DELAWARE">DE</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>CORPORATE NOT TAX EXEMPT</ns1:organizationalType>
+              <ns1:numberOfEmployees>1036</ns1:numberOfEmployees>
+              <ns1:annualRevenue>142098000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>1 BALA PLAZA E STE 600</ns1:streetAddress>
+              <ns1:city>BALA CYNWYD</ns1:city>
+              <ns1:state name="PENNSYLVANIA">PA</ns1:state>
+              <ns1:ZIPCode>190041406</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>6106176841</ns1:phoneNo>
+              <ns1:faxNo>6106176846</ns1:faxNo>
+              <ns1:congressionalDistrictCode>02</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>008862315</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>19004</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>008862315</ns1:DUNSNumber>
+              <ns1:vendorName>KEYSTONE SHIPPING SERVICES, INC.</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>002595296</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2000-12-19 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2016-04-29 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="OTHER THAN SMALL BUSINESS">O</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="LOUISIANA">LA</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="ORLEANS" city="NEW ORLEANS">701465902</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>02</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION">A</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>9</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="YES">Y</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>ALINE.SMITH</ns1:createdBy>
+          <ns1:createdDate>2016-11-04 14:12:57</ns1:createdDate>
+          <ns1:lastModifiedBy>ALINE.SMITH</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 14:45:12</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+  <entry>
+    <title><![CDATA[DELIVERY ORDER 0031 (1) awarded to PATRIOT CONTRACT SERVICES, LLC, was modified for the amount of $44,232.95]]></title>
+    <link rel="alternate" type="text/html" href="https://www.fpds.gov/ezsearch/search.do?s=FPDS&amp;indexName=awardfull&amp;templateName=1.4&amp;q=0031+6938+"></link>
+    <modified>2016-11-04 12:33:24</modified>
+    <content xmlns:ns1="http://www.fpdsng.com/FPDS" type="application/xml">
+      <ns1:award xmlns:ns1="http://www.fpdsng.com/FPDS" version="1.4">
+        <ns1:awardID>
+          <ns1:awardContractID>
+            <ns1:agencyID name="MARITIME ADMINISTRATION">6938</ns1:agencyID>
+            <ns1:PIID>0031</ns1:PIID>
+            <ns1:modNumber>1</ns1:modNumber>
+            <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID>
+          <ns1:referencedIDVID>
+            <ns1:agencyID name="MARITIME ADMINISTRATION">6938</ns1:agencyID>
+            <ns1:PIID>DTMA98D16007</ns1:PIID>
+            <ns1:modNumber>0</ns1:modNumber></ns1:referencedIDVID></ns1:awardID>
+        <ns1:relevantContractDates>
+          <ns1:signedDate>2016-11-04 00:00:00</ns1:signedDate>
+          <ns1:effectiveDate>2016-11-04 00:00:00</ns1:effectiveDate>
+          <ns1:currentCompletionDate>2017-10-31 00:00:00</ns1:currentCompletionDate>
+          <ns1:ultimateCompletionDate>2017-10-31 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+        <ns1:dollarValues>
+          <ns1:obligatedAmount>44232.95</ns1:obligatedAmount>
+          <ns1:baseAndExercisedOptionsValue>44232.95</ns1:baseAndExercisedOptionsValue>
+          <ns1:baseAndAllOptionsValue>44232.95</ns1:baseAndAllOptionsValue></ns1:dollarValues>
+        <ns1:purchaserInformation>
+          <ns1:contractingOfficeAgencyID name="MARITIME ADMINISTRATION">6938</ns1:contractingOfficeAgencyID>
+          <ns1:contractingOfficeID name="DOT  MARITIME ADMINISTRATION">697276</ns1:contractingOfficeID>
+          <ns1:fundingRequestingAgencyID name="DEPT OF THE NAVY">1700</ns1:fundingRequestingAgencyID>
+          <ns1:fundingRequestingOfficeID name="FIELD SUPPORT ACTIVITY BSO-11">N00011</ns1:fundingRequestingOfficeID>
+          <ns1:foreignFunding description="NOT APPLICABLE">X</ns1:foreignFunding></ns1:purchaserInformation>
+        <ns1:contractMarketingData>
+          <ns1:feePaidForUseOfService>0.00</ns1:feePaidForUseOfService></ns1:contractMarketingData>
+        <ns1:contractData>
+          <ns1:contractActionType description="DELIVERY ORDER">C</ns1:contractActionType>
+          <ns1:typeOfContractPricing description="COST NO FEE">S</ns1:typeOfContractPricing>
+          <ns1:reasonForModification description="FUNDING ONLY ACTION">C</ns1:reasonForModification>
+          <ns1:nationalInterestActionCode description="NONE">NONE</ns1:nationalInterestActionCode>
+          <ns1:costOrPricingData description="No">N</ns1:costOrPricingData>
+          <ns1:descriptionOfContractRequirement>CAPE TRINITY - PCS-TRI17-1008A - FY17 SHIP SUPPORT A 
+INCR $44,232.95  IGF::OT::IGF</ns1:descriptionOfContractRequirement>
+          <ns1:GFE-GFP description="Transaction does not use GFE/GFP">N</ns1:GFE-GFP>
+          <ns1:undefinitizedAction description="NO">X</ns1:undefinitizedAction>
+          <ns1:consolidatedContract description="NO">N</ns1:consolidatedContract>
+          <ns1:performanceBasedServiceContract description="YES - SERVICE WHERE PBA IS USED.">Y</ns1:performanceBasedServiceContract>
+          <ns1:multiYearContract description="YES">Y</ns1:multiYearContract>
+          <ns1:contingencyHumanitarianPeacekeepingOperation description="NOT APPLICABLE">X</ns1:contingencyHumanitarianPeacekeepingOperation>
+          <ns1:listOfTreasuryAccounts>
+            <ns1:treasuryAccount>
+              <ns1:treasuryAccountSymbol>
+                <ns1:agencyIdentifier>69</ns1:agencyIdentifier>
+                <ns1:mainAccountCode>1710</ns1:mainAccountCode>
+                <ns1:subAccountCode>000</ns1:subAccountCode></ns1:treasuryAccountSymbol></ns1:treasuryAccount></ns1:listOfTreasuryAccounts>
+          <ns1:purchaseCardAsPaymentMethod description="NO">N</ns1:purchaseCardAsPaymentMethod>
+          <ns1:numberOfActions>1</ns1:numberOfActions></ns1:contractData>
+        <ns1:legislativeMandates>
+          <ns1:ClingerCohenAct description="NO">N</ns1:ClingerCohenAct>
+          <ns1:WalshHealyAct description="NOT APPLICABLE">X</ns1:WalshHealyAct>
+          <ns1:serviceContractAct description="YES">Y</ns1:serviceContractAct>
+          <ns1:DavisBaconAct description="NOT APPLICABLE">X</ns1:DavisBaconAct>
+          <ns1:interagencyContractingAuthority description="NOT APPLICABLE">X</ns1:interagencyContractingAuthority></ns1:legislativeMandates>
+        <ns1:productOrServiceInformation>
+          <ns1:productOrServiceCode description="OPERATION OF OTHER NON-BUILDING FACILITIES">M1PZ</ns1:productOrServiceCode>
+          <ns1:contractBundling description="NOT A BUNDLED REQUIREMENT">D</ns1:contractBundling>
+          <ns1:principalNAICSCode description="DEEP SEA FREIGHT TRANSPORTATION">483111</ns1:principalNAICSCode>
+          <ns1:recoveredMaterialClauses description="FAR 52.223-4 AND FAR 52.223-9 INCLUDED">B</ns1:recoveredMaterialClauses>
+          <ns1:manufacturingOrganizationType description="U.S. OWNED BUSINESS">A</ns1:manufacturingOrganizationType>
+          <ns1:informationTechnologyCommercialItemCategory description="NOT IT PRODUCTS OR SERVICES">Z</ns1:informationTechnologyCommercialItemCategory>
+          <ns1:useOfEPADesignatedProducts description="MEETS REQUIREMENTS">A</ns1:useOfEPADesignatedProducts>
+          <ns1:countryOfOrigin name="UNITED STATES">USA</ns1:countryOfOrigin>
+          <ns1:placeOfManufacture description="NOT A MANUFACTURED END PRODUCT">C</ns1:placeOfManufacture></ns1:productOrServiceInformation>
+        <ns1:vendor>
+          <ns1:vendorHeader>
+            <ns1:vendorName>PATRIOT CONTRACT SERVICES, LLC</ns1:vendorName></ns1:vendorHeader>
+          <ns1:vendorSiteDetails>
+            <ns1:vendorSocioEconomicIndicators>
+              <ns1:isAlaskanNativeOwnedCorporationOrFirm>false</ns1:isAlaskanNativeOwnedCorporationOrFirm>
+              <ns1:isAmericanIndianOwned>false</ns1:isAmericanIndianOwned>
+              <ns1:isIndianTribe>false</ns1:isIndianTribe>
+              <ns1:isNativeHawaiianOwnedOrganizationOrFirm>false</ns1:isNativeHawaiianOwnedOrganizationOrFirm>
+              <ns1:isTriballyOwnedFirm>false</ns1:isTriballyOwnedFirm>
+              <ns1:isVeteranOwned>false</ns1:isVeteranOwned>
+              <ns1:isServiceRelatedDisabledVeteranOwnedBusiness>false</ns1:isServiceRelatedDisabledVeteranOwnedBusiness>
+              <ns1:isWomenOwned>false</ns1:isWomenOwned>
+              <ns1:minorityOwned>
+                <ns1:isMinorityOwned>false</ns1:isMinorityOwned>
+                <ns1:isSubContinentAsianAmericanOwnedBusiness>false</ns1:isSubContinentAsianAmericanOwnedBusiness>
+                <ns1:isAsianPacificAmericanOwnedBusiness>false</ns1:isAsianPacificAmericanOwnedBusiness>
+                <ns1:isBlackAmericanOwnedBusiness>false</ns1:isBlackAmericanOwnedBusiness>
+                <ns1:isHispanicAmericanOwnedBusiness>false</ns1:isHispanicAmericanOwnedBusiness>
+                <ns1:isNativeAmericanOwnedBusiness>false</ns1:isNativeAmericanOwnedBusiness>
+                <ns1:isOtherMinorityOwned>false</ns1:isOtherMinorityOwned></ns1:minorityOwned>
+              <ns1:isVerySmallBusiness>false</ns1:isVerySmallBusiness></ns1:vendorSocioEconomicIndicators>
+            <ns1:vendorBusinessTypes>
+              <ns1:isCommunityDevelopedCorporationOwnedFirm>false</ns1:isCommunityDevelopedCorporationOwnedFirm>
+              <ns1:isLaborSurplusAreaFirm>false</ns1:isLaborSurplusAreaFirm>
+              <ns1:federalGovernment>
+                <ns1:isFederalGovernment>false</ns1:isFederalGovernment>
+                <ns1:isFederallyFundedResearchAndDevelopmentCorp>false</ns1:isFederallyFundedResearchAndDevelopmentCorp>
+                <ns1:isFederalGovernmentAgency>false</ns1:isFederalGovernmentAgency></ns1:federalGovernment>
+              <ns1:isStateGovernment>false</ns1:isStateGovernment>
+              <ns1:localGovernment>
+                <ns1:isLocalGovernment>false</ns1:isLocalGovernment>
+                <ns1:isCityLocalGovernment>false</ns1:isCityLocalGovernment>
+                <ns1:isCountyLocalGovernment>false</ns1:isCountyLocalGovernment>
+                <ns1:isInterMunicipalLocalGovernment>false</ns1:isInterMunicipalLocalGovernment>
+                <ns1:isLocalGovernmentOwned>false</ns1:isLocalGovernmentOwned>
+                <ns1:isMunicipalityLocalGovernment>false</ns1:isMunicipalityLocalGovernment>
+                <ns1:isSchoolDistrictLocalGovernment>false</ns1:isSchoolDistrictLocalGovernment>
+                <ns1:isTownshipLocalGovernment>false</ns1:isTownshipLocalGovernment></ns1:localGovernment>
+              <ns1:isTribalGovernment>false</ns1:isTribalGovernment>
+              <ns1:isForeignGovernment>false</ns1:isForeignGovernment>
+              <ns1:businessOrOrganizationType>
+                <ns1:isCorporateEntityNotTaxExempt>false</ns1:isCorporateEntityNotTaxExempt>
+                <ns1:isCorporateEntityTaxExempt>false</ns1:isCorporateEntityTaxExempt>
+                <ns1:isPartnershipOrLimitedLiabilityPartnership>false</ns1:isPartnershipOrLimitedLiabilityPartnership>
+                <ns1:isSolePropreitorship>false</ns1:isSolePropreitorship>
+                <ns1:isSmallAgriculturalCooperative>false</ns1:isSmallAgriculturalCooperative>
+                <ns1:isInternationalOrganization>false</ns1:isInternationalOrganization>
+                <ns1:isUSGovernmentEntity>false</ns1:isUSGovernmentEntity></ns1:businessOrOrganizationType></ns1:vendorBusinessTypes>
+            <ns1:vendorLineOfBusiness>
+              <ns1:isCommunityDevelopmentCorporation>false</ns1:isCommunityDevelopmentCorporation>
+              <ns1:isDomesticShelter>false</ns1:isDomesticShelter>
+              <ns1:isEducationalInstitution>false</ns1:isEducationalInstitution>
+              <ns1:isFoundation>false</ns1:isFoundation>
+              <ns1:isHospital>false</ns1:isHospital>
+              <ns1:isManufacturerOfGoods>false</ns1:isManufacturerOfGoods>
+              <ns1:isVeterinaryHospital>false</ns1:isVeterinaryHospital>
+              <ns1:isHispanicServicingInstitution>false</ns1:isHispanicServicingInstitution></ns1:vendorLineOfBusiness>
+            <ns1:vendorRelationshipWithFederalGovernment>
+              <ns1:receivesContracts>false</ns1:receivesContracts>
+              <ns1:receivesGrants>false</ns1:receivesGrants>
+              <ns1:receivesContractsAndGrants>true</ns1:receivesContractsAndGrants></ns1:vendorRelationshipWithFederalGovernment>
+            <ns1:typeOfGovernmentEntity>
+              <ns1:isAirportAuthority>false</ns1:isAirportAuthority>
+              <ns1:isCouncilOfGovernments>false</ns1:isCouncilOfGovernments>
+              <ns1:isHousingAuthoritiesPublicOrTribal>false</ns1:isHousingAuthoritiesPublicOrTribal>
+              <ns1:isInterstateEntity>false</ns1:isInterstateEntity>
+              <ns1:isPlanningCommission>false</ns1:isPlanningCommission>
+              <ns1:isPortAuthority>false</ns1:isPortAuthority>
+              <ns1:isTransitAuthority>false</ns1:isTransitAuthority></ns1:typeOfGovernmentEntity>
+            <ns1:vendorOrganizationFactors>
+              <ns1:isSubchapterSCorporation>false</ns1:isSubchapterSCorporation>
+              <ns1:isLimitedLiabilityCorporation>true</ns1:isLimitedLiabilityCorporation>
+              <ns1:isForeignOwnedAndLocated>false</ns1:isForeignOwnedAndLocated>
+              <ns1:profitStructure>
+                <ns1:isForProfitOrganization>true</ns1:isForProfitOrganization>
+                <ns1:isNonprofitOrganization>false</ns1:isNonprofitOrganization>
+                <ns1:isOtherNotForProfitOrganization>false</ns1:isOtherNotForProfitOrganization></ns1:profitStructure>
+              <ns1:isShelteredWorkshop>false</ns1:isShelteredWorkshop>
+              <ns1:stateOfIncorporation name="CALIFORNIA">CA</ns1:stateOfIncorporation>
+              <ns1:countryOfIncorporation name="UNITED STATES">USA</ns1:countryOfIncorporation>
+              <ns1:organizationalType>OTHER</ns1:organizationalType>
+              <ns1:numberOfEmployees>450</ns1:numberOfEmployees>
+              <ns1:annualRevenue>58000000</ns1:annualRevenue></ns1:vendorOrganizationFactors>
+            <ns1:typeOfEducationalEntity>
+              <ns1:is1862LandGrantCollege>false</ns1:is1862LandGrantCollege>
+              <ns1:is1890LandGrantCollege>false</ns1:is1890LandGrantCollege>
+              <ns1:is1994LandGrantCollege>false</ns1:is1994LandGrantCollege>
+              <ns1:isHistoricallyBlackCollegeOrUniversity>false</ns1:isHistoricallyBlackCollegeOrUniversity>
+              <ns1:isMinorityInstitution>false</ns1:isMinorityInstitution>
+              <ns1:isPrivateUniversityOrCollege>false</ns1:isPrivateUniversityOrCollege>
+              <ns1:isSchoolOfForestry>false</ns1:isSchoolOfForestry>
+              <ns1:isStateControlledInstitutionofHigherLearning>false</ns1:isStateControlledInstitutionofHigherLearning>
+              <ns1:isTribalCollege>false</ns1:isTribalCollege>
+              <ns1:isVeterinaryCollege>false</ns1:isVeterinaryCollege>
+              <ns1:isAlaskanNativeServicingInstitution>false</ns1:isAlaskanNativeServicingInstitution>
+              <ns1:isNativeHawaiianServicingInstitution>false</ns1:isNativeHawaiianServicingInstitution></ns1:typeOfEducationalEntity>
+            <ns1:vendorCertifications>
+              <ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>false</ns1:isDOTCertifiedDisadvantagedBusinessEnterprise>
+              <ns1:isSelfCertifiedSmallDisadvantagedBusiness>false</ns1:isSelfCertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertifiedSmallDisadvantagedBusiness>false</ns1:isSBACertifiedSmallDisadvantagedBusiness>
+              <ns1:isSBACertified8AProgramParticipant>false</ns1:isSBACertified8AProgramParticipant>
+              <ns1:isSBACertifiedHUBZone>false</ns1:isSBACertifiedHUBZone>
+              <ns1:isSBACertified8AJointVenture>false</ns1:isSBACertified8AJointVenture></ns1:vendorCertifications>
+            <ns1:vendorLocation>
+              <ns1:streetAddress>1320 WILLOW PASS RD STE 485</ns1:streetAddress>
+              <ns1:city>CONCORD</ns1:city>
+              <ns1:state name="CALIFORNIA">CA</ns1:state>
+              <ns1:ZIPCode>945207940</ns1:ZIPCode>
+              <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode>
+              <ns1:phoneNo>9252962000</ns1:phoneNo>
+              <ns1:faxNo>8663403072</ns1:faxNo>
+              <ns1:congressionalDistrictCode>11</ns1:congressionalDistrictCode></ns1:vendorLocation>
+            <ns1:vendorSiteCode>364261511</ns1:vendorSiteCode>
+            <ns1:vendorAlternateSiteCode>94520</ns1:vendorAlternateSiteCode>
+            <ns1:vendorDUNSInformation>
+              <ns1:DUNSNumber>364261511</ns1:DUNSNumber>
+              <ns1:vendorName>PATRIOT CONTRACT SERVICES, LLC</ns1:vendorName>
+              <ns1:globalParentDUNSNumber>364261511</ns1:globalParentDUNSNumber></ns1:vendorDUNSInformation>
+            <ns1:ccrRegistrationDetails>
+              <ns1:registrationDate>2001-06-11 00:00:00</ns1:registrationDate>
+              <ns1:renewalDate>2017-01-17 00:00:00</ns1:renewalDate></ns1:ccrRegistrationDetails></ns1:vendorSiteDetails>
+          <ns1:contractingOfficerBusinessSizeDetermination description="SMALL BUSINESS">S</ns1:contractingOfficerBusinessSizeDetermination></ns1:vendor>
+        <ns1:placeOfPerformance>
+          <ns1:principalPlaceOfPerformance>
+            <ns1:stateCode name="TEXAS">TX</ns1:stateCode>
+            <ns1:countryCode name="UNITED STATES">USA</ns1:countryCode></ns1:principalPlaceOfPerformance>
+          <ns1:placeOfPerformanceZIPCode county="JEFFERSON" city="BEAUMONT">777011000</ns1:placeOfPerformanceZIPCode>
+          <ns1:placeOfPerformanceCongressionalDistrict>14</ns1:placeOfPerformanceCongressionalDistrict></ns1:placeOfPerformance>
+        <ns1:competition>
+          <ns1:extentCompeted description="FULL AND OPEN COMPETITION">A</ns1:extentCompeted>
+          <ns1:solicitationProcedures description="NEGOTIATED PROPOSAL/QUOTE">NP</ns1:solicitationProcedures>
+          <ns1:typeOfSetAside description="NO SET ASIDE USED.">NONE</ns1:typeOfSetAside>
+          <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference>
+          <ns1:numberOfOffersReceived>9</ns1:numberOfOffersReceived>
+          <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL ITEM PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures>
+          <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram>
+          <ns1:A76Action description="NO">N</ns1:A76Action>
+          <ns1:fedBizOpps description="YES">Y</ns1:fedBizOpps>
+          <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside></ns1:competition>
+        <ns1:preferencePrograms></ns1:preferencePrograms>
+        <ns1:transactionInformation>
+          <ns1:createdBy>CAROLYN.QUINN</ns1:createdBy>
+          <ns1:createdDate>2016-11-04 09:44:41</ns1:createdDate>
+          <ns1:lastModifiedBy>CAROLYN.QUINN</ns1:lastModifiedBy>
+          <ns1:lastModifiedDate>2016-11-04 12:33:24</ns1:lastModifiedDate>
+          <ns1:status description="FINAL">F</ns1:status></ns1:transactionInformation></ns1:award>
+    </content>
+  </entry>
+</feed>
