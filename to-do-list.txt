@@ -6,6 +6,7 @@ Table Fixes:
 	column sizing
 	field entry length limits
 	navbar doesn't extend
+	ajax querying
 
 Ancillary activities:
 	Set up (test) business email

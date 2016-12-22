@@ -1,5 +1,6 @@
-from functools import partial
+from collections import namedtuple
 import datetime
+from functools import partial
 import re
 
 from bs4 import BeautifulSoup
@@ -8,6 +9,8 @@ from models import FboMaster
 import pdb
 import sys
 import pprint
+
+import pdb
 
 """So the idea here is going to be to just use the list of all the fields in the fbo_master model.  If a field isn't in the fbo_master model then we can just log it and deal with it.  But all of the fields should be present"""
 
@@ -22,14 +25,52 @@ record_types = [
     'archive'
 ]
 
-srcsgt_fields = [
-    'agency',
-    'office'
-]
+# Helper methods for setting fields that are more complex
 
-# Define aliases for importing fields, includeing functions used to handle complicated inputs
+MasterDateTuple = namedtuple('MasterDateTuple', ['master_id', 'date_field', 'year_field'])
+master_date_tuple = MasterDateTuple(None, None, None) # Used to store a partial function
 
-def set_contact_data(master, text):
+def process_date_tuple(master):
+    master.date = datetime.date(int(master_date_tuple.year_field), int(master_date_tuple.date_field[:2]), int(master_date_tuple.date_field[2:]))
+
+def handle_date(master, date):
+    """Creates the master/date tuple for this record"""
+    global master_date_tuple
+    master_date_tuple = master_date_tuple._replace(date_field=date)
+    if master_date_tuple.master_id == master.id and master_date_tuple.year_field is not None:
+        process_date_tuple(master)
+    else:
+        master_date_tuple = master_date_tuple._replace(master_id=master.id)
+
+def handle_year(master, year):
+    """If we already have a date for this record, then create the combined date"""
+    #Get the right prefix for the year
+
+    if int(year) > 90:
+       year = '19' + year
+    else:
+        year = '20' + year
+
+    # Do our normal thing
+
+    global master_date_tuple
+    master_date_tuple = master_date_tuple._replace(year_field=year)
+    if master.id == master_date_tuple.master_id and master_date_tuple.date_field is not None:
+        process_date_tuple(master)
+    else:
+        master_date_tuple = master_date_tuple._replace(master_id=master.id)
+
+def handle_respdate(master, text):
+    respYear = text[4:]
+    if int(respYear) > 90:
+       respYear = int('19' + respYear)
+    else:
+        respYear = int('20' + respYear)
+    respMonth = int(text[:2])
+    respDay = int(text[2:4])
+    master.response_date = datetime.date(respYear, respMonth, respDay)
+
+def handle_contact(master, text):
     # nameRegex = re.search(r'^([^,]+)', text)
     # phoneRegex = re.search(r'Phone ([^,]+)', text)
     # emailRegex = re.search(r'Email ([^\s]+)', text)
@@ -41,23 +82,19 @@ def set_contact_data(master, text):
     #     master.contact_email = emailRegex.group(1)
     pass
 
-def set_respdate_data(master, text):
-    respYear = text[4:]
-    if int(respYear) > 90:
-       respYear = int('19' + respYear)
-    else:
-        respYear = int('20' + respYear)
-    respMonth = int(text[:2])
-    respDay = int(text[2:4])
-    master.response_date = datetime.date(respYear, respMonth, respDay)
+
+
+# Define aliases for importing fields, includeing functions used to handle complicated inputs
 
 field_aliases = {
+    'date': handle_date,
+    'year': handle_year,
     'zip' : 'zip_code',
     'classcod' : 'class_code',
     'offadd' : 'office_address',
-    'respdate' : set_respdate_data,
+    'respdate' : handle_respdate,
     'archdate' : 'archive_date',
-    'contact' : set_contact_data,
+    'contact' : handle_contact,
     'desc' : 'description',
 }
 
@@ -94,9 +131,7 @@ def parse_file(file_path):
             name = item.name
             if not text:
                 continue
-            if name in field_names:
-                setattr(master, name, text)
-            elif name in field_aliases_keys:
+            if name in field_aliases_keys:
                 destination = field_aliases[name]
                 if type(destination) == str:
                     try:
@@ -106,6 +141,8 @@ def parse_file(file_path):
                         return
                 else:
                     destination(master, text)
+            elif name in field_names:
+                setattr(master, name, text)
             else:
                 print("Field name {0} not in field lists".format(name))
         try:

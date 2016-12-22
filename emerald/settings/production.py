@@ -2,4 +2,5 @@
 
 from .base import *
 
-pass
+# THIS IS ONLY TEMPORARY!!!
+DEBUG = True
