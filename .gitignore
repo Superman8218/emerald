@@ -6,7 +6,6 @@ Procfile~
 venv/
 staticfiles/*
 *~
-
 *.swp
 *.swo
 .git-old/
@@ -14,3 +13,4 @@ staticfiles/*
 local_settings.py
 *.sw*
 emerald/staticfiles/
+logs/debug.log
