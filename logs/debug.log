@@ -2416,3 +2416,420 @@ MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
 (0.007) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
 (0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:09:35.180096+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 9, 35, 180096, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.009) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/fbo/list/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'fbo-list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:10:32.006702+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 10, 32, 6702, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/fbo/list/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'opportunity-list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.000) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:10:54.345669+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 10, 54, 345669, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'opportunity-list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:11:32.404418+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 11, 32, 404418, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'opportunity-list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:11:43.944006+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 11, 43, 944006, tzinfo=<UTC>))
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'opportunity-list' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:12:53.458042+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 12, 53, 458042, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:12:58.356892+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 12, 58, 356892, tzinfo=<UTC>))
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Not Found: /fbo/fbo/list/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+Not Found: /fbo/fbo/list/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Not Found: /fbo/fbo/list/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:18:32.381889+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 18, 32, 381889, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:18:36.123401+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 18, 36, 123401, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.007) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:21:28.904462+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 21, 28, 904462, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:21:37.445868+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 21, 37, 445868, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:21:51.375196+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 21, 51, 375196, tzinfo=<UTC>))
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2016-12-31T01:21:53.688289+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2016, 12, 31, 1, 21, 53, 688289, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
