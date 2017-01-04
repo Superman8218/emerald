@@ -24,7 +24,7 @@ class UserProfile(models.Model):
         if created:
 
             # Set up a User Profile
-            
+
             newProfile = UserProfile()
             newProfile.user = instance
 

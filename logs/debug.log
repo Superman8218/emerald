@@ -2833,3 +2833,806 @@ MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.032) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Not Found: /data/fbo/list/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'fbo.urls' from '/home/zac/development/emerald/fbo/urls.pyc'> (None:fbo) ^fbo/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+Not Found: /favicon.ico
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'fbo.urls' from '/home/zac/development/emerald/fbo/urls.pyc'> (None:fbo) ^fbo/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+(0.021) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T00:57:11.989878+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 0, 57, 11, 989878, tzinfo=<UTC>))
+(0.011) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T00:57:14.163099+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 0, 57, 14, 163099, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.011) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.010) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.011) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T19:15:30.380070+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 19, 15, 30, 380070, tzinfo=<UTC>))
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 448, in _reverse_with_prefix
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 316, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in reverse_dict
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 334, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 255, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 100, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 102, in get_callable
+    "'%s' is not a callable or a dot-notation path" % lookup_view
+ViewDoesNotExist: '<fbo.views.FboMagicView object at 0x7f1581c09ad0>' is not a callable or a dot-notation path
+Not Found: /favicon.ico
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'fbo.urls' from '/home/zac/development/emerald/fbo/urls.pyc'> (None:fbo) ^fbo/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'accounts.urls' from '/home/zac/development/emerald/accounts/urls.pyc'> (None:None) ^accounts/>"
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.009) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T19:16:17.629749+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 19, 16, 17, 629749, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 448, in _reverse_with_prefix
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 316, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in reverse_dict
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 334, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 255, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 100, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 102, in get_callable
+    "'%s' is not a callable or a dot-notation path" % lookup_view
+ViewDoesNotExist: '<fbo.views.FboMagicView object at 0x7f4d64e4fb10>' is not a callable or a dot-notation path
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T19:19:32.396171+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 19, 19, 32, 396171, tzinfo=<UTC>))
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/emerald/views.py", line 9, in index
+    return render(request, 'emerald/index.html')
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 448, in _reverse_with_prefix
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 316, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in reverse_dict
+    self._populate()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 334, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 255, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 100, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 102, in get_callable
+    "'%s' is not a callable or a dot-notation path" % lookup_view
+ViewDoesNotExist: '<fbo.views.FboMagicView object at 0x7f0acf8bca90>' is not a callable or a dot-notation path
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T19:21:33.240468+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 19, 21, 33, 240468, tzinfo=<UTC>))
+(0.008) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'xayjmf2x1wdekznp5pwy7yhelgrzdrrm' AND "django_session"."expire_date" > '2017-01-04T19:21:36.389711+00:00'::timestamptz); args=('xayjmf2x1wdekznp5pwy7yhelgrzdrrm', datetime.datetime(2017, 1, 4, 19, 21, 36, 389711, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.012) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 32, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.017) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.005) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 32, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.009) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.006) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+Exception while resolving variable 'next' in template 'accounts/login.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [next] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'0JgSTl8EnywDfgM6z0VgoApVOQhzAp73\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f702c0e5050>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f702c038450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f702c0661d0>, u\'request\': <WSGIRequest: GET \'/accounts/login/\'>}, {}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n    <div class="containe\'>, <django.template.defaulttags.URLNode object at 0x7f702c0d5f50>, <TextNode: u\'" method="post">\\n        \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f702c0d5cd0>, <TextNode: u\'\\n                <label f\'>, <django.template.defaulttags.URLNode object at 0x7f702c038390>, <TextNode: u\'">Don\\\'t have an account? \'>, <IfNode>, <TextNode: u\'\\n\\n        </form>\\n    </d\'>]>}]'
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zac'; args=(u'zac',)
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zac'; args=(u'zac',)
+(0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'jrnujda2r12mym2txxgld9h8pb2v0r5q' LIMIT 1; args=(u'jrnujda2r12mym2txxgld9h8pb2v0r5q',)
+(0.002) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('jrnujda2r12mym2txxgld9h8pb2v0r5q', 'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', '2017-01-18T19:55:43.495632+00:00'::timestamptz); args=(u'jrnujda2r12mym2txxgld9h8pb2v0r5q', u'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', datetime.datetime(2017, 1, 18, 19, 55, 43, 495632, tzinfo=<UTC>))
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'jrnujda2r12mym2txxgld9h8pb2v0r5q'; args=(u'jrnujda2r12mym2txxgld9h8pb2v0r5q',)
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('jrnujda2r12mym2txxgld9h8pb2v0r5q'); args=(u'jrnujda2r12mym2txxgld9h8pb2v0r5q',)
+(0.002) UPDATE "auth_user" SET "last_login" = '2017-01-04T19:55:43.505722+00:00'::timestamptz WHERE "auth_user"."id" = 10; args=(datetime.datetime(2017, 1, 4, 19, 55, 43, 505722, tzinfo=<UTC>), 10)
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/development/emerald/accounts/views.py", line 39, in post
+    request.session['profile'] = user.get_profile()
+AttributeError: 'User' object has no attribute 'get_profile'
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Forbidden (CSRF token missing or incorrect.): /accounts/login/
+Exception while resolving variable 'next' in template 'accounts/login.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [next] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'Z4v8pnJ7JbCwlfyGYEbTvJ6F13Xr07LP\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f39f48db410>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f39f40d01d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f39f405de50>, u\'request\': <WSGIRequest: GET \'/accounts/login/\'>}, {}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n    <div class="containe\'>, <django.template.defaulttags.URLNode object at 0x7f39f4067450>, <TextNode: u\'" method="post">\\n        \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f39f4067f10>, <TextNode: u\'\\n                <label f\'>, <django.template.defaulttags.URLNode object at 0x7f39f4067510>, <TextNode: u\'">Don\\\'t have an account? \'>, <IfNode>, <TextNode: u\'\\n\\n        </form>\\n    </d\'>]>}]'
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zac'; args=(u'zac',)
+(0.006) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 't6ll0ex768hthvfwf0jw67diw5jbo7w0' LIMIT 1; args=(u't6ll0ex768hthvfwf0jw67diw5jbo7w0',)
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('t6ll0ex768hthvfwf0jw67diw5jbo7w0', 'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', '2017-01-18T20:01:43.501397+00:00'::timestamptz); args=(u't6ll0ex768hthvfwf0jw67diw5jbo7w0', u'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', datetime.datetime(2017, 1, 18, 20, 1, 43, 501397, tzinfo=<UTC>))
+(0.011) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 't6ll0ex768hthvfwf0jw67diw5jbo7w0'; args=(u't6ll0ex768hthvfwf0jw67diw5jbo7w0',)
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('t6ll0ex768hthvfwf0jw67diw5jbo7w0'); args=(u't6ll0ex768hthvfwf0jw67diw5jbo7w0',)
+(0.001) UPDATE "auth_user" SET "last_login" = '2017-01-04T20:01:43.521975+00:00'::timestamptz WHERE "auth_user"."id" = 10; args=(datetime.datetime(2017, 1, 4, 20, 1, 43, 521975, tzinfo=<UTC>), 10)
+(0.003) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/development/emerald/accounts/views.py", line 39, in post
+    request.session['profile'] = user.userprofile()
+TypeError: 'UserProfile' object is not callable
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Forbidden (CSRF token missing or incorrect.): /accounts/login/
+Exception while resolving variable 'next' in template 'accounts/login.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [next] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'CgeI1UWUSKQms5UmIZ6yfSFmiAKccgLw\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7fd14eb13410>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd14e29e450>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd14e295e50>, u\'request\': <WSGIRequest: GET \'/accounts/login/\'>}, {}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n    <div class="containe\'>, <django.template.defaulttags.URLNode object at 0x7fd14e29ed50>, <TextNode: u\'" method="post">\\n        \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7fd14e29ed90>, <TextNode: u\'\\n                <label f\'>, <django.template.defaulttags.URLNode object at 0x7fd14e29ee50>, <TextNode: u\'">Don\\\'t have an account? \'>, <IfNode>, <TextNode: u\'\\n\\n        </form>\\n    </d\'>]>}]'
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zac'; args=(u'zac',)
+(0.005) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '9p76qwkxif6si0s8slh8dhyn0fg4508z' LIMIT 1; args=(u'9p76qwkxif6si0s8slh8dhyn0fg4508z',)
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('9p76qwkxif6si0s8slh8dhyn0fg4508z', 'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', '2017-01-18T20:02:05.907648+00:00'::timestamptz); args=(u'9p76qwkxif6si0s8slh8dhyn0fg4508z', u'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', datetime.datetime(2017, 1, 18, 20, 2, 5, 907648, tzinfo=<UTC>))
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '9p76qwkxif6si0s8slh8dhyn0fg4508z'; args=(u'9p76qwkxif6si0s8slh8dhyn0fg4508z',)
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('9p76qwkxif6si0s8slh8dhyn0fg4508z'); args=(u'9p76qwkxif6si0s8slh8dhyn0fg4508z',)
+(0.001) UPDATE "auth_user" SET "last_login" = '2017-01-04T20:02:05.916686+00:00'::timestamptz WHERE "auth_user"."id" = 10; args=(datetime.datetime(2017, 1, 4, 20, 2, 5, 916686, tzinfo=<UTC>), 10)
+(0.001) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 235, in get_response
+    response = middleware_method(request, response)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/sessions/middleware.py", line 50, in process_response
+    request.session.save()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 82, in save
+    obj = self.create_model_instance(data)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 68, in create_model_instance
+    session_data=self.encode(data),
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 88, in encode
+    serialized = self.serializer().dumps(session_dict)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/signing.py", line 95, in dumps
+    return json.dumps(obj, separators=(',', ':')).encode('latin-1')
+  File "/usr/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <UserProfile: UserProfile object> is not JSON serializable
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+Exception while resolving variable 'next' in template 'accounts/login.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [next] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'CgeI1UWUSKQms5UmIZ6yfSFmiAKccgLw\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f08f452ad70>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f08f4440150>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f08f442b710>, u\'request\': <WSGIRequest: GET \'/accounts/login/\'>}, {}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n    <div class="containe\'>, <django.template.defaulttags.URLNode object at 0x7f08f4437590>, <TextNode: u\'" method="post">\\n        \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f08f4440110>, <TextNode: u\'\\n                <label f\'>, <django.template.defaulttags.URLNode object at 0x7f08f4440790>, <TextNode: u\'">Don\\\'t have an account? \'>, <IfNode>, <TextNode: u\'\\n\\n        </form>\\n    </d\'>]>}]'
+(0.006) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'zac'; args=(u'zac',)
+(0.002) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' LIMIT 1; args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m',)
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('svgmpjhfb1aedocg2upzkf5e9q98ex2m', 'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', '2017-01-18T20:04:31.983113+00:00'::timestamptz); args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m', u'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', datetime.datetime(2017, 1, 18, 20, 4, 31, 983113, tzinfo=<UTC>))
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m'; args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m',)
+(0.006) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('svgmpjhfb1aedocg2upzkf5e9q98ex2m'); args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m',)
+(0.001) UPDATE "auth_user" SET "last_login" = '2017-01-04T20:04:32.008098+00:00'::timestamptz WHERE "auth_user"."id" = 10; args=(datetime.datetime(2017, 1, 4, 20, 4, 32, 8098, tzinfo=<UTC>), 10)
+(0.000) UPDATE "django_session" SET "session_data" = 'N2NjZjk4YTUxZWY1NDZhYjQ0MjBlMzIxOGM5OWNkMTkxYzZmOGJhZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImVhZDY3MmYyN2FkMDgwOTZiYjQ5NGQyOTcwNDllYmFlM2ZiMTIyOWUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxMCJ9', "expire_date" = '2017-01-18T20:04:32.014043+00:00'::timestamptz WHERE "django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m'; args=(u'N2NjZjk4YTUxZWY1NDZhYjQ0MjBlMzIxOGM5OWNkMTkxYzZmOGJhZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImVhZDY3MmYyN2FkMDgwOTZiYjQ5NGQyOTcwNDllYmFlM2ZiMTIyOWUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxMCJ9', datetime.datetime(2017, 1, 18, 20, 4, 32, 14043, tzinfo=<UTC>), u'svgmpjhfb1aedocg2upzkf5e9q98ex2m')
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('svgmpjhfb1aedocg2upzkf5e9q98ex2m', 'N2NjZjk4YTUxZWY1NDZhYjQ0MjBlMzIxOGM5OWNkMTkxYzZmOGJhZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImVhZDY3MmYyN2FkMDgwOTZiYjQ5NGQyOTcwNDllYmFlM2ZiMTIyOWUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxMCJ9', '2017-01-18T20:04:32.014043+00:00'::timestamptz); args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m', u'N2NjZjk4YTUxZWY1NDZhYjQ0MjBlMzIxOGM5OWNkMTkxYzZmOGJhZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImVhZDY3MmYyN2FkMDgwOTZiYjQ5NGQyOTcwNDllYmFlM2ZiMTIyOWUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxMCJ9', datetime.datetime(2017, 1, 18, 20, 4, 32, 14043, tzinfo=<UTC>))
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:04:32.031507+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 4, 32, 31507, tzinfo=<UTC>))
+(0.010) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:04:34.133661+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 4, 34, 133661, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.005) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 32, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.008) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:04:36.742306+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 4, 36, 742306, tzinfo=<UTC>))
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.024) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:23:59.688817+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 23, 59, 688817, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:26:29.370778+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 26, 29, 370778, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.004) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.000) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 37, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.009) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.009) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.004) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:55:46.016333+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 55, 46, 16333, tzinfo=<UTC>))
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /fbo/list/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 37, in get_context_data
+    context = super(FilteredSingleTableView, self).get_context_data(**kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/views.py", line 107, in get_context_data
+    table = self.get_table(**self.get_table_kwargs())
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/views.py", line 82, in get_table
+    table = table_class(self.get_table_data(), **kwargs)
+  File "/home/zac/development/emerald/fbo/views.py", line 33, in get_table_data
+    return self.filter.qs
+  File "/home/zac/development/emerald/fbo/views.py", line 33, in get_table_data
+    return self.filter.qs
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+(0.013) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.006) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:56:21.496172+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 56, 21, 496172, tzinfo=<UTC>))
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.002) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.000) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.005) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 39, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:56:52.027818+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 56, 52, 27818, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.010) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 39, in get_context_data
+    self.filter.form.helper = self.helper_class()
+  File "/home/zac/development/emerald/fbo/views.py", line 39, in get_context_data
+    self.filter.form.helper = self.helper_class()
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+(0.004) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:57:51.300932+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 57, 51, 300932, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.005) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 39, in get_context_data
+    self.filter.form.helper = self.helper_class()
+  File "/home/zac/development/emerald/fbo/views.py", line 39, in get_context_data
+    self.filter.form.helper = self.helper_class()
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:58:00.375037+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 58, 0, 375037, tzinfo=<UTC>))
+(0.007) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 37, in get_context_data
+    context = super(FilteredSingleTableView, self).get_context_data(**kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/views.py", line 101, in get_context_data
+    def get_context_data(self, **kwargs):
+  File "/usr/lib/python2.7/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_call(frame, arg)
+  File "/usr/lib/python2.7/bdb.py", line 81, in dispatch_call
+    if self.quitting: raise BdbQuit
+BdbQuit
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T20:59:05.985442+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 20, 59, 5, 985442, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT "accounts_userprofile"."id", "accounts_userprofile"."user_id", "accounts_userprofile"."account_id" FROM "accounts_userprofile" WHERE "accounts_userprofile"."user_id" = 10; args=(10,)
+(0.000) SELECT "accounts_account"."id", "accounts_account"."name" FROM "accounts_account" WHERE "accounts_account"."id" = 1; args=(1,)
+(0.006) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.006) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.011) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T21:05:07.822772+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 21, 5, 7, 822772, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T21:05:15.447925+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 21, 5, 15, 447925, tzinfo=<UTC>))
+(0.007) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T21:05:16.863553+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 21, 5, 16, 863553, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T21:05:34.387740+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 21, 5, 34, 387740, tzinfo=<UTC>))
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+Exception while resolving variable 'table' in template 'fbo/fbo-list.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [table] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7ff4856bec80>>, 'user': <SimpleLazyObject: <User: zac>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff4856cb7d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff485706e10>, u'request': <WSGIRequest: GET '/fbo/magic/'>}, {}, {'block': <Block Node: content. Contents: [<TextNode: u'\\n    <h2>FBO Opportunitie'>, <django_tables2.templatetags.django_tables2.RenderTableNode object at 0x7ff484ffc090>, <TextNode: u'\\n    \\n'>]>}]"
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/templatetags/django_tables2.py", line 131, in render
+    raise ValueError('Expected table or queryset, not {}'.format(klass))
+ValueError: Expected table or queryset, not str
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T21:06:41.579046+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 21, 6, 41, 579046, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster"; args=()
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 25; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

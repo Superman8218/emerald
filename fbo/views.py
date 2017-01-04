@@ -17,6 +17,11 @@ import pdb
 
 # Create your views here.
 
+class FboDetailView(LoginRequiredMixin, DetailView):
+
+    model = FboMaster
+    template_name = 'fbo/fbo-detail.html'
+
 # Generic filtered table view
 
 class FilteredSingleTableView(SingleTableView):
@@ -33,16 +38,7 @@ class FilteredSingleTableView(SingleTableView):
         context['filter'] = self.filter
         return context
 
-def FboImportView(request):
-    FboImport.main()
-    return HttpResponse("Import was successful")
-
-class FboDetailView(LoginRequiredMixin, DetailView):
-
-    model = FboMaster
-    template_name = 'fbo/fbo-detail.html'
-
-class FboListView(LoginRequiredMixin, FilteredSingleTableView, ListView):
+class FboListView(FilteredSingleTableView, LoginRequiredMixin, ListView):
 
     model = FboMaster
     template_name = 'fbo/fbo-list.html'
@@ -50,6 +46,13 @@ class FboListView(LoginRequiredMixin, FilteredSingleTableView, ListView):
     table_class = FboMasterTable
     filter_class = FboMasterFilter
     helper_class = FboMasterFilterFormHelper
+
+# Implements the magic view
+
+class FboMagicView(FboListView):
+    def get_context_data(self, **kwargs):
+        context = super(FboMagicView, self).get_context_data(**kwargs)
+        return context
 
 def FboAddView(request, pk):
 
