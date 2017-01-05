@@ -54,6 +54,10 @@ class FboMagicView(FboListView):
         context = super(FboMagicView, self).get_context_data(**kwargs)
         return context
 
+    def get_table_data(self):
+        qs = super(FboMagicView, self).get_table_data()
+        return qs.filter(solicitation_type='presol')
+
 def FboAddView(request, pk):
 
     # Get the information necessary to create a new opportunity

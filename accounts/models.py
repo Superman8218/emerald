@@ -5,12 +5,15 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+from sam.models import SamRecord
+
 import pdb
 
 # Create your models here.
 
 class Account(models.Model):
     name = models.CharField(max_length=150, default="New Account")
+    sam = models.OneToOneField(SamRecord, null=True)
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
