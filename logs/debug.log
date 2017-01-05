@@ -3636,3 +3636,326 @@ MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T22:58:05.329044+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 22, 58, 5, 329044, tzinfo=<UTC>))
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 54, in get_context_data
+    context = super(FboMagicView, self).get_context_data(**kwargs)
+  File "/home/zac/development/emerald/fbo/views.py", line 35, in get_context_data
+    context = super(FilteredSingleTableView, self).get_context_data(**kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/views.py", line 107, in get_context_data
+    table = self.get_table(**self.get_table_kwargs())
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django_tables2/views.py", line 82, in get_table
+    table = table_class(self.get_table_data(), **kwargs)
+  File "/home/zac/development/emerald/fbo/views.py", line 58, in get_table_data
+    return super.model.objects.filter(solicitation_type='presol')
+AttributeError: type object 'super' has no attribute 'model'
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.006) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T22:58:33.232864+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 22, 58, 33, 232864, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.002) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol'; args=('presol',)
+Internal Server Error: /fbo/magic/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/home/zac/development/emerald/fbo/views.py", line 54, in get_context_data
+    context = super(FboMagicView, self).get_context_data(**kwargs)
+  File "/home/zac/development/emerald/fbo/views.py", line 37, in get_context_data
+    self.filter.form.helper = self.helper_class()
+AttributeError: 'FboMagicView' object has no attribute 'filter'
+(0.014) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.001) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.013) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" LIMIT 21; args=()
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.018) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T22:59:20.092675+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 22, 59, 20, 92675, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol'; args=('presol',)
+(0.005) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol' LIMIT 25; args=('presol',)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T22:59:30.812984+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 22, 59, 30, 812984, tzinfo=<UTC>))
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.004) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol'; args=('presol',)
+(0.004) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol' LIMIT 25; args=('presol',)
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T22:59:33.138191+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 22, 59, 33, 138191, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol'; args=('presol',)
+(0.003) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" WHERE "fbo_fbomaster"."solicitation_type" = 'presol' LIMIT 25; args=('presol',)
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T23:00:15.243768+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 23, 0, 15, 243768, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE ("fbo_fbomaster"."solicitation_type" = 'SS' AND "fbo_fbomaster"."solicitation_type" = 'presol'); args=(u'SS', 'presol')
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T23:00:26.370089+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 23, 0, 26, 370089, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.006) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE ("fbo_fbomaster"."solicitation_type" = 'presol' AND "fbo_fbomaster"."solicitation_type" = 'presol'); args=(u'presol', 'presol')
+(0.002) SELECT "fbo_fbomaster"."id", "fbo_fbomaster"."solicitation_type", "fbo_fbomaster"."date", "fbo_fbomaster"."agency", "fbo_fbomaster"."office", "fbo_fbomaster"."location", "fbo_fbomaster"."zip_code", "fbo_fbomaster"."class_code", "fbo_fbomaster"."naics", "fbo_fbomaster"."office_address", "fbo_fbomaster"."subject", "fbo_fbomaster"."solnbr", "fbo_fbomaster"."response_date", "fbo_fbomaster"."contact_name", "fbo_fbomaster"."contact_phone", "fbo_fbomaster"."contact_email", "fbo_fbomaster"."description", "fbo_fbomaster"."url", "fbo_fbomaster"."setaside", "fbo_fbomaster"."pop_country", "fbo_fbomaster"."pop_address" FROM "fbo_fbomaster" WHERE ("fbo_fbomaster"."solicitation_type" = 'presol' AND "fbo_fbomaster"."solicitation_type" = 'presol') LIMIT 25; args=(u'presol', 'presol')
+(0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-04T23:00:30.639402+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 4, 23, 0, 30, 639402, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.003) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE ("fbo_fbomaster"."solicitation_type" = 'combine' AND "fbo_fbomaster"."solicitation_type" = 'presol'); args=(u'combine', 'presol')
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.009) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-05T01:15:34.655371+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 5, 1, 15, 34, 655371, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "fbo_fbomaster" WHERE ("fbo_fbomaster"."solicitation_type" = 'combine' AND "fbo_fbomaster"."solicitation_type" = 'presol'); args=(u'combine', 'presol')
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m' AND "django_session"."expire_date" > '2017-01-05T01:15:37.509150+00:00'::timestamptz); args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m', datetime.datetime(2017, 1, 5, 1, 15, 37, 509150, tzinfo=<UTC>))
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 10; args=(10,)
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'svgmpjhfb1aedocg2upzkf5e9q98ex2m'; args=('svgmpjhfb1aedocg2upzkf5e9q98ex2m',)
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('svgmpjhfb1aedocg2upzkf5e9q98ex2m'); args=(u'svgmpjhfb1aedocg2upzkf5e9q98ex2m',)
+Exception while resolving variable 'next' in template 'accounts/login.html'.
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [next] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'oJ78bhI223zcgcoQZhlcCox9UGAHwSzI\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f4da4133d70>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f4d9f578c10>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f4d9f5c6a10>, u\'request\': <WSGIRequest: GET \'/accounts/login/\'>}, {}, {\'block\': <Block Node: content. Contents: [<TextNode: u\'\\n    <div class="containe\'>, <django.template.defaulttags.URLNode object at 0x7f4d9f5787d0>, <TextNode: u\'" method="post">\\n        \'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f4d9f578890>, <TextNode: u\'\\n                <label f\'>, <django.template.defaulttags.URLNode object at 0x7f4d9f578910>, <TextNode: u\'">Don\\\'t have an account? \'>, <IfNode>, <TextNode: u\'\\n\\n        </form>\\n    </d\'>]>}]'
+(0.003) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test2' LIMIT 1; args=(u'test2',)
+(0.008) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test2' LIMIT 1; args=(u'test2',)
+(0.006) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test2' LIMIT 1; args=(u'test2',)
+(0.005) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$24000$VFgvkY0wDncr$N95V3pY54tjDgB5dfm9dTipBOZLCwU4D13IRwg1ZgZU=', NULL, false, 'test2', '', '', '', false, true, '2017-01-05T01:15:59.787838+00:00'::timestamptz) RETURNING "auth_user"."id"; args=(u'pbkdf2_sha256$24000$VFgvkY0wDncr$N95V3pY54tjDgB5dfm9dTipBOZLCwU4D13IRwg1ZgZU=', None, False, u'test2', u'', u'', u'', False, True, datetime.datetime(2017, 1, 5, 1, 15, 59, 787838, tzinfo=<UTC>))
+(0.001) INSERT INTO "accounts_account" ("name", "sam_id") VALUES ('  Account', NULL) RETURNING "accounts_account"."id"; args=(u'  Account', None)
+Internal Server Error: /accounts/register/
+Traceback (most recent call last):
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zac/development/emerald/accounts/views.py", line 17, in register
+    new_user = form.save()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/forms.py", line 97, in save
+    user.save()
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 737, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 192, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/zac/development/emerald/accounts/models.py", line 41, in handle_new_user
+    newProfile.account = Account.objects.create(name=accountName)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/zac/envs/emerald/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: column "sam_id" of relation "accounts_account" does not exist
+LINE 1: INSERT INTO "accounts_account" ("name", "sam_id") VALUES (' ...
+                                                ^
+
+(0.004) SELECT "accounts_account"."id", "accounts_account"."name", "accounts_account"."sam_id" FROM "accounts_account" LIMIT 21; args=()
+(0.001) SELECT "accounts_account"."id", "accounts_account"."name", "accounts_account"."sam_id" FROM "accounts_account" LIMIT 21; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+ALTER TABLE "accounts_account" ADD COLUMN "sam_id" integer NULL UNIQUE; (params [])
+(0.036) ALTER TABLE "accounts_account" ADD COLUMN "sam_id" integer NULL UNIQUE; args=[]
+ALTER TABLE "accounts_account" ALTER COLUMN "sam_id" DROP DEFAULT; (params [])
+(0.000) ALTER TABLE "accounts_account" ALTER COLUMN "sam_id" DROP DEFAULT; args=[]
+ALTER TABLE "accounts_account" ADD CONSTRAINT "accounts_account_sam_id_5a8d13bd_fk_sam_samrecord_id" FOREIGN KEY ("sam_id") REFERENCES "sam_samrecord" ("id") DEFERRABLE INITIALLY DEFERRED; (params [])
+(0.019) ALTER TABLE "accounts_account" ADD CONSTRAINT "accounts_account_sam_id_5a8d13bd_fk_sam_samrecord_id" FOREIGN KEY ("sam_id") REFERENCES "sam_samrecord" ("id") DEFERRABLE INITIALLY DEFERRED; args=[]
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('accounts', '0004_account_sam', '2017-01-05T01:18:18.681247+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('accounts', u'0004_account_sam', datetime.datetime(2017, 1, 5, 1, 18, 18, 681247, tzinfo=<UTC>))
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+(0.013) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.004) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.006) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+(0.002) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.002) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'account' AND "django_content_type"."app_label" = 'accounts'); args=('account', 'accounts')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'userprofile' AND "django_content_type"."app_label" = 'accounts'); args=('userprofile', 'accounts')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9)
+(0.003) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'fbomaster' AND "django_content_type"."app_label" = 'fbo'); args=('fbomaster', 'fbo')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'opportunity' AND "django_content_type"."app_label" = 'fbo'); args=('opportunity', 'fbo')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (10, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(10, 7)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'fbo'; args=('fbo',)
+(0.002) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'fpdsmaster' AND "django_content_type"."app_label" = 'fpds'); args=('fpdsmaster', 'fpds')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (14) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(14,)
+(0.004) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'fpds'; args=('fpds',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'importhistory' AND "django_content_type"."app_label" = 'importer'); args=('importhistory', 'importer')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (13) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(13,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'importer'; args=('importer',)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'samrecord' AND "django_content_type"."app_label" = 'sam'); args=('samrecord', 'sam')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sam'; args=('sam',)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.005) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test2' LIMIT 1; args=(u'test2',)
+MiddlewareNotUsed: 'django_pudb.PudbMiddleware'
+(0.002) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test2' LIMIT 1; args=(u'test2',)
+(0.006) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test3' LIMIT 1; args=(u'test3',)
+(0.004) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$24000$Lt8Ic7zTdaIh$N1h6+I4iD9KUvlxCwlQrEnhJ8PtHuhPclLGXTAAAeHo=', NULL, false, 'test3', '', '', '', false, true, '2017-01-05T01:18:38.685855+00:00'::timestamptz) RETURNING "auth_user"."id"; args=(u'pbkdf2_sha256$24000$Lt8Ic7zTdaIh$N1h6+I4iD9KUvlxCwlQrEnhJ8PtHuhPclLGXTAAAeHo=', None, False, u'test3', u'', u'', u'', False, True, datetime.datetime(2017, 1, 5, 1, 18, 38, 685855, tzinfo=<UTC>))
+(0.002) INSERT INTO "accounts_account" ("name", "sam_id") VALUES ('  Account', NULL) RETURNING "accounts_account"."id"; args=(u'  Account', None)
+(0.003) INSERT INTO "accounts_userprofile" ("user_id", "account_id") VALUES (15, 5) RETURNING "accounts_userprofile"."id"; args=(15, 5)
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'test3'; args=(u'test3',)
+(0.003) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '2gs883ab5hr9u6wsesw8s5qzhc0bn3mn' LIMIT 1; args=(u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn',)
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('2gs883ab5hr9u6wsesw8s5qzhc0bn3mn', 'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', '2017-01-19T01:18:38.894786+00:00'::timestamptz); args=(u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn', u'YjU2MTYxYTg2YzIzYTc1Njc1Yjg3ZWNkYmVhNWJkYTFlODVkZGRmMDp7fQ==', datetime.datetime(2017, 1, 19, 1, 18, 38, 894786, tzinfo=<UTC>))
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '2gs883ab5hr9u6wsesw8s5qzhc0bn3mn'; args=(u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn',)
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('2gs883ab5hr9u6wsesw8s5qzhc0bn3mn'); args=(u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn',)
+(0.000) UPDATE "auth_user" SET "last_login" = '2017-01-05T01:18:38.906151+00:00'::timestamptz WHERE "auth_user"."id" = 15; args=(datetime.datetime(2017, 1, 5, 1, 18, 38, 906151, tzinfo=<UTC>), 15)
+(0.000) UPDATE "django_session" SET "session_data" = 'NjdhZTFmYmEyNWExNjZmYzM1YjYxZmM4NDRlOTMyYjJkMmVkZTc3YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjZWYzMDk2MDBkY2QwZDdjZTkxM2JiOTM4YWMxN2I0YTc2MmNiOTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNSJ9', "expire_date" = '2017-01-19T01:18:38.910710+00:00'::timestamptz WHERE "django_session"."session_key" = '2gs883ab5hr9u6wsesw8s5qzhc0bn3mn'; args=(u'NjdhZTFmYmEyNWExNjZmYzM1YjYxZmM4NDRlOTMyYjJkMmVkZTc3YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjZWYzMDk2MDBkY2QwZDdjZTkxM2JiOTM4YWMxN2I0YTc2MmNiOTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNSJ9', datetime.datetime(2017, 1, 19, 1, 18, 38, 910710, tzinfo=<UTC>), u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn')
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('2gs883ab5hr9u6wsesw8s5qzhc0bn3mn', 'NjdhZTFmYmEyNWExNjZmYzM1YjYxZmM4NDRlOTMyYjJkMmVkZTc3YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjZWYzMDk2MDBkY2QwZDdjZTkxM2JiOTM4YWMxN2I0YTc2MmNiOTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNSJ9', '2017-01-19T01:18:38.910710+00:00'::timestamptz); args=(u'2gs883ab5hr9u6wsesw8s5qzhc0bn3mn', u'NjdhZTFmYmEyNWExNjZmYzM1YjYxZmM4NDRlOTMyYjJkMmVkZTc3YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjZWYzMDk2MDBkY2QwZDdjZTkxM2JiOTM4YWMxN2I0YTc2MmNiOTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNSJ9', datetime.datetime(2017, 1, 19, 1, 18, 38, 910710, tzinfo=<UTC>))
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '2gs883ab5hr9u6wsesw8s5qzhc0bn3mn' AND "django_session"."expire_date" > '2017-01-05T01:18:38.940370+00:00'::timestamptz); args=('2gs883ab5hr9u6wsesw8s5qzhc0bn3mn', datetime.datetime(2017, 1, 5, 1, 18, 38, 940370, tzinfo=<UTC>))
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 15; args=(15,)

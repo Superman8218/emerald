@@ -1,5 +1,3 @@
-Fix the import
-Import SAM data
 Import FPDS data
 
 Table Fixes:
@@ -18,6 +16,9 @@ Moderate Severity:
 	Fbo Import
 		Fix contact import
 		Look into archive date
+
+Other Features:
+	Ask for email address not username
 
 Features:
 	Magic filter

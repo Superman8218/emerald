@@ -14,8 +14,12 @@ import pdb
 def register(request):
     form = EmeraldGovRegistrationForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
-        form.save()
-        return HttpResponseRedirect(reverse('login'))
+        new_user = form.save()
+        new_user = authenticate(username=form.cleaned_data['username'],
+                                password=form.cleaned_data['password1'],
+                               )
+        login(request, new_user)
+        return HttpResponseRedirect(reverse('home'))
     return render(request, 'accounts/register.html', {
         'form': form
     })
