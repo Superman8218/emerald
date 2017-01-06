@@ -13,4 +13,4 @@ staticfiles/*
 local_settings.py
 *.sw*
 emerald/staticfiles/
-logs/debug.log
+logs/*
