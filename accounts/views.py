@@ -6,7 +6,9 @@ from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import View
+from django.views.generic.edit import UpdateView
 
+from models import Account
 from forms import EmeraldGovRegistrationForm
 
 import pdb
@@ -54,3 +56,9 @@ class LoginView(View):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('login'))
+
+class AccountUpdate(UpdateView):
+
+    model = Account
+    template_name = 'accounts/update.html'
+    fields = ['name', 'sam']

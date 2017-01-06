@@ -27,5 +27,5 @@ urlpatterns = [
         url(r'^$', index, name='home'),
         url(r'^landing', landing, name='landing'),
         url(r'^fbo/', include('fbo.urls', namespace='fbo')),
-        url(r'^accounts/', include('accounts.urls'))
+        url(r'^accounts/', include('accounts.urls', namespace='accounts'))
 ]

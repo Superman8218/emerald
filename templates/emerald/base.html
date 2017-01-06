@@ -25,10 +25,10 @@
                 {% if request.user.is_authenticated %}
 
                     <span class="navbar-right">
-                        <p class="navbar-text">Welcome, {{ user.username }}</p>
-                        <a href="{% url 'logout' %}">
+						<p class="navbar-text">Welcome, <a href="{% url 'accounts:update' user.userprofile.account.pk %}">{{ user.username }}</a></p>
+                        <a href="{% url 'accounts:logout' %}">
                             <button class="btn btn-primary navbar-btn" type="button">
-                                Sign Out  
+                                Sign Out
                             </button>
                         </a>
                     </span>
@@ -39,7 +39,7 @@
 
                     <a href="{% url 'login' %}">
                         <button class="btn btn-primary navbar-btn navbar-right" type="button">
-                            Sign In  
+                            Sign In
                         </button>
                     </a>
 
@@ -61,7 +61,7 @@
     <!--Content-->
 
     {% block content %}
-   
+
     {% endblock %}
 
     <!--Footer-->

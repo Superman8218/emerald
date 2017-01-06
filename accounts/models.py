@@ -30,6 +30,7 @@ class UserProfile(models.Model):
 
             newProfile = UserProfile()
             newProfile.user = instance
+            newProfile.account = Account()
 
             # Set account to either given Account or a new Account
 
