@@ -9,7 +9,7 @@
 {% block content %}
     <div class="container">
         <h2 class="std-header">Login to your account</h2>
-        <form action="{% url 'login' %}" method="post">
+        <form action="{% url 'accounts:login' %}" method="post">
             {% csrf_token %}
                 <label for="id_username"><b>Username:</b></label>
                 <input type="text" class="form-control" name="username" placeholder="Enter Username" size="50" required/>
@@ -20,7 +20,7 @@
             <!--Give users the ability to register-->
 
             <p>
-                <a href="{% url 'register' %}">Don't have an account? Click here to register!</a>
+                <a href="{% url 'accounts:register' %}">Don't have an account? Click here to register!</a>
             </p>
 
             <button type="submit" class="btn btn-primary" value="submit"/>Login</button>
