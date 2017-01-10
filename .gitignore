@@ -14,3 +14,4 @@ local_settings.py
 *.sw*
 emerald/staticfiles/
 logs/*
+sam/sam_files/*
