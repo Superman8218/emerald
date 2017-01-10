@@ -32,14 +32,16 @@ class SamRecord(models.Model):
     business_type_counter = IntegerBlankStringField(null=True)
     buysiness_type_string = models.CharField(max_length=220, null=True)
     primary_naics = models.CharField(max_length=6, null=True)
-    naics_code_counter = IntegerBlankStringField(null=True)
-    naics_code_string = models.CharField(max_length=12000, null=True)
     email_address = models.EmailField(max_length=80, null=True)
     phone = models.CharField(max_length=30, null=True)
     phone_ext = models.CharField(max_length=25, null=True)
     naics_exception_counter = models.CharField(max_length=4, null=True)
     naics_exception_string = models.CharField(max_length=1100, null=True)
+    naics = models.CharField(max_length=2000, null=True)
     sba_business_types_counter = models.CharField(max_length=4, null=True)
     sba_business_types_string = models.CharField(max_length=125, null=True)
     no_public_display_flag = models.CharField(max_length=4, null=True)
+
+    def __unicode__(self):
+        return u'{0}'.format(self.legal_name)
 

@@ -15,6 +15,9 @@ class Account(models.Model):
     name = models.CharField(max_length=150, default="New Account")
     sam = models.OneToOneField(SamRecord, null=True)
 
+    def __str__(self):
+        return self.name
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
     account = models.ForeignKey(Account)

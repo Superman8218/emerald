@@ -3,6 +3,8 @@ from models import SamRecord
 
 import csv
 import codecs
+import re
+
 import pdb
 
 
@@ -30,8 +32,6 @@ legend = {
     28 : 'business_type_counter',
     29 : 'business_type_string',
     30 : 'primary_naics',
-    31 : 'naics_code_counter',
-    32 : 'naics_code_string',
     # 33 : 'psc_code_counter',
     # 34 : 'psc_code_string',
     # 44 : 'govt_bus_poc_first_name',
@@ -55,6 +55,21 @@ legend = {
     146 : 'no_public_display_flag',
 }
 
+# Declare a userful regex
+
+non_numeric = re.compile(r'[^\d~]+')
+
+def parse_naics(param_list, master):
+    """Takes the naics string and converts it into a list of strings. The only parameter in the list should be the naics string"""
+    source = param_list[0]
+    naics = non_numeric.sub('', source)
+    naics = naics.replace('~', ' ')
+    master.naics = naics
+    return
+
+additional_functions = {
+    parse_naics : [32],
+}
 
 def parse_file(file_path):
     with open(file_path, 'rU') as csvfile:
@@ -65,5 +80,7 @@ def parse_file(file_path):
                 master = SamRecord()
                 for key in legend.keys():
                     setattr(master, legend[key], row[key])
+                for key in additional_functions:
+                    key([row[index] for index in additional_functions[key]], master)
                 master.save()
     return

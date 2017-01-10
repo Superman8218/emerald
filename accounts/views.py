@@ -62,3 +62,6 @@ class AccountUpdate(UpdateView):
     model = Account
     template_name = 'accounts/update.html'
     fields = ['name', 'sam']
+
+    def get_success_url(self):
+        return reverse('home')

@@ -1,18 +1,15 @@
-from __future__ import unicode_literals
-
 import datetime
 
 from django.db import models
 
 from accounts.models import Account
 import choices
+from managers import FboMasterManager
 
 
 class FboMaster(models.Model):
 
     solicitation_type = models.CharField(max_length=20, choices=choices.SOLICITATION_TYPES)
-    # date = models.CharField(max_length=4)
-    # year = models.CharField(max_length=4)
     date = models.DateField(null=True)
     agency = models.CharField(max_length=200)
     office = models.CharField(max_length=200)
@@ -32,6 +29,8 @@ class FboMaster(models.Model):
     setaside = models.CharField(max_length=100)
     pop_country = models.CharField(max_length=50)
     pop_address = models.CharField(max_length=100)
+
+    objects = FboMasterManager()
 
 class Opportunity(models.Model):
     fbomaster = models.ForeignKey(FboMaster)

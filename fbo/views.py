@@ -55,8 +55,8 @@ class FboMagicView(FboListView):
         return context
 
     def get_table_data(self):
-        qs = super(FboMagicView, self).get_table_data()
-        return qs.filter(solicitation_type='presol')
+        naics_list = self.request.user.userprofile.account.sam.naics.split()
+        return super(FboMagicView, self).get_table_data().filter(naics__in=naics_list)
 
 def FboAddView(request, pk):
 
