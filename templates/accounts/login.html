@@ -11,8 +11,8 @@
         <h2 class="std-header">Login to your account</h2>
         <form action="{% url 'accounts:login' %}" method="post">
             {% csrf_token %}
-                <label for="id_username"><b>Username:</b></label>
-                <input type="text" class="form-control" name="username" placeholder="Enter Username" size="50" required/>
+                <label for="id_username"><b>Email:</b></label>
+                <input type="text" class="form-control" name="username" placeholder="Enter Email Address" size="50" required/>
 
                 <label for="id_password"><b>Password:</b></label>
                 <input type="password" class="form-control" name="password" placeholder="Enter Password" value="" size="50" required/>

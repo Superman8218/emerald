@@ -7,12 +7,12 @@ import pdb
 
 class EmeraldGovRegistrationForm(UserCreationForm):
     username = forms.CharField(
-            label='Username',
+            label='Email',
             widget=forms.TextInput(attrs=
                 {
                     'class':'form-control',
                     'name':'username',
-                    'placeholder':'Username',
+                    'placeholder':'Email Address',
                     'size':'50'
                 })
             )
