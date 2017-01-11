@@ -3,6 +3,8 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
 from accounts.models import EmeraldUser
 
+import pdb
+
 class EmeraldGovRegistrationForm(UserCreationForm):
     username = forms.CharField(
             label='Username',
@@ -44,8 +46,7 @@ class EmeraldUserCreationForm(UserCreationForm):
     """
 
     def __init__(self, *args, **kargs):
-        super(CustomUserCreationForm, self).__init__(*args, **kargs)
-        del self.fields['username']
+        super(EmeraldUserCreationForm, self).__init__(*args, **kargs)
 
     class Meta:
         model = EmeraldUser
@@ -58,8 +59,7 @@ class EmeraldUserChangeForm(UserChangeForm):
     """
 
     def __init__(self, *args, **kargs):
-        super(CustomUserChangeForm, self).__init__(*args, **kargs)
-        del self.fields['username']
+        super(EmeraldUserChangeForm, self).__init__(*args, **kargs)
 
     class Meta:
         model = EmeraldUser
