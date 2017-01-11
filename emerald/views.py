@@ -9,7 +9,6 @@ def index(request):
     account_id = 0
     if request.user.is_authenticated():
         account_id = request.user.userprofile.account.id
-    pdb.set_trace()
     return render(request, 'emerald/index.html', {
         'account_id': account_id, 
     })
