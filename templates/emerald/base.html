@@ -25,7 +25,7 @@
                 {% if request.user.is_authenticated %}
 
                     <span class="navbar-right">
-						<p class="navbar-text">Welcome, <a href="{% url 'accounts:update' user.userprofile.account.pk %}">{{ user.username }}</a></p>
+						<p class="navbar-text">Welcome, <a href="{% url 'accounts:update' account_id %}">{{ user.username }}</a></p>
                         <a href="{% url 'accounts:logout' %}">
                             <button class="btn btn-primary navbar-btn" type="button">
                                 Sign Out
@@ -37,7 +37,7 @@
 
                 {% else %}
 
-                    <a href="{% url 'login' %}">
+                    <a href="{% url 'accounts:login' %}">
                         <button class="btn btn-primary navbar-btn navbar-right" type="button">
                             Sign In
                         </button>
