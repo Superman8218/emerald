@@ -8,7 +8,7 @@ from django.shortcuts import render
 from django.views.generic import View
 from django.views.generic.edit import UpdateView
 
-from models import Account, EmeraldUser
+from models import Account
 from forms import EmeraldGovRegistrationForm
 
 import pdb
@@ -16,9 +16,8 @@ import pdb
 def register(request):
     form = EmeraldGovRegistrationForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
-        pdb.set_trace()
         new_user = form.save()
-        new_user = authenticate(username=form.cleaned_data['email'],
+        new_user = authenticate(username=form.cleaned_data['username'],
                                 password=form.cleaned_data['password1'],
                                )
         login(request, new_user)
@@ -66,7 +65,3 @@ class AccountUpdate(UpdateView):
 
     def get_success_url(self):
         return reverse('home')
-
-class EmeraldUserUpdate(UpdateView):
-
-    model = EmeraldUser
