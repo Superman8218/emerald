@@ -20,7 +20,6 @@ from django.contrib import admin
 
 from emerald.views import index
 from emerald.views import landing
-from emerald.views import test
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),

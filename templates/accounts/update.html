@@ -7,7 +7,7 @@
 {% block content %}
 	<div class="container">
 		<h2 class="std-header">Update your account information</h2>
-		<form action="" method="post">
+		<form action="{% url 'home' %}" method="post">
 			{% csrf_token %}
 			{{ form.as_p }}
 			<input type="submit" value="Update" />
