@@ -6,13 +6,24 @@ from accounts.models import EmeraldUser
 import pdb
 
 class EmeraldGovRegistrationForm(UserCreationForm):
-    username = forms.CharField(
+    # username = forms.CharField(
+            # label='Email',
+            # widget=forms.TextInput(attrs=
+                # {
+                    # 'class':'form-control',
+                    # 'name':'username',
+                    # 'placeholder':'Email Address',
+                    # 'size':'50'
+                # })
+            # )
+
+    email = forms.EmailField(
             label='Email',
-            widget=forms.TextInput(attrs=
+            widget=forms.EmailInput(attrs=
                 {
                     'class':'form-control',
                     'name':'username',
-                    'placeholder':'Email Address',
+                    'placeholder':'Mewtwo',
                     'size':'50'
                 })
             )
@@ -38,6 +49,10 @@ class EmeraldGovRegistrationForm(UserCreationForm):
                     'size':'50'
                 })
             )
+
+    class Meta:
+        model = EmeraldUser
+        fields = ('email', 'password1', 'password2')
 
 class EmeraldUserCreationForm(UserCreationForm):
     """

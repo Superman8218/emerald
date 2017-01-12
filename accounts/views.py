@@ -17,7 +17,7 @@ def register(request):
     form = EmeraldGovRegistrationForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         new_user = form.save()
-        new_user = authenticate(username=form.cleaned_data['username'],
+        new_user = authenticate(username=form.cleaned_data['email'],
                                 password=form.cleaned_data['password1'],
                                )
         login(request, new_user)
