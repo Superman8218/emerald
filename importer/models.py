@@ -50,6 +50,7 @@ class Importer():
     def do_import(self):
         """Runs the whole import"""
 
+        pdb.set_trace()
         # Make sure storage_dir exists
         if not os.path.exists(self.storage_dir):
             os.makedirs(self.storage_dir)

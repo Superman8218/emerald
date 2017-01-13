@@ -3,7 +3,8 @@ from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import ugettext_lazy as _
 
 from accounts.forms import EmeraldUserChangeForm, EmeraldUserCreationForm
-from accounts.models import EmeraldUser, UserProfile, Account
+from accounts.models import EmeraldUser, Account
+from userprofile.models import UserProfile
 
 class EmeraldUserAdmin(UserAdmin):
     # The forms to add and change user instances

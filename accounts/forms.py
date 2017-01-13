@@ -1,21 +1,13 @@
 from django import forms
+from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.forms import ModelForm
 
 from accounts.models import EmeraldUser
 
 import pdb
 
-class EmeraldGovRegistrationForm(UserCreationForm):
-    # username = forms.CharField(
-            # label='Email',
-            # widget=forms.TextInput(attrs=
-                # {
-                    # 'class':'form-control',
-                    # 'name':'username',
-                    # 'placeholder':'Email Address',
-                    # 'size':'50'
-                # })
-            # )
+class UserFormMixin(forms.Form):
 
     email = forms.EmailField(
             label='Email',
@@ -23,7 +15,7 @@ class EmeraldGovRegistrationForm(UserCreationForm):
                 {
                     'class':'form-control',
                     'name':'username',
-                    'placeholder':'Mewtwo',
+                    'placeholder':'Email Address',
                     'size':'50'
                 })
             )
@@ -50,9 +42,15 @@ class EmeraldGovRegistrationForm(UserCreationForm):
                 })
             )
 
+class EmeraldGovRegistrationForm(UserFormMixin, UserCreationForm):
+
+    def __init__(self, *args, **kwargs):
+        super(EmeraldGovRegistrationForm, self).__init__(*args, **kwargs)
+        self.fields.keyOrder = ['email', 'password1', 'password2']
+
     class Meta:
         model = EmeraldUser
-        fields = ('email', 'password1', 'password2')
+        fields = ['email', 'password1', 'password2']
 
 class EmeraldUserCreationForm(UserCreationForm):
     """
@@ -79,3 +77,42 @@ class EmeraldUserChangeForm(UserChangeForm):
     class Meta:
         model = EmeraldUser
         fields = ("email",)
+
+class UserUpdateForm(ModelForm):
+
+    first_name = forms.CharField(
+            label='First Name',
+            widget=forms.TextInput(attrs=
+                {
+                    'class':'form-control',
+                    'name':'first_name',
+                    'placeholder':'First Name',
+                    'size':'50'
+                })
+            )
+
+    last_name = forms.CharField(
+            label='Last Name',
+            widget=forms.TextInput(attrs=
+                {
+                    'class':'form-control',
+                    'name':'last_name',
+                    'placeholder':'Last Name',
+                    'size':'50'
+                })
+            )
+
+    email = forms.EmailField(
+            label='Email',
+            widget=forms.EmailInput(attrs=
+                {
+                    'class':'form-control',
+                    'name':'email',
+                    'placeholder':'Email Address',
+                    'size':'50'
+                })
+            )
+
+    class Meta:
+        model = EmeraldUser
+        fields = ['first_name', 'last_name', 'email']

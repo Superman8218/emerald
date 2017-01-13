@@ -1,0 +1,17 @@
+{% extends 'emerald/base.html' %}
+
+{% block title %}
+	Update User Profile
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<h2 class="std-header">Update your profile</h2>
+		<form action="{% url 'userprofile:update' user.userprofile.pk %}" method="post">
+			{% csrf_token %}
+			{{ user_form.as_p }}
+			{{ user_profile_form.as_p }}
+			<input type="submit" class="btn btn-primary" value="Update" />
+		</form>
+	</div>
+{% endblock %}

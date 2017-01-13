@@ -21,7 +21,7 @@ def register(request):
                                 password=form.cleaned_data['password1'],
                                )
         login(request, new_user)
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('userprofile:update', kwargs={'pk': new_user.userprofile.pk}))
     return render(request, 'accounts/register.html', {
         'form': form
     })

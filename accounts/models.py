@@ -72,33 +72,3 @@ class EmeraldUser(AbstractBaseUser, PermissionsMixin):
         Sends an email to this User.
         """
         send_mail(subject, message, from_email, [self.email])
-
-class UserProfile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
-    account = models.ForeignKey(Account)
-
-    @receiver(post_save, sender=settings.AUTH_USER_MODEL)
-    def handle_new_user(sender, instance, created, **kwargs):
-
-        # Set up a new record
-
-        if created:
-
-            # Set up a User Profile
-
-            newProfile = UserProfile()
-            newProfile.user = instance
-            newProfile.account = Account()
-
-            # Set account to either given Account or a new Account
-
-            if False: # NOT FULLY IMPLEMENTED
-                pass
-
-            else:
-                accountName = " ".join([instance.first_name, instance.last_name, "Account"])
-                newProfile.account = Account.objects.create(name=accountName)
-
-            #Finally save the new object
-
-            newProfile.save()
