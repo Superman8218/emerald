@@ -1,12 +1,14 @@
 from django.core.management.base import BaseCommand, CommandError
 from fbo import fbo_import
+from fbo.fbo_import import FboImporter
 
 class Command(BaseCommand):
     help = 'Runs the Fbo Import task'
 
     def handle(self, *args, **options):
         try:
-            fbo_import.main()
+            importer = FboImporter()
+            importer.do_import()
         except:
             raise CommandError('Fbo import failed')
 

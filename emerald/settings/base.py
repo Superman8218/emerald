@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     #My Django apps:
     'accounts',
+    'contact',
     'emerald',
     'fbo',
     'fpds',

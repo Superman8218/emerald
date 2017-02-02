@@ -3,6 +3,7 @@ import datetime
 from django.db import models
 
 from accounts.models import Account
+from contact.models import Contact
 import choices
 from managers import FboMasterManager
 
@@ -21,9 +22,10 @@ class FboMaster(models.Model):
     subject = models.CharField(max_length=400)
     solnbr = models.CharField(max_length=100)
     response_date = models.DateField(null=True)
-    contact_name = models.CharField(max_length=50)
-    contact_phone = models.CharField(max_length=30)
-    contact_email = models.EmailField()
+    # contact_name = models.CharField(max_length=50)
+    # contact_phone = models.CharField(max_length=30)
+    # contact_email = models.EmailField()
+    contacts = models.ManyToManyField(Contact)
     description = models.TextField()
     url = models.URLField()
     setaside = models.CharField(max_length=100)

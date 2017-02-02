@@ -5,8 +5,8 @@ import re
 
 from bs4 import BeautifulSoup
 
+from contact.models import Contact
 from models import FboMaster
-import pdb
 import sys
 import pprint
 
@@ -80,8 +80,20 @@ def handle_contact(master, text):
         # master.contact_phone = phoneRegex.group(1)
     # if emailRegex:
     #     master.contact_email = emailRegex.group(1)
-    pass
 
+    contact_regex = re.compile(r'(?P<name>[a-zA-Z]+ [a-zA-Z]+)(?:, (?P<title>[a-zA-Z]+ [a-zA-Z]+)?)?(?:, Phone (?P<phone>[0-9\-]+)?)?, (?:Fax (?P<fax>[0-9\-]+)?)?(?:, Email (?P<email>[a-zA-Z0-9@\.]+)?)?')
+    contact = contact_regex.search(text)
+    new_contact = Contact()
+    if contact:
+        new_contact.name = contact.group('name')
+        new_contact.job_title = contact.group('title')
+        new_contact.email = contact.group('email')
+        new_contact.phone = contact.group('phone')
+        try:
+            new_contact.save()
+        except:
+            pdb.set_trace()
+        master.contacts.add(new_contact)
 
 
 # Define aliases for importing fields, includeing functions used to handle complicated inputs
@@ -108,22 +120,25 @@ field_names = [field.name for field in FboMaster._meta.get_fields()]
 
 combined_field_list = field_names + field_aliases_keys
 
-# Filter functions
+# Methods to get the list of all the relevant tags
 
-def tag_filter(tag, name):
-    return tag.name == name
+def flatten(l):
+    """Takes a list of lists and flattens it into a single list"""
+    return [item for sublist in l for item in sublist]
 
-def nonempty_tag(tag):
-    return tag.name is not None
+def get_records(soup):
+    """Takes the soup and gets all of the nodes whose type is in the list of record types"""
+    return flatten([soup.find_all(record_type) for record_type in record_types])
 
 # The actual parsing method
 
 def parse_file(file_path):
     """So right now this is built to only extract one type of record, but we can definitely make it extract more"""
     soup = BeautifulSoup(open(file_path))
-    records = filter(nonempty_tag, soup.children)
+    records = get_records(soup)
     for record in records:
         master = FboMaster()
+        master.save()
         master.solicitation_type = record.name
         fields = filter(lambda x: x.name in combined_field_list, record(True))
         for item in fields:

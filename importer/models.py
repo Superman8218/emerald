@@ -50,7 +50,7 @@ class Importer():
     def do_import(self):
         """Runs the whole import"""
 
-        pdb.set_trace()
+
         # Make sure storage_dir exists
         if not os.path.exists(self.storage_dir):
             os.makedirs(self.storage_dir)
@@ -71,7 +71,7 @@ class Importer():
             try:
                 self.process_single_date(next_file_dt)
             except Exception, err:
-                logger.error('Unable to process file date: {0}'.format(next_file_dt.strftime(self.url_date_format)))
+                logger.error('Unable to process file date: {0}, {1}'.format(self.data_source, next_file_dt.strftime(self.url_date_format)))
             next_file_dt = next_file_dt + timedelta(days=1)
 
     def download_file(self, file_dt):
@@ -84,7 +84,7 @@ class Importer():
             response = urllib2.urlopen(file_url)
         except urllib2.HTTPError, err:
             logger.info('Download failed for url: {0}'.format(file_url))
-        pdb.set_trace()
+        # pdb.set_trace()
         text_file = open(file_path, 'w')
         text_file.write(response.read())
         text_file.close()
@@ -94,7 +94,8 @@ class Importer():
 
     def process_single_date(self, file_dt):
         """Download the file for the given date, process it, and then create a record of the import"""
-        file_dt = pytz.utc.localize(file_dt)
+        if file_dt.tzinfo is None or file_dt.tzinfo.utcoffset(file_dt) is None:
+            file_dt = pytz.utc.localize(file_dt)
         # pdb.set_trace()
         file_path = self.download_file(file_dt)
         success = self.process_file(file_path)
