@@ -70,30 +70,28 @@ def handle_respdate(master, text):
     respDay = int(text[2:4])
     master.response_date = datetime.date(respYear, respMonth, respDay)
 
-def handle_contact(master, text):
-    # nameRegex = re.search(r'^([^,]+)', text)
-    # phoneRegex = re.search(r'Phone ([^,]+)', text)
-    # emailRegex = re.search(r'Email ([^\s]+)', text)
-    # if nameRegex:
-        # master.contact_name = nameRegex.group(1).title()
-    # if phoneRegex:
-        # master.contact_phone = phoneRegex.group(1)
-    # if emailRegex:
-    #     master.contact_email = emailRegex.group(1)
+# Used to handle contacts by writing to a file that shows the contact data that we did not use
 
-    contact_regex = re.compile(r'(?P<name>[a-zA-Z]+ [a-zA-Z]+)(?:, (?P<title>[a-zA-Z]+ [a-zA-Z]+)?)?(?:, Phone (?P<phone>[0-9\-]+)?)?, (?:Fax (?P<fax>[0-9\-]+)?)?(?:, Email (?P<email>[a-zA-Z0-9@\.]+)?)?')
-    contact = contact_regex.search(text)
+def handle_contact(master, text):
+
     new_contact = Contact()
-    if contact:
+
+    contact_regex = re.compile(r'(?:Name: )?(?P<name>[a-zA-Z. ]+)(?:, (?:Title:)?(?P<title>[a-zA-Z ]+)?[&,])?(?:[, ]|(?:Phone(?::)? (?P<phone>[0-9\-() .]+))|(?:Fax(?::)? (?P<fax>[0-9\-() .]+))|(?:(?:Email(?::)? )?(?P<email>[a-zA-Z0-9@\.\-]+)))*')
+    contact = contact_regex.search(text)
+
+    if contact and len(contact.group('name')) <= 60:
         new_contact.name = contact.group('name')
-        new_contact.job_title = contact.group('title')
+        new_contact.title = contact.group('title')
         new_contact.email = contact.group('email')
         new_contact.phone = contact.group('phone')
         try:
             new_contact.save()
+            master.contacts.add(new_contact)
         except:
             pdb.set_trace()
-        master.contacts.add(new_contact)
+    else:
+        out = open('bad_contacts.txt', 'a')
+        out.write(text + '\n')
 
 
 # Define aliases for importing fields, includeing functions used to handle complicated inputs
