@@ -26,6 +26,8 @@ urlpatterns = [
         url(r'^$', index, name='home'),
         url(r'^landing', landing, name='landing'),
         url(r'^accounts/', include('accounts.urls', namespace='accounts')),
+        url(r'^contact/', include('contact.urls', namespace='contact')),
         url(r'^fbo/', include('fbo.urls', namespace='fbo')),
+        url(r'^opportunity/', include('opportunity.urls', namespace='opportunity')),
         url(r'^userprofile/', include('userprofile.urls', namespace='userprofile')),
 ]

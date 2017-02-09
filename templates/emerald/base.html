@@ -7,8 +7,14 @@
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'emerald/custom.css' %}" />
+
+	<!-- Custom js -->
+	<script src="{% static 'emerald/emerald.js' %}"></script>
 
 </head>
 
@@ -16,7 +22,7 @@
 
     <!--Navbar-->
 
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-light navbar-default">
         <div class="container">
             {% block login_info %}
 
@@ -53,6 +59,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'fbo:list' %}">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'opportunity:list' %}">Watchlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact:list' %}">Contacts</a>
                 </li>
             </ul>
         </div>

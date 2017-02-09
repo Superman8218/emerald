@@ -4,5 +4,7 @@
     <h2>FBO Opportunity Detail</h2>
     <div>
         Subject: {{ object.subject }}
+		<br>
+		<a href="{% url 'fbo:add-to-watchlist' pk=object.pk %}">Watch</a>
     <div>    
 {% endblock %}

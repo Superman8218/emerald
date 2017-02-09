@@ -1,0 +1,9 @@
+{% extends "emerald/base.html" %}
+{% load render_table from django_tables2 %}
+
+<h2>Contact List</h2>
+{% block content %}
+    <div class="container">
+        {% render_table table 'emerald/filtered-table.html' %}
+    </div>
+{% endblock %}

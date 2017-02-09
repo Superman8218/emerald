@@ -7,8 +7,3 @@ class FboMasterTable(tables.Table):
         model = FboMaster
         attrs = {'class':'table'}
         exclude = ('subject', )
-
-class OpportunityTable(tables.Table):
-    class Meta:
-        model = Opportunity
-        attrs = {'class':'table'}

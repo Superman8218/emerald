@@ -35,7 +35,7 @@
             </td>
             {% endfor %}
         </tr>
-        
+
         <!--End of custom row-->
 
         {% for row in table.page.object_list|default:table.rows %} {# support pagination #}
@@ -100,7 +100,7 @@
     {% endif %}
     {% block pagination.cardinality %}
         <li class="cardinality">
-            {% if total != count %}{% blocktrans %}{{ count }} of {{ total }}{% endblocktrans %}{% else %}{{ total }}{% endif %} {% if total == 1 %}{{ table.data.verbose_name }}{% else %}{{ table.data.verbose_name_plural }}{% endif %}
+            {% if total != count %}{% blocktrans %}{{ count }} of {{ total }}{% endblocktrans %}{% else %}{{ total }}{% endif %} {% if total == 1 %}{{ table.data.verbose_name|title }}{% else %}{{ table.data.verbose_name_plural|title }}{% endif %}
         </li>
     {% endblock pagination.cardinality %}
 </ul>

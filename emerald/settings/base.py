@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'fbo',
     'fpds',
     'importer',
+    'opportunity',
     'sam',
     'userprofile',
 ]

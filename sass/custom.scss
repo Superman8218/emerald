@@ -37,6 +37,17 @@ $emerald: #50C878;
     color: white;
 }
 
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a
+{
+	color: white;
+}
+
+.navbar-default .navbar-nav > .active > a
+{
+	color: green;
+	//background-color: white;
+}
+
 .navbar-btn
 {
     background-color: white;
