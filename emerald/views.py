@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from django.shortcuts import render
 
 from django_tables2 import SingleTableView
@@ -24,22 +26,16 @@ class FilteredSingleTableView(SingleTableView):
 
         self.filter.form.helper = self.helper_class()
 
-        # Make the filter form columns match the table columns
+        # Make the filter form fields match the contents and order of the table columns
 
-        # pdb.set_trace()
         column_headers = [column.name for column in context['table'].columns]
-        # for key in self.filter.form.fields:
-            # print key
-        # self.filter.form.fields = { key: self.filter.form[key] for key in self.filter.form.fields if key in column_headers }
-        # filtered_fields = OrderedDict()
-        for key in self.filter.form.fields:
-            # if key in column.headers:
-                # filtered_fields[key] = self.filter.form[key]
-            if key not in column_headers:
-                del self.filter.form.fields[key]
-        # self.filter.form.fields = filtered_fields
-        # pdb.set_trace()
+        new_fields = OrderedDict()
 
+        for column_name in column_headers:
+            if column_name in self.filter.form.fields:
+                new_fields[column_name] = self.filter.form.fields[column_name]
+
+        self.filter.form.fields = new_fields
         context['filter'] = self.filter
 
         return context
