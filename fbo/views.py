@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse
@@ -31,13 +32,19 @@ class FboListView(FilteredSingleTableView, LoginRequiredMixin, ListView):
 # Implements the magic view
 
 class FboMagicView(FboListView):
+
     def get_context_data(self, **kwargs):
         context = super(FboMagicView, self).get_context_data(**kwargs)
         return context
 
     def get_table_data(self):
-        naics_list = self.request.user.userprofile.account.sam.naics.split()
-        return super(FboMagicView, self).get_table_data().filter(naics__in=naics_list)
+        qs = super(FboMagicView, self).get_table_data()
+        if self.request.user.userprofile.sam:
+            naics_list = self.request.user.userprofile.sam.naics.split()
+            return qs.filter(naics__in=naics_list)
+        else:
+            messages.warning(self.request, 'Unable to filter solicitations without setting up your SAM record')
+            return qs
 
 def FboAddView(request, pk):
 

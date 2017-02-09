@@ -31,6 +31,7 @@ class FboMaster(models.Model):
 
     objects = FboMasterManager()
 
-class Opportunity(models.Model):
-    fbomaster = models.ForeignKey(FboMaster)
-    account = models.ForeignKey(Account)
+    class Meta:
+
+        verbose_name = 'solicitation'
+        verbose_name_plural = 'solicitations'

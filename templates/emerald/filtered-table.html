@@ -26,15 +26,18 @@
         <!--Here is the custom row for the filter-->
 
         <tr>
-            <td>
-                <button type="submit" class="btn btn-primary" value="submit"/>Filter</button>
-            </td>
             {% for field in filter.form %}
             <td>
                 {% render_field field class="form-control fbf-box" %}
             </td>
             {% endfor %}
         </tr>
+
+		<tr>
+            <td>
+                <button type="submit" class="btn btn-primary" value="submit"/>Filter</button>
+            </td>
+		</tr>
 
         <!--End of custom row-->
 

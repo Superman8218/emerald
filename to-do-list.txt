@@ -15,6 +15,8 @@ Ancillary activities:
 Moderate Severity:
 	Fbo Import
 		Fix contact import
+			The description gets tied up with the contacts sometimes
+		The description field can get all out of whack
 		Look into archive date
 
 Other Features:
