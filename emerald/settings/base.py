@@ -25,8 +25,6 @@ SECRET_KEY = 'scx+7k4)*^vl7f0s25&x_ys+t#i(b^n6njilgok!kqawnkk2gw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.emeraldgov.com']
-
 # Application definition
 
 INSTALLED_APPS = [
