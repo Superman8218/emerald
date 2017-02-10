@@ -13,3 +13,6 @@ class Contact(models.Model):
     email = models.EmailField(null=True)
 
     related_users = models.ManyToManyField(UserProfile, related_name='related_users')
+
+    def __unicode__(self):
+        return self.name

@@ -14,3 +14,6 @@ class Opportunity(models.Model):
     class Meta:
 
         verbose_name_plural = "opportunities"
+
+    def __unicode__(self):
+        return self.fbo_master.description

@@ -28,3 +28,6 @@ class UserProfile(models.Model):
             # Save the new object
 
             newProfile.save()
+
+    def __unicode__(self):
+        return u'{0}'.format(self.user.get_full_name())

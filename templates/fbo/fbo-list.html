@@ -2,7 +2,8 @@
 {% load django_tables2 crispy_forms_tags %}
 
 {% block content %}
-    <h2>FBO Opportunities List</h2>
-    {% render_table table 'emerald/filtered-table.html' %}
-    
+    <h2>FBO Solicitations</h2>
+	<div class=container">
+		{% render_table table 'emerald/filtered-table.html' %}
+	</div>
 {% endblock %}

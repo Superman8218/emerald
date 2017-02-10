@@ -3,14 +3,7 @@ Import FPDS data
 Table Fixes:
 	navbar doesn't extend
 	ajax querying
-
-Ancillary activities:
-	Set up (test) business email
-	Develop terms and conditions
-	Form an LLC
-	Create a business bank account
-	Get an EIN
-	File 2016 taxes
+	The filter widgets aren't always suitable.  For example, filtering for owner shouldn't show a picklist of all the owners, but instead should show a textbox
 
 Moderate Severity:
 	Fbo Import
@@ -19,8 +12,10 @@ Moderate Severity:
 		The description field can get all out of whack
 		Look into archive date
 
-Other Features:
-	Ask for email address not username
-
-Features:
-	Magic filter
+Ancillary activities:
+	Set up (test) business email
+	Develop terms and conditions
+	Form an LLC
+	Create a business bank account
+	Get an EIN
+	File 2016 taxes
