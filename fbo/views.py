@@ -8,10 +8,11 @@ from django.template import RequestContext
 from django.views.generic import View, DetailView, ListView
 
 from emerald.views import FilteredSingleTableView
-from models import FboMaster
-from tables import FboMasterTable
-from forms import FboMasterFilterFormHelper
 from filters import FboMasterFilter
+from forms import FboMasterFilterFormHelper
+from models import FboMaster
+from opportunity.models import Opportunity
+from tables import FboMasterTable
 
 import pdb
 
