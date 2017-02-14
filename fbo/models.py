@@ -5,8 +5,7 @@ from django.db import models
 from accounts.models import Account
 from contact.models import Contact
 import choices
-from managers import FboMasterManager
-
+from managers import FboMasterManager 
 
 class FboMaster(models.Model):
 
@@ -35,3 +34,7 @@ class FboMaster(models.Model):
 
         verbose_name = 'solicitation'
         verbose_name_plural = 'solicitations'
+
+    def __unicode__(self):
+
+        return self.description

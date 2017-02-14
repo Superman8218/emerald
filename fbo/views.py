@@ -1,3 +1,5 @@
+from functools import partial
+
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse
@@ -29,6 +31,31 @@ class FboListView(FilteredSingleTableView, LoginRequiredMixin, ListView):
     table_class = FboMasterTable
     filter_class = FboMasterFilter
     helper_class = FboMasterFilterFormHelper
+
+    # Necessary to set the row_attrs element
+
+    def get_table(self, **kwargs):
+
+        table = super(FboListView, self).get_table(**kwargs)
+        table.row_attrs = self.get_row_attrs()
+        return table
+
+    def get_row_attrs(self):
+
+        return {'class': self.get_watchlist_function()}
+
+    def get_watchlist_function(self):
+
+        ids = [opportunity.fbo_master.id for opportunity in Opportunity.objects.get_by_owner(self.request.user.userprofile)]
+        test_fbo = FboMaster.objects.get(id='44058')
+        return partial(self.in_watchlist, opportunity_ids=ids)
+
+    def in_watchlist(self, fbo_record, opportunity_ids):
+
+        if fbo_record.id in opportunity_ids:
+            return 'watchlist'
+        else:
+            return ''
 
 # Implements the magic view
 

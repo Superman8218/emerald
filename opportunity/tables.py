@@ -7,8 +7,8 @@ class OpportunityTable(tables.Table):
     class Meta:
         model = Opportunity
         attrs = {'class':'table'}
-        exclude = ('id', 'fbo_master', )
-        sequence = ('solnbr', 'description', 'owner', '...')
+        exclude = ('id', 'fbo_master', 'owner', )
+        sequence = ('solnbr', 'description', '...')
 
     id = tables.LinkColumn('opportunity:detail', args=[A('pk')])
 
