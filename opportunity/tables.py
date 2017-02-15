@@ -8,7 +8,7 @@ class OpportunityTable(tables.Table):
         model = Opportunity
         attrs = {'class':'table'}
         exclude = ('id', 'fbo_master', 'owner', )
-        sequence = ('solnbr', 'description', '...')
+        sequence = ('remove_button', 'solnbr', 'description', '...')
 
     id = tables.LinkColumn('opportunity:detail', args=[A('pk')])
 
@@ -16,4 +16,6 @@ class OpportunityTable(tables.Table):
     description = tables.Column(accessor=A('fbo_master.description'))
     remove_button = tables.TemplateColumn(verbose_name=('Remove'),
                                           template_name='opportunity/btn-remove.html')
+
+    offset = 1
 

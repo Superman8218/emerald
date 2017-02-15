@@ -6,7 +6,7 @@
 		<!--The heading-->
 		<h2>
 			{{ object.subject }}
-			<a href="{% url 'fbo:add-to-watchlist' pk=object.pk %}">
+			<a href="{% url 'fbo:add' pk=object.pk %}">
 				<button class="btn watchlist-btn">Watch</button>
 			</a>
 		</h2>

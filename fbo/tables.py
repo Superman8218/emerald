@@ -8,6 +8,11 @@ class FboMasterTable(tables.Table):
         model = FboMaster
         attrs = {'class':'table'}
         exclude = ('id', 'subject', )
-        sequence = ('solnbr', 'description', '...')
+        sequence = ('add_button', 'solnbr', 'description', '...')
 
+    add_button = tables.TemplateColumn(verbose_name='Watch',
+                                       template_name='fbo/btn-watch.html')
     solnbr = tables.LinkColumn('fbo:detail', args=[A('pk')])
+
+    offset = 1
+

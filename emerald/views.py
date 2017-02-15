@@ -26,9 +26,11 @@ class FilteredSingleTableView(SingleTableView):
 
         self.filter.form.helper = self.helper_class()
 
+        table = context['table']
+
         # Make the filter form fields match the contents and order of the table columns
 
-        column_headers = [column.name for column in context['table'].columns]
+        column_headers = [column.name for column in table.columns]
         new_fields = OrderedDict()
 
         for column_name in column_headers:
@@ -37,5 +39,11 @@ class FilteredSingleTableView(SingleTableView):
 
         self.filter.form.fields = new_fields
         context['filter'] = self.filter
+
+        # Add an offset to tell the table how many columns the filter should be offset by
+
+        if hasattr(table, 'offset'):
+            context['offset_range'] = range(table.offset)
+        # pdb.set_trace()
 
         return context

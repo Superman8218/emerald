@@ -31,14 +31,3 @@ class OpportunityDeleteView(LoginRequiredMixin, DeleteView):
 
     model = Opportunity
     success_url = reverse_lazy('opportunity:list')
-    template_name = 'Opportunity/opportunity_confirm_delete.html'
-
-    def get_context_data(self, **kwargs):
-        context = super(OpportunityDeleteView, self).get_context_data(**kwargs)
-        import pdb; pdb.set_trace()
-        return context
-
-# class OpportunityDeleteView(View):
-    # def get(self, request, pk):
-        # import pdb; pdb.set_trace()
-        # return 'Success'

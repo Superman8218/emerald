@@ -26,6 +26,11 @@
         <!--Here is the custom row for the filter-->
 
         <tr>
+			<!--Offset the fitlter-->
+			{% for i in offset_range %}
+			<td></td>
+			{% endfor %}
+
             {% for field in filter.form %}
             <td>
                 {% render_field field class="form-control fbf-box" %}
