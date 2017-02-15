@@ -3,6 +3,7 @@ $emerald: #50C878;
 .btn
 {
     background-color: $emerald;
+	color: white;
 }
 
 .error
@@ -55,6 +56,16 @@ $emerald: #50C878;
     border: $emerald;
 }
 
+ul.solicitation-info
+{
+	list-style-type: none;
+}
+
+ul.solicitation-contacts
+{
+	list-style-type: none;
+}
+
 .std-header
 {
     color: $emerald;
@@ -74,5 +85,11 @@ input[type=text], input[type=password]
 
 .watchlist
 {
-	background-color: red;
+	background-color: #ffa07a;
+}
+
+.watchlist-btn
+{
+	position: relative;
+	left:30px;
 }

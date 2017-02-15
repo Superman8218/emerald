@@ -14,3 +14,6 @@ class OpportunityTable(tables.Table):
 
     solnbr = tables.Column(accessor = A('fbo_master.solnbr'))
     description = tables.Column(accessor=A('fbo_master.description'))
+    remove_button = tables.TemplateColumn(verbose_name=('Remove'),
+                                          template_name='opportunity/btn-remove.html')
+

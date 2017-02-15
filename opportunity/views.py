@@ -1,5 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from django.views.generic import View, DetailView, ListView
+from django.views.generic.edit import DeleteView
 
 from emerald.views import FilteredSingleTableView
 from filters import OpportunityFilter
@@ -24,3 +26,19 @@ class OpportunityListView(FilteredSingleTableView, LoginRequiredMixin, ListView)
 
     def get_queryset(self):
         return Opportunity.objects.filter(owner=self.request.user.userprofile)
+
+class OpportunityDeleteView(LoginRequiredMixin, DeleteView):
+
+    model = Opportunity
+    success_url = reverse_lazy('opportunity:list')
+    template_name = 'Opportunity/opportunity_confirm_delete.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(OpportunityDeleteView, self).get_context_data(**kwargs)
+        import pdb; pdb.set_trace()
+        return context
+
+# class OpportunityDeleteView(View):
+    # def get(self, request, pk):
+        # import pdb; pdb.set_trace()
+        # return 'Success'

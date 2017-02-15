@@ -11,6 +11,7 @@ Moderate Severity:
 			The description gets tied up with the contacts sometimes
 		The description field can get all out of whack
 		Look into archive date
+		Setasides need their own choices
 
 Ancillary activities:
 	Set up (test) business email

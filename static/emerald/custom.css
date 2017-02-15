@@ -1,5 +1,6 @@
 .btn {
-  background-color: #50C878; }
+  background-color: #50C878;
+  color: white; }
 
 .error {
   color: red; }
@@ -32,6 +33,12 @@
   color: #50C878;
   border: #50C878; }
 
+ul.solicitation-info {
+  list-style-type: none; }
+
+ul.solicitation-contacts {
+  list-style-type: none; }
+
 .std-header {
   color: #50C878; }
 
@@ -44,6 +51,10 @@ input[type=text], input[type=password] {
   background-color: white; }
 
 .watchlist {
-  background-color: #E9967A; }
+  background-color: #ffa07a; }
+
+.watchlist-btn {
+  position: relative;
+  left: 30px; }
 
 /*# sourceMappingURL=custom.css.map */

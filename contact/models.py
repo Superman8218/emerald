@@ -16,3 +16,6 @@ class Contact(models.Model):
 
     def __unicode__(self):
         return self.name
+
+    def get_detail_html(self):
+        return '<li>' + self.name + '</li>'
