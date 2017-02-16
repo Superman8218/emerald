@@ -30,4 +30,5 @@ urlpatterns = [
         url(r'^fbo/', include('fbo.urls', namespace='fbo')),
         url(r'^opportunity/', include('opportunity.urls', namespace='opportunity')),
         url(r'^userprofile/', include('userprofile.urls', namespace='userprofile')),
+        url(r'^pipeline/', include('pipeline.urls', namespace='pipeline')),
 ]

@@ -29,5 +29,9 @@ class UserProfile(models.Model):
 
             newProfile.save()
 
+    @property
+    def default_pipeline(self):
+        return self.pipeline_set.first()
+
     def __unicode__(self):
         return u'{0}'.format(self.user.get_full_name())

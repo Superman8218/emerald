@@ -1,7 +1,5 @@
 from django.db import models
 
-import pdb
-
 class FboMasterManager(models.Manager):
 
     def get_by_account(self, account):

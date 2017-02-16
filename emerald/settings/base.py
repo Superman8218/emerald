@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'fpds',
     'importer',
     'opportunity',
+    'pipeline',
     'sam',
     'userprofile',
 ]
