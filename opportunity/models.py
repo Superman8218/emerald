@@ -33,6 +33,9 @@ class Opportunity(models.Model):
             current_stage_number = 0
             current_stage_pipeline = self.owner.default_pipeline
 
+        if len(current_stage_pipeline.pipeline_set.all()) == 0:
+            raise Exception('Your pipeline has not been set up yet')
+
         new_stage_number = current_stage_number + change_number
 
         if new_stage_number < 0 or new_stage_number >= len(current_stage_pipeline.pipelinestage_set.all()):

@@ -11,11 +11,6 @@ class Pipeline(models.Model):
     def __unicode__(self):
         return u'{0}\'s Pipeline'.format(self.userprofile.user.get_full_name())
 
-    @receiver(pre_init, sender=Pipeline)
-    def create_default_stage(sender, **kwargs):
-
-        sender.pipelinestage_set.add(PipelineStage(name='Default', stage_number=1, pipeline=sender))
-
 class PipelineStage(models.Model):
 
     pipeline = models.ForeignKey(Pipeline)
