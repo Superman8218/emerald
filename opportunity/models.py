@@ -22,3 +22,30 @@ class Opportunity(models.Model):
 
     def __unicode__(self):
         return self.fbo_master.description
+
+    def change_pipeline_stage(self, change_number):
+
+        if self.pipeline_stage:
+            current_stage_number = self.pipeline_stage.stage_number
+            current_stage_pipeline = self.pipeline_stage.pipeline
+
+        else:
+            current_stage_number = 0
+            current_stage_pipeline = self.owner.default_pipeline
+
+        new_stage_number = current_stage_number + change_number
+
+        if new_stage_number < 0 or new_stage_number >= len(current_stage_pipeline.pipelinestage_set.all()):
+            raise IndexError('The new stage number doesn\'t fall within the given pipeline\s number of stages')
+
+        self.pipeline_stage = PipelineStage.objects.get(stage_number=new_stage_number, pipeline=current_stage_pipeline)
+
+        self.save()
+
+    def increment_pipeline_stage(self):
+
+        self.change_pipeline_stage(1)
+
+    def decrement_pipeline_stage(self):
+
+        self.change_pipeline_stage(-1)

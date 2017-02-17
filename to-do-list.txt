@@ -9,6 +9,7 @@ Moderate Severity:
 	Fbo Import
 		Fix contact import
 			The description gets tied up with the contacts sometimes
+			RECURSION CAN BE USER HERE
 		The description field can get all out of whack
 		Look into archive date
 		Setasides need their own choices

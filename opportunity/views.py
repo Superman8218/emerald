@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.views.generic import View, DetailView, ListView
 from django.views.generic.edit import DeleteView
@@ -31,3 +32,12 @@ class OpportunityDeleteView(LoginRequiredMixin, DeleteView):
 
     model = Opportunity
     success_url = reverse_lazy('opportunity:list')
+
+def OpportunityAddView(request, pk):
+    '''Takes an opportunity and sets its pipeline stage to be 1, the first stage in the pipeline'''
+
+    opportunity = Opportunity.objects.get(pk=pk)
+    opportunity.increment_pipeline_stage()
+    opportunity.save()
+
+    return HttpResponseRedirect(reverse_lazy('pipeline:detail', request.user.userprofile.default_pipeline.pk))
