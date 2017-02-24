@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'fbo',
     'fpds',
     'importer',
+    'mail',
     'opportunity',
     'pipeline',
     'sam',

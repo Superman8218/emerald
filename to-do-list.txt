@@ -21,3 +21,9 @@ Ancillary activities:
 	Create a business bank account
 	Get an EIN
 	File 2016 taxes
+
+Revolutionary software takes the shape of VIM.  Create a language of building blocks, and then something much more powerful can emerge when you compose those different functions in novel ways.  How can this be applied to government contracting? How about other fields?
+
+The idea of tech platforms (Facebook, Amazon) is that they let other people create all of the features
+
+The real killer app here is an automatic response generator.  Or failing that, a tool that compiles ALL of the information that you could possibly need in order to craft a winning response.  Think in terms of the Caavo, something that uses an algorithm to automatically deal with the messy stuff.

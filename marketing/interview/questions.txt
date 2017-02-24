@@ -1,0 +1,11 @@
+Open Ended:
+
+What is the first thing that you look at when evaluating an opportunity
+What is the hardest part about the opportunity capture process
+Is there any tool missing from your current capture process
+
+Testing Features:
+
+Would it be useful to have automatic filters
+Would it be useful to have automatic response generators
+	What information is most useful in preparing a resonse
