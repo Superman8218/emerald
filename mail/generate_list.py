@@ -61,7 +61,7 @@ def generate_email_csv(list_size=1000):
 
     non_decimal = re.compile(r'[^\d]+')
     file_number_list = [int(non_decimal.sub('', file)) for file in listdir('mail/lists')]
-    file_number = max(file_number_list) if file_number_list else 1
+    file_number = max(file_number_list)+1 if file_number_list else 1
 
     file_name = 'mail/lists/email_{0}.csv'.format(file_number)
 

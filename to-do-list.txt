@@ -24,6 +24,12 @@ Ancillary activities:
 
 Revolutionary software takes the shape of VIM.  Create a language of building blocks, and then something much more powerful can emerge when you compose those different functions in novel ways.  How can this be applied to government contracting? How about other fields?
 
-The idea of tech platforms (Facebook, Amazon) is that they let other people create all of the features
+The idea of tech platforms (Facebook, Amazon) is that they let other people create all of the features.  You build one thing and then take a skim off of the entire ecosystem build on top of them.
 
 The real killer app here is an automatic response generator.  Or failing that, a tool that compiles ALL of the information that you could possibly need in order to craft a winning response.  Think in terms of the Caavo, something that uses an algorithm to automatically deal with the messy stuff.
+
+Another differentiator would be really focusing on providing top of the line software for managing your relationships with the buyers.  Keeping track of who they are, getting research on them, and having a list of all your communications.  A powerful buyer relationship management tool would be novel and would go over well with Amtower
+
+The idea of a contact driven contract paradigm actually makes the most sense.  Instead of blindly searching for opportunities, you get to know the agencies that fit what you want.  You develop relationships, understand their patterns (aided by analytics), and then you get alerts when the right agencies have opportunities.  You have an agency/contact watchlist more than you have opportunity watchlists.
+
+Using bold font in emails can make the main ideas stand out.
