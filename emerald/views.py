@@ -4,13 +4,28 @@ from django.shortcuts import render
 
 from django_tables2 import SingleTableView
 
+from accounts.forms import EmeraldGovRegistrationForm
+
 import pdb
 
 def index(request):
     return render(request, 'emerald/index.html')
 
 def landing(request):
-    return render(request, 'emerald/landing-page-email-list.html')
+    form = EmeraldGovRegistrationForm(data=request.POST or None)
+    if request.method == 'POST' and form.is_valid():
+        new_user = form.save()
+        new_user = authenticate(username=form.cleaned_data['email'],
+                                password=form.cleaned_data['password1'],
+                               )
+        login(request, new_user)
+        return HttpResponseRedirect(reverse('userprofile:update', kwargs={'pk': new_user.userprofile.pk}))
+    return render(request, 'emerald/zygarde.html', {
+        'form': form
+    })
+
+def signup(request):
+    return render(request, 'emerald/signup.html')
 
 # Generic filtered table view
 

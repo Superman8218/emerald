@@ -1,6 +1,7 @@
 .btn {
   background-color: #50C878;
-  color: white; }
+  color: white;
+  border-color: #50C878; }
 
 .error {
   color: red; }

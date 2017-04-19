@@ -7,16 +7,20 @@
 	{% load staticfiles %}
 
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'emerald/custom.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'emerald/css/custom.css' %}" />
 
 	<!-- Custom js -->
-	<script src="{% static 'emerald/emerald.js' %}"></script>
+	<script src="{% static 'emerald/js/emerald.js' %}"></script>
 
 
 	<!-- Google Analytics -->
@@ -30,6 +34,8 @@
 	  ga('send', 'pageview');
 
 	</script>
+
+	{% block additional-sources %} {% endblock %}
 </head>
 
 <body>
@@ -66,6 +72,7 @@
                 {% endif %}
 
             {% endblock %}
+			{% block nav %}
             <a class="navbar-brand" href="#">EmeraldGov</a>
             <ul class="nav navbar-nav">
                 <li class="nav-item home">
@@ -90,6 +97,7 @@
                     <a class="nav-link" href="{% url 'contact:list' %}">Contacts</a>
                 </li>
             </ul>
+			{% endblock %}
         </div>
     </nav>
 
@@ -111,11 +119,5 @@
 
     {% block footer %}
     {% endblock %}
-
-<!--Bootstrap Javascript-->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 </body>
 </html>

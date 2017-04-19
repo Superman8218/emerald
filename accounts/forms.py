@@ -45,6 +45,7 @@ class UserFormMixin(forms.Form):
 class EmeraldGovRegistrationForm(UserFormMixin, UserCreationForm):
 
     def __init__(self, *args, **kwargs):
+        pdb.set_trace()
         super(EmeraldGovRegistrationForm, self).__init__(*args, **kwargs)
         self.fields.keyOrder = ['email', 'password1', 'password2']
 

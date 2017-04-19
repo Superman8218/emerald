@@ -15,6 +15,7 @@ import pdb
 
 def register(request):
     form = EmeraldGovRegistrationForm(data=request.POST or None)
+    form.order_fields(['email', 'password1', 'password2'])
     if request.method == 'POST' and form.is_valid():
         new_user = form.save()
         new_user = authenticate(username=form.cleaned_data['email'],

@@ -1,9 +1,10 @@
-$emerald: #50C878;
+@import "variables";
 
 .btn
 {
     background-color: $emerald;
 	color: white;
+	border-color: $emerald;
 }
 
 .error
