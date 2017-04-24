@@ -1,3 +1,18 @@
+h1 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+blockquote {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+pre {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
 .btn {
   background-color: #50C878;
   color: white;
@@ -10,6 +25,10 @@
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
+
+label {
+  color: #319b54;
+  text-stroke: 2px black; }
 
 .nav-link {
   color: white; }

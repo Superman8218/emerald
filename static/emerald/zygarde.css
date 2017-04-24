@@ -1,0 +1,22 @@
+.container-fluid, .row-fluid {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  alight-items: center; }
+
+.header {
+  font-size: 450%; }
+
+h1 {
+  color: #50C878; }
+
+.sub-header {
+  font-size: 200%; }
+
+.row {
+  width: 100%; }
+
+.label {
+  float: left; }
+
+/*# sourceMappingURL=zygarde.css.map */

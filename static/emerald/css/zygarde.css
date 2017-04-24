@@ -7,13 +7,38 @@
 .header {
   font-size: 250%; }
 
+h1 {
+  color: #50C878; }
+
+h2 {
+  color: #50C878; }
+
 .sub-header {
   font-size: 200%; }
 
-.row {
-  width: 100%; }
-
 .label {
   float: left; }
+
+.wireframe {
+  border: 1px; }
+
+.div {
+  border: 1px;
+  border-color: black; }
+
+.feature-desc {
+  border-style: solid;
+  border-width: large;
+  border-color: #50C878;
+  padding: 5px; }
+
+p {
+  margin-bottom: 0; }
+
+.btn {
+  text-size: xl; }
+
+.beta-notification {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=zygarde.css.map */

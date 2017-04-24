@@ -20,7 +20,8 @@ def landing(request):
                                )
         login(request, new_user)
         return HttpResponseRedirect(reverse('userprofile:update', kwargs={'pk': new_user.userprofile.pk}))
-    return render(request, 'emerald/zygarde.html', {
+    return render(request, 'emerald/rayquaza.html', {
+    # return render(request, 'emerald/zygarde.html', {
         'form': form
     })
 

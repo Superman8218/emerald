@@ -1,0 +1,61 @@
+.btn {
+  background-color: #50C878;
+  color: white;
+  border-color: #50C878; }
+
+.error {
+  color: red; }
+
+.fbf-box {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.nav-link {
+  color: white; }
+
+.navbar {
+  background-color: #50C878; }
+
+.navbar-brand {
+  color: white; }
+
+.navbar-text {
+  color: white; }
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > .active > a {
+  color: green; }
+
+.navbar-btn {
+  background-color: white;
+  color: #50C878;
+  border: #50C878; }
+
+ul.solicitation-info {
+  list-style-type: none; }
+
+ul.solicitation-contacts {
+  list-style-type: none; }
+
+.std-header {
+  color: #50C878; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white; }
+
+.watchlist {
+  background-color: #ffa07a; }
+
+.watchlist-btn {
+  position: relative;
+  left: 30px; }
+
+/*# sourceMappingURL=custom.css.map */
