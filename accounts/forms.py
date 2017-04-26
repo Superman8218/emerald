@@ -79,53 +79,22 @@ class EmeraldUserChangeForm(UserChangeForm):
         model = EmeraldUser
         fields = ("email",)
 
-class LandingPageForm(forms.Form):
+class LandingPageForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(LandingPageForm, self).__init__(*args, **kwargs)
 
     email = forms.EmailField(
-            label='Email',
+            label='',
             widget=forms.EmailInput(attrs=
                 {
                     'class':'form-control',
                     'name':'email',
                     'placeholder':'Email Address',
-                    'size':'50'
+                    'size':'30'
                 })
             )
 
-    # password1 = forms.CharField(
-            # label='Password',
-            # widget=forms.PasswordInput(attrs=
-                # {
-                    # 'class':'form-control',
-                    # 'name':'password1',
-                    # 'placeholder':'Password',
-                    # 'size':'50'
-                # })
-            # )
-
-    # password2 = forms.CharField(
-            # label='Password (again)',
-            # widget=forms.PasswordInput(attrs=
-                # {
-                    # 'class':'form-control',
-                    # 'name':'password2',
-                    # 'placeholder':'Password',
-                    # 'size':'50'
-                # })
-            # )
-    # email = forms.EmailField(
-            # label='Email',
-            # widget=forms.EmailInput(attrs=
-                # {
-                    # 'class':'form-control',
-                    # 'name':'email',
-                    # 'placeholder':'Email Address',
-                    # 'size':'50'
-                # })
-            # )
 
     class Meta:
         model = EmailSubscriber

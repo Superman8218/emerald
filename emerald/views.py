@@ -1,7 +1,8 @@
 from collections import OrderedDict
 
+from django.core.urlresolvers import reverse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
-
 from django_tables2 import SingleTableView
 
 from accounts.forms import EmeraldGovRegistrationForm, LandingPageForm
@@ -15,9 +16,8 @@ def landing(request):
     form = LandingPageForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         new_subscriber = form.save()
-        return HttpResponseRedirect(reverse('signup', kwargs={'pk': new_user.userprofile.pk}))
-    return render(request, 'emerald/rayquaza.html', {
-    # return render(request, 'emerald/zygarde.html', {
+        return HttpResponseRedirect(reverse('signup'))
+    return render(request, 'emerald/zygarde.html', {
         'form': form
     })
 

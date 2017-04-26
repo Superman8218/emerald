@@ -1,9 +1,3 @@
-.container-fluid, .row-fluid {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  alight-items: center; }
-
 .header {
   font-size: 250%; }
 
@@ -22,10 +16,6 @@ h2 {
 .wireframe {
   border: 1px; }
 
-.div {
-  border: 1px;
-  border-color: black; }
-
 .feature-desc {
   border-style: solid;
   border-width: large;
@@ -41,12 +31,13 @@ p {
 .beta-notification {
   margin-top: 10px; }
 
-input {
-  width: 100%;
+input.form-control {
+  width: 60%;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  background-color: white; }
+  text-align: center; }
+
+button {
+  display: block; }
 
 /*# sourceMappingURL=zygarde.css.map */
