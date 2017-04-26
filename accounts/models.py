@@ -28,8 +28,7 @@ class Account(models.Model):
 class EmeraldUser(AbstractBaseUser, PermissionsMixin):
     """
     A fully featured User model with admin-compliant permissions that uses
-    a full-length email field as the username.
-
+    a full-length email field as the username.  
     Email and password are required. Other fields are optional.
     """
 
@@ -72,3 +71,7 @@ class EmeraldUser(AbstractBaseUser, PermissionsMixin):
         Sends an email to this User.
         """
         send_mail(subject, message, from_email, [self.email])
+
+class EmailSubscriber(models.Model):
+
+    email = models.EmailField(unique=True, max_length=254, blank=True)

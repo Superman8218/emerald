@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.forms import ModelForm
 
-from accounts.models import EmeraldUser
+from accounts.models import EmeraldUser, EmailSubscriber
 
 import pdb
 
@@ -45,7 +45,6 @@ class UserFormMixin(forms.Form):
 class EmeraldGovRegistrationForm(UserFormMixin, UserCreationForm):
 
     def __init__(self, *args, **kwargs):
-        # pdb.set_trace()
         super(EmeraldGovRegistrationForm, self).__init__(*args, **kwargs)
         self.order_fields(['email', 'password1', 'password2'])
 
@@ -79,6 +78,59 @@ class EmeraldUserChangeForm(UserChangeForm):
     class Meta:
         model = EmeraldUser
         fields = ("email",)
+
+class LandingPageForm(forms.Form):
+
+    def __init__(self, *args, **kwargs):
+        super(LandingPageForm, self).__init__(*args, **kwargs)
+
+    email = forms.EmailField(
+            label='Email',
+            widget=forms.EmailInput(attrs=
+                {
+                    'class':'form-control',
+                    'name':'email',
+                    'placeholder':'Email Address',
+                    'size':'50'
+                })
+            )
+
+    # password1 = forms.CharField(
+            # label='Password',
+            # widget=forms.PasswordInput(attrs=
+                # {
+                    # 'class':'form-control',
+                    # 'name':'password1',
+                    # 'placeholder':'Password',
+                    # 'size':'50'
+                # })
+            # )
+
+    # password2 = forms.CharField(
+            # label='Password (again)',
+            # widget=forms.PasswordInput(attrs=
+                # {
+                    # 'class':'form-control',
+                    # 'name':'password2',
+                    # 'placeholder':'Password',
+                    # 'size':'50'
+                # })
+            # )
+    # email = forms.EmailField(
+            # label='Email',
+            # widget=forms.EmailInput(attrs=
+                # {
+                    # 'class':'form-control',
+                    # 'name':'email',
+                    # 'placeholder':'Email Address',
+                    # 'size':'50'
+                # })
+            # )
+
+    class Meta:
+        model = EmailSubscriber
+        fields = ["email",]
+        exclude= ["password1", "password2", ]
 
 class UserUpdateForm(ModelForm):
 
