@@ -51,6 +51,6 @@ input.form-control {
 	text-align: center;
 }
 
-button {
-	display:block;
+button[type="submit"] {
+	text-align: center;
 }

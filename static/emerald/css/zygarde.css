@@ -37,7 +37,7 @@ input.form-control {
   display: inline-block;
   text-align: center; }
 
-button {
-  display: block; }
+button[type="submit"] {
+  text-align: center; }
 
 /*# sourceMappingURL=zygarde.css.map */
