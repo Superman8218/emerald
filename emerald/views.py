@@ -6,6 +6,7 @@ from django.shortcuts import render
 from django_tables2 import SingleTableView
 
 from accounts.forms import EmeraldGovRegistrationForm, LandingPageForm
+from common.utils import mail_to_admin
 
 import pdb
 
@@ -16,6 +17,7 @@ def landing(request):
     form = LandingPageForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         new_subscriber = form.save()
+        mail_to_admin('New Email Subscriber', '')
         return HttpResponseRedirect(reverse('signup'))
     return render(request, 'emerald/zygarde.html', {
         'form': form

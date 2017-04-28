@@ -50,3 +50,9 @@ LOGGING = {
 }
 
 ALLOWED_HOSTS = ['127.0.0.1']
+
+# Mailtrap.io
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'ff5bf54286842f'
+EMAIL_HOST_PASSWORD = '0fe4318692fdfa'
+EMAIL_PORT = '2525'
