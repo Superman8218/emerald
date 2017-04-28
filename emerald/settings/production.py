@@ -11,3 +11,6 @@ EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = '25'
+
+# Restrict access until push to production
+ROOT_URLCONF = 'emerald.urls_landing_only'
