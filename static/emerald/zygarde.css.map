@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAEA,4BAA6B;EAC5B,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,YAAY,EAAE,MAAM;;AAGrB,OAAQ;EACP,SAAS,EAAE,IAAI;;AAGhB,EAAG;EACF,KAAK,ECdI,OAAO;;ADiBjB,WAAY;EACX,SAAS,EAAE,IAAI;;AAGhB,IAAK;EACJ,KAAK,EAAE,IAAI;;AAGZ,MAAM;EACL,KAAK,EAAE,IAAI",
-"sources": ["../../sass/zygarde.scss","../../sass/variables.scss"],
+"sources": ["../../sass/landing.scss","../../sass/variables.scss"],
 "names": [],
-"file": "zygarde.css"
+"file": "landing.css"
 }

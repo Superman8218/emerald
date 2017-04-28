@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAEA,OAAQ;EACP,SAAS,EAAE,IAAI;;AAGhB,EAAG;EACF,KAAK,ECPI,OAAO;;ADUjB,EAAG;EACF,KAAK,ECXI,OAAO;;ADcjB,WAAY;EACX,SAAS,EAAE,IAAI;;AAGhB,MAAO;EACN,KAAK,EAAE,IAAI;;AAGZ,UAAW;EACV,MAAM,EAAE,GAAG;;AAIZ,aAAc;EACb,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,KAAK;EACnB,YAAY,EC9BH,OAAO;ED+BhB,OAAO,EAAE,GAAG;;AAGb,CAAE;EACD,aAAa,EAAE,CAAC;;AAGjB,IAAK;EACJ,SAAS,EAAE,EAAE;;AAGd,kBAAmB;EAClB,UAAU,EAAE,IAAI;;AAGjB,kBAAmB;EACf,KAAK,EAAC,GAAG;EACT,MAAM,EAAE,KAAK;EACb,OAAO,EAAC,YAAY;EACvB,UAAU,EAAE,MAAM;;AAGnB,qBAAsB;EACrB,UAAU,EAAE,MAAM",
-"sources": ["../../../sass/zygarde.scss","../../../sass/variables.scss"],
+"sources": ["../../../sass/landing.scss","../../../sass/variables.scss"],
 "names": [],
-"file": "zygarde.css"
+"file": "landing.css"
 }

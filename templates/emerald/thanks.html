@@ -1,0 +1,24 @@
+{% extends "emerald/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+	Thank You
+{% endblock %}
+
+{% block additional-sources %}
+	<link rel="stylesheet" type="text/css" href="{% static 'emerald/css/thanks.css' %}" />
+{% endblock %}
+
+{% block login_info %}
+{% endblock %}
+{% block nav %}
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="jumbotron text-xs text-center">
+			<h1 class="display-3">Thank You!</h1>
+			Thank you for signing up for out beta test! We're very excited to have you involved.  We will send you an email invitation as soon as the software is ready to use.  In the meantime we'll send you an email or two to get you input on what could make this software great.  We want to know what you need, so we can build it for you.  We look forward to hearing from you!
+		</div>
+	</div>
+{% endblock %}

@@ -20,13 +20,13 @@ from django.contrib import admin
 
 from emerald.views import index
 from emerald.views import landing
-from emerald.views import signup
+from emerald.views import thanks
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
         url(r'^$', index, name='home'),
         url(r'^landing', landing, name='landing'),
-        url(r'^signup', signup, name='signup'),
+        url(r'^thanks', thanks, name='thanks'),
         url(r'^accounts/', include('accounts.urls', namespace='accounts')),
         url(r'^contact/', include('contact.urls', namespace='contact')),
         url(r'^fbo/', include('fbo.urls', namespace='fbo')),

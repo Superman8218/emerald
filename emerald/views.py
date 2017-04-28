@@ -17,14 +17,14 @@ def landing(request):
     form = LandingPageForm(data=request.POST or None)
     if request.method == 'POST' and form.is_valid():
         new_subscriber = form.save()
-        mail_to_admin('New Email Subscriber', '')
-        return HttpResponseRedirect(reverse('signup'))
-    return render(request, 'emerald/zygarde.html', {
+        mail_to_admin('New Email Subscriber', new_subscriber.email)
+        return HttpResponseRedirect(reverse('thanks'))
+    return render(request, 'emerald/landing.html', {
         'form': form
     })
 
-def signup(request):
-    return render(request, 'emerald/signup.html')
+def thanks(request):
+    return render(request, 'emerald/thanks.html')
 
 # Generic filtered table view
 
