@@ -9,6 +9,6 @@ from emerald.views import thanks
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
-        url(r'^', landing, name='landing'),
+        url(r'^/', landing, name='landing'),
         url(r'^thanks', thanks, name='thanks'),
 ]
