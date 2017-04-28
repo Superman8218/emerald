@@ -1,7 +1,8 @@
+Errors on landing page need some styling
+
 Import FPDS data
 
 Table Fixes:
-	navbar doesn't extend
 	ajax querying
 	The filter widgets aren't always suitable.  For example, filtering for owner shouldn't show a picklist of all the owners, but instead should show a textbox
 
@@ -15,12 +16,10 @@ Moderate Severity:
 		Setasides need their own choices
 
 Ancillary activities:
-	Set up (test) business email
 	Develop terms and conditions
 	Form an LLC
 	Create a business bank account
 	Get an EIN
-	File 2016 taxes
 
 Revolutionary software takes the shape of VIM.  Create a language of building blocks, and then something much more powerful can emerge when you compose those different functions in novel ways.  How can this be applied to government contracting? How about other fields?
 

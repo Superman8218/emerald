@@ -2,8 +2,8 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import ugettext_lazy as _
 
-from accounts.forms import EmeraldUserChangeForm, EmeraldUserCreationForm
-from accounts.models import EmeraldUser, Account
+from accounts.forms import EmeraldUserChangeForm, EmeraldUserCreationForm, LandingPageForm
+from accounts.models import EmeraldUser, Account, EmailSubscriber
 from userprofile.models import UserProfile
 
 class EmeraldUserAdmin(UserAdmin):
@@ -40,3 +40,8 @@ class Account(admin.ModelAdmin):
 @admin.register(UserProfile)
 class UserProfile(admin.ModelAdmin):
     pass
+
+@admin.register(EmailSubscriber)
+class EmailSubscriber(admin.ModelAdmin):
+    form = LandingPageForm
+    list_display = ['email']

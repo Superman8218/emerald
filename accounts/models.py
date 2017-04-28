@@ -75,3 +75,6 @@ class EmeraldUser(AbstractBaseUser, PermissionsMixin):
 class EmailSubscriber(models.Model):
 
     email = models.EmailField(unique=True, max_length=254, blank=True)
+
+    def __unicode__(self):
+        return self.email
