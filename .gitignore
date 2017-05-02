@@ -15,4 +15,4 @@ local_settings.py
 emerald/staticfiles/
 logs/*
 sam/sam_files/*
-node_modules
+node_modules/
