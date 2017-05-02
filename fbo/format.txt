@@ -14,15 +14,12 @@
 
 <SOLNBR>
 <SETASIDE>
-</tr>
 <SUBJECT>
-</table>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
 <ARCHDATE>
 <BR>
-<tr>
 <DESC>
 <ZIP>
 <CLASSCOD>
@@ -31,8 +28,6 @@
 <tbody>
 <NAICS>
 <LOCATION>
-</tbody>
-</td>
 <POPADDRESS>
 <LINK>
 <CONTACT>
@@ -40,10 +35,8 @@
 <DATE>
 <POPZIP>
 <YEAR>
-<p>
 <OFFICE>
 <RESPDATE>
-</ul>
 
 <FAIROPP>:
 
@@ -95,59 +88,43 @@
 <SRCSGT>:
 
 <SOLNBR>
-</span>
 <SUBJECT>
-<strong>
-</table>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
-<p>
 <ARCHDATE>
-<tr>
 <DESC>
 <ZIP>
 <CLASSCOD>
-</strong>
 <EMAIL>
-<tbody>
 <NAICS>
 <LOCATION>
 </tbody>
-</p>
-</td>
 <POPADDRESS>
 <LINK>
 <CONTACT>
 <OFFADD>
-</tr>
 <DATE>
 <POPZIP>
 <YEAR>
 <SETASIDE>
 <OFFICE>
 <RESPDATE>
-</ol>
 
 <COMBINE>:
 
 <SOLNBR>
 <SUBJECT>
-<div>
-<strong>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
-<p>
 <LINK>
 <DESC>
 <ZIP>
 <CLASSCOD>
-</strong>
 <EMAIL>
 <NAICS>
 <LOCATION>
-</li>
 <POPADDRESS>
 <ARCHDATE>
 <CONTACT>
@@ -158,37 +135,23 @@
 <DATE>
 <OFFICE>
 <RESPDATE>
-</ul>
 
 <AMDCSS>:
 
 <SOLNBR>
-</div>
-<tr>
 <SUBJECT>
-<div>
-<strong>
-</thead>
-</table>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
-<p>
 <ARCHDATE>
-<thead>
-</tr>
 <DESC>
 <ZIP>
 <CLASSCOD>
 <tbody>
 <NTYPE>
-</li>
 <EMAIL>
 <NAICS>
 <LOCATION>
-</tbody>
-<td>
-</td>
 <POPADDRESS>
 <LINK>
 <CONTACT>
@@ -199,23 +162,18 @@
 <DATE>
 <OFFICE>
 <RESPDATE>
-</ul>
 
 <SNOTE>:
 
 <SOLNBR>
-</span>
 <SUBJECT>
-<strong>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
-<p>
 <ARCHDATE>
 <DESC>
 <ZIP>
 <CLASSCOD>
-</strong>
 <EMAIL>
 <NAICS>
 <LOCATION>
@@ -254,7 +212,6 @@
 <DATE>
 <YEAR>
 <AWDAMT>
-<p>
 <OFFICE>
 
 <ARCHIVE>:
@@ -273,25 +230,18 @@
 
 <SOLNBR>
 <SUBJECT>
-<strong>
-</table>
 <POPCOUNTRY>
 <AGENCY>
 <URL>
-<p>
 <ARCHDATE>
 <BR>
-</tr>
 <DESC>
 <ZIP>
 <CLASSCOD>
-</strong>
 <tbody>
 <EMAIL>
 <NAICS>
 <LOCATION>
-</tbody>
-</td>
 <POPADDRESS>
 <LINK>
 <CONTACT>

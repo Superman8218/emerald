@@ -1,0 +1,23 @@
+{
+  "name": "emerald",
+  "version": "1.0.0",
+  "description": "EmeraldGov Node Dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Superman8218/emerald.git"
+  },
+  "author": "Zac Yauney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Superman8218/emerald/issues"
+  },
+  "homepage": "https://github.com/Superman8218/emerald#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
