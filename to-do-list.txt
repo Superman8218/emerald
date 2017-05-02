@@ -1,4 +1,5 @@
 Errors on landing page need some styling
+It turns out that the smogon pokedex UI is really good.  Could definitely be worth copying
 
 Import FPDS data
 

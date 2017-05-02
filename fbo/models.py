@@ -27,6 +27,7 @@ class FboMaster(models.Model):
     setaside = models.CharField(max_length=100)
     pop_country = models.CharField(max_length=50)
     pop_address = models.CharField(max_length=100)
+    pop_zip = models.CharField(max_length=30)
 
     objects = FboMasterManager()
 
