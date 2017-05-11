@@ -234,11 +234,9 @@
 <AGENCY>
 <URL>
 <ARCHDATE>
-<BR>
 <DESC>
 <ZIP>
 <CLASSCOD>
-<tbody>
 <EMAIL>
 <NAICS>
 <LOCATION>

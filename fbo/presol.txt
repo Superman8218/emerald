@@ -1,0 +1,26 @@
+<PRESOL>
+<DATE>1104
+<YEAR>16
+<AGENCY>Department of the Air Force
+<OFFICE>AFICA
+<LOCATION>AFICA- CONUS
+<CLASSCOD>U
+<NAICS>611699
+<OFFADD>Test Office Address
+<SUBJECT>AFICA Battlefield Airman (BA) Military Freefall (MFF)
+<SOLNBR>FA3002-16-R-0023
+<RESPDATE>112116
+<CONTACT>Tina L. Watsontarver, Contract Specialist, Email tina.watsontarver.1@us.af.mil - Jaclyn G. Rodriguez, Contracting Officer, Email jaclyn.rodriguez@us.af.mil
+<DESC><strong>Requirement Summary:</strong><span style="mso-spacerun: yes">&nbsp; </span>This requirement is for Military Freefall (MFF) training for Battlefield Airman (BA) personnel. MFF training is an initial skills course that provides academic, ground, vertical wind tunnel/simulation, and military freefall training to first time jumpers that meets United States Special Operations Command/United States Army Special Operations Command (USSOCOM/USASOC) curriculum requirements.<span style="mso-spacerun: yes">&nbsp; </span>
+<p>The United States Air Force (USAF) requires instructional support and training services in the delivery of MFF parachutist training.<span style="mso-spacerun: yes">&nbsp; </span>These services will include fully qualified MFF instructors and Contractor personnel to provide the instructional support and training services typically associated with the delivery of the AF MFF Parachutist Course (MFFPC).<span style="mso-spacerun: yes">&nbsp; </span></p>
+<p><strong>Request for Information:</strong><span style="mso-spacerun: yes">&nbsp; </span>This is a Follow-On Request for Information (RFI).<span style="mso-spacerun: yes">&nbsp; </span>Responses to this notice are not offers and cannot be accepted by the Government to form a binding contract.<span style="mso-spacerun: yes">&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Responses are due NLT 3:00&nbsp;pm CST on 21 Nov 16.</span></strong> </span>Please see the following attached documents for all information pertaining to this RFI:</p>
+<p>1.<span style="mso-tab-count: 1">&nbsp; </span>BA MFF - Follow-on RFI<span style="mso-spacerun: yes">&nbsp; </span>- 04 Nov 16<br />2.&nbsp; Attachment 1 - Draft BA MFF PWS - 04 Nov 16<br />3.&nbsp; Attachment 2 - Draft Section L<br />4.&nbsp; Attachment 3 - Draft Section M<br />5.&nbsp; Attachment 4 - Draft Pricing Model</p>
+<p><strong>NOTE:</strong><span style="mso-spacerun: yes">&nbsp; </span>This requirement was previously combined with Battlefield Airman Aircraft Lift Service Requirement and market research was performed for this requirement under the following FBO Link:<br /><a href="https://www.fbo.gov/notices/0b92fc8041dfb6398916a36bf65d7c43">https://www.fbo.gov/notices/0b92fc8041dfb6398916a36bf65d7c43</a></p>
+<p>However, The Battlefield Airman Military Freefall (MFF) and Aircraft Lift Service Requirements have been separated into two separate contract actions.<span style="mso-spacerun: yes">&nbsp; </span>This link is only for the Battlefield Airman (BA) Military Freefall (MFF) requirement.</p>
+<LINK>
+<URL>https://www.fbo.gov/notices/85e8faa8413df24c99219bfdc90f13f2
+<DESC>Link To Document
+<SETASIDE>N/A
+<POPCOUNTRY>US
+<POPADDRESS>TBD
+</PRESOL>

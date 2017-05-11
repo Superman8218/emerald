@@ -1,0 +1,22 @@
+<AWARD>
+<DATE>1216
+<YEAR>16
+<AGENCY>Department of the Air Force
+<OFFICE>Air Force Materiel Command
+<LOCATION>AFLCMC - Hanscom
+<CLASSCOD>A
+<NAICS>541990
+<OFFADD>AIR FORCE MATERIEL COMMAND, USAF, AFLCMC/PZM (HANSCOM AFB), 20 SCHILLING CIRCLE, B1305, 3RD FL, HANSCOM AFB, MA 01731-
+<SUBJECT>A--DeObligation of excess funds for MITRE Engr Services
+<SOLNBR>
+<CONTACT>ANN MARIE E BASTEK, Contracting Negotiator, Phone (781) 271-3053 x, Email annmarie.bastek@us.af.mil; JASON M LILLIE, Contracting Officer, Phone 781-271-3054 x, Email jason.lillie@us.af.mil
+<AWDNBR>FA872112C0001P00025
+<AWDAMT>$-1734784.23
+<AWDDATE>121616
+<ARCHDATE>12312016
+<AWARDEE>THE MITRE CORPORATION, 202 BURLINGTON RD, BEDFORD MA 01730-1407
+<DESC>No Description Provided
+<LINK>
+<URL>https://www.fbo.gov/spg/USAF/AFMC/ESC/Awards/FA872112C0001P00025.html
+<DESC>Link To Document
+</AWARD>

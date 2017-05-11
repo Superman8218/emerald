@@ -1,0 +1,39 @@
+<COMBINE>
+<DATE>1216
+<YEAR>16
+<AGENCY>Department of the Air Force
+<OFFICE>Air Combat Command
+<LOCATION>355 CONS
+<ZIP>85707-3522
+<CLASSCOD>V
+<NAICS>481219
+<OFFADD>3180 S Craycroft Rd Davis Monthan AFB AZ 85707-3522
+<SUBJECT>Airlift Services
+<SOLNBR>FA4877-17-Q-0083
+<RESPDATE>122116
+<CONTACT>Amy Richardson, Phone 5202285484, Email amy.richardson.3@us.af.mil
+<DESC><p>This is a combined synopsis/solicitation for commercial services prepared in accordance with the format prescribed in FAR Subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotes are being requested and a written solicitation will not be issued. Solicitation FA4877-17-Q-0083 is issued as a request for quotation (RFQ). This solicitation document incorporates provisions and clauses of those in effect through Federal Acquisition Circular 2005-92, Defense Circular Number 20161104, and Air Force Acquisition Circular 2016-0603. This procurement is being issued as a small business set aisde and with a Limited Source Justification and Approval (See attachment). The North American Industry Classification System Code is 481219 with a size standard of $15.0 Million or less The right to make multiple or no award is reserved in the event it is advantageous to the Government to do so. The contractor shall provide the following Contract Line Item Number (CLIN):</p>
+<p>CLIN 0001 - (QTY: 119 hrs) Airlift Services</p>
+<p>Period of Performance: 5 January - 24 August 2017, see projected days on attached PWS</p>
+<p>QUOTE MUST INCLUDE: The name of the company of the Air Carrier being used for the Airlift Services IAW with the attached PWS. Quoted as one line item in the format of price per hour.</p>
+<p>SEE ATTACHED PWS FOR ADDITIONAL INFORMATION</p>
+<p>THE AIRLIFT PORTION OF THIS REQUIREMENT IS A LIMITED SOURCE REQUIREMENT IN ACCORDANCE WITH THE ATTACHED J&amp;A</p>
+<p>SEE ATTACHED FOR ALL APPLICABLE CONTRACT CLAUSES AND PROVISIONS</p>
+<p>QUOTES WILL BE EVALUATED ON TECHNICAL ACCEPTABILITY AND LOWEST PRICE</p>
+<p>Any questions pertaining to this acquisition shall be submitted in writing no later than Monday, 19 December 2017 by 4:00 PM Arizona Local Time. Written questions shall be sent to A1C Amy Richardson at amy.richardson.3@us.af.mil. NO questions will be considered after close of questions due date.</p>
+<p>Questions will be addressed no later than Tuesday, 20 December 2017 by 2:00 P.M., Arizona Local Time</p>
+<p>It is the responsibility of the offeror to view the website for any changes or amendments to this RFQ. Quotes will be due to the 355th Contracting Squadron, 3180 S. Craycroft Rd. Davis-Monthan AFB, AZ 85707, via email Wednesday, 21 December 2017, 2:00 P.M, Arizona Local Time.</p>
+<p>Point of Contact is:</p>
+<p>Primary: A1C Amy Richardson - email: amy.richardson.3@us.af.mil Phone: 520-228-5484</p>
+<p>It is the responsibility of the vendor to ensure the quote was received by 355 CONS on time.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<LINK>
+<URL>https://www.fbo.gov/spg/USAF/ACC/355CONS/FA4877-17-Q-0083/listing.html
+<DESC>Link To Document
+<SETASIDE>Total Small Business
+<POPCOUNTRY>US
+<POPZIP>85707
+<POPADDRESS>
+Davis-Monthan, AZ
+</COMBINE>
