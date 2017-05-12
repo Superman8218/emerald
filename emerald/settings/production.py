@@ -13,4 +13,4 @@ EMAIL_HOST_PASSWORD = os.environ['SENDGRID_API_KEY']
 EMAIL_PORT = '25'
 
 # Restrict access until push to production
-ROOT_URLCONF = 'emerald.urls_landing_only'
+# ROOT_URLCONF = 'emerald.urls_landing_only'
