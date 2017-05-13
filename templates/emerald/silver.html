@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="TyMetjaRala6rOgAN_mGddW_abSz-H2HTz23LG2Di3g" />
+
+    <title>{% block title %} {% endblock %}</title>
+	{% load staticfiles %}
+
+	<link rel="icon" href="{% static 'emerald/images/emerald_icon.png' %}">
+
+    <!-- Bootstrap  -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'emerald/css/custom.css' %}" />
+
+
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-92945208-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	{% block additional-sources %} {% endblock %}
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-light navbar-default">
+		{% block login_info %}
+
+			<!--If the user is logged in , show their username and a logout button-->
+
+			{% if request.user.is_authenticated %}
+
+				<span class="navbar-right">
+					<p class="navbar-text">Welcome, <a href="{% url 'userprofile:update' user.userprofile.id|default_if_none:0 %}">{{ user.first_name }}</a></p>
+					<a href="{% url 'accounts:logout' %}">
+						<button class="btn btn-primary navbar-btn" type="button">
+							Sign Out
+						</button>
+					</a>
+				</span>
+
+			<!--Else, show a login button-->
+
+			{% else %}
+
+				<a href="{% url 'accounts:login' %}">
+					<button class="btn btn-primary navbar-btn navbar-right" type="button">
+						Sign In
+					</button>
+				</a>
+
+			{% endif %}
+
+		{% endblock %}
+		{% block nav %}
+		<a class="navbar-brand" href="#">EmeraldGov</a>
+		<ul class="nav navbar-nav">
+			<li class="nav-item home">
+				<a class="nav-link" id="link-green" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item fbo">
+				<a class="nav-link" href="{% url 'fbo:list' %}">Search</a>
+			</li>
+			<li class="nav-item opportunity">
+				<a class="nav-link" href="{% url 'opportunity:list' %}">Watchlist</a>
+			</li>
+			<li class="nav-item pipeline">
+				<a class="nav-link" href="
+				{% if request.user.userprofile.pipeline_set.first %}
+				{% url 'pipeline:detail' pk=request.user.userprofile.pipeline_set.first.pk %}
+				{% else %}
+				{% url 'pipeline:default-new' %}
+				{% endif %}
+				">Pipeline</a>
+			</li>
+			<li class="nav-item contact">
+				<a class="nav-link" href="{% url 'contact:list' %}">Contacts</a>
+			</li>
+		</ul>
+		{% endblock %}
+    </nav>
+
+	<!-- Messages -->
+
+	{% if messages %}
+        {% for message in messages %}
+			<div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
+        {% endfor %}
+	{% endif %}
+
+    <!--Content-->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!--Footer-->
+
+    {% block footer %}
+    {% endblock %}
+
+<!-- jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Custom js --> <script src="{% static 'emerald/js/emerald.js' %}"></script>
+
+</body>
+
+</html>

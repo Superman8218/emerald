@@ -39,6 +39,10 @@ label {
 .navbar-brand {
   color: white; }
 
+.navbar-logo {
+  width: 170px;
+  max-height: 70px; }
+
 .navbar-text {
   color: white; }
 
