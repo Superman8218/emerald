@@ -84,7 +84,6 @@ class Importer():
             response = urllib2.urlopen(file_url)
         except urllib2.HTTPError, err:
             logger.info('Download failed for url: {0}'.format(file_url))
-        # pdb.set_trace()
         text_file = open(file_path, 'w')
         text_file.write(response.read())
         text_file.close()
@@ -96,7 +95,6 @@ class Importer():
         """Download the file for the given date, process it, and then create a record of the import"""
         if file_dt.tzinfo is None or file_dt.tzinfo.utcoffset(file_dt) is None:
             file_dt = pytz.utc.localize(file_dt)
-        # pdb.set_trace()
         file_path = self.download_file(file_dt)
         success = self.process_file(file_path)
         os.remove(file_path)

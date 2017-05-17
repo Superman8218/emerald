@@ -7,7 +7,6 @@ from models import FboMaster
 from parser import parse_file
 import parse_helpers
 
-import pdb
 
 class TestParser(TestCase):
 

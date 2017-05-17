@@ -4,8 +4,6 @@ from contact.models import Contact
 
 import re
 
-import pdb
-
 def date(master, line):
     month = int(line[:2])
     day = int(line[2:])
@@ -13,7 +11,7 @@ def date(master, line):
         master.date.month = month
         master.date.day = day
     else:
-        master.date = datetime.date(1, month, day) 
+        master.date = datetime.date(1, month, day)
 def year(master, line):
     year = int(line)
     if master.date:
@@ -66,9 +64,7 @@ def format_name(person):
         return person
 
     # # Last, First M.
-
-    match = last_first_regex.match(person)
-
+    match = last_first_regex.match(person) 
     if match:
         person = 'Name: {0} {1}'.format(match.group(2), match.group(1))
         return person
