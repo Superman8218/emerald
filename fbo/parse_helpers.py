@@ -9,13 +9,11 @@ import pdb
 def date(master, line):
     month = int(line[:2])
     day = int(line[2:])
-    # pdb.set_trace()
     if master.date:
         master.date.month = month
         master.date.day = day
     else:
-        master.date = datetime.date(1, month, day)
-
+        master.date = datetime.date(1, month, day) 
 def year(master, line):
     year = int(line)
     if master.date:
@@ -33,108 +31,14 @@ def respdate(master, line):
 def link(master, lines):
     pass
 
-# Helper methods for the contact handling
+phone_cleaning_regex = re.compile(r'(?:\+([0-9]+)[ ,.-])?\(?([0-9]{3})\)?[ ,.-]?([0-9]{3})[ .,-]?([0-9]{4})')
+alphanumeric_regex = re.compile(r'^([A-Z][a-z]+(?: [A-Za-z]\.?)? [A-Z][a-z]+) ?([0-9]+)$')
+last_first_regex = re.compile(r'^([A-Za-z]+), ?([A-Za-z. ]+)$')
+title_regex = re.compile(r'^(?:Title:? ?)?([A-Za-z .]+)?$')
+fax_regex = re.compile(r'^(?:Fax:? ?)([0-9]+)$')
+phone_regex = re.compile(r'^(?:Phone:? ?)?([0-9]+)$')
+email_regex = re.compile(r'^(?:Email:? ?)?(.+\@.+\..+)$')
 
-class Tokenizer():
-    def __init__(self, inp):
-        if isinstance(inp, list):
-            self.tokens = inp
-        else:
-            self.tokens = self.tokenize_line(inp)
-
-        self.index = -1
-
-    def ___len__(self):
-        return len(self.tokens)
-
-    def get_tokens(self):
-        return self.tokens
-
-    def next(self):
-        self.index += 1
-        token = self.tokens[self.index]
-        return token
-
-    def prev(self):
-        return self.tokens[self.index-1]
-
-    def peek(self):
-        return self.tokens[self.index+1]
-
-    def tokenize_line(self, line):
-        tokens = []
-        current_token = ''
-        previous_char = ''
-
-        for char in line:
-            if char == ',':
-                tokens.append(current_token)
-                current_token = ''
-                tokens += ','
-            elif char == '-':
-                if current_token:
-                    tokens.append(current_token)
-                current_token = ''
-                tokens += '-'
-            elif char == ':' or char == ' ':
-                if current_token:
-                    tokens.append(current_token)
-                    current_token = ''
-            else:
-                if previous_char.isalpha() and char.isdigit():
-                    if current_token:
-                        tokens.append(current_token)
-                        current_token = ''
-                current_token = current_token + char
-                previous_char = char
-
-        # Make sure that we get the last token
-        if current_token:
-            tokens.append(current_token)
-
-
-        return tokens
-
-# # Accepts a Tokenizer object
-# def extract_contacts(tokenizer):
-    # contacts = []
-
-    # contact = Contact()
-    # current_token = tokenizer.next()
-
-    # # Discard the first one if it is 'Name', because we are assuming the first is a name
-    # if (current_token == 'Name'):
-        # current_token = tokens.next()
-
-    # name = []
-    # while (tokenizer.peek() != ','):
-        # name.append(tokenizer.next())
-
-    # if len(name) == 1:
-        # #Special Case
-        # pass
-
-    # else:
-        # while (tokenizer.peek() != ','):
-            # name.append(tokenizer.next())
-
-
-    # return contacts
-
-# Utilities
-
-def contains_alpha_and_num(s):
-    alpha = False
-    num = False
-    for char in s:
-        if isalpha(char):
-            alpha = True
-        elif isdigit(char):
-            num = True
-    return alpha and num
-
-
-phone_regex = re.compile(r'(?:\+([0-9]+)[ ,.-])?\(?([0-9]{3})\)?[ ,.-]?([0-9]{3})[ .,-]?([0-9]{4})')
 
 # Takes a regex match for a phone number and
 
@@ -142,47 +46,89 @@ def clean_single_phone_number(phone_match):
     return ''.join([element for element in phone_match.groups() if element is not None])
 
 def clean_phone_numbers(line):
-    return re.sub(phone_regex, clean_single_phone_number, line)
+    return re.sub(phone_cleaning_regex, clean_single_phone_number, line)
+
 
 # Takes a single person and formats the names correctly
-def clean_names(person):
-    tokens = ','.split(person)[0].st
-    name_token = tokens[0]
-    if '@' in name_token: # This is just an email
-        return person
-    elif contains_alpha_and_num(name_token):
-        break_index = 0
-        for x in xrange(0, len(name_token)-1):
-            if isalpha(name_token[x]) and isdigit(name_token[x+1]) or isdigit(name_token[x]) and isalpha(name_token[x+1]):
-                break_index = x+1
-        if break_index == 0:
-            raise ValueError('Break index is 0')
-        fixed_name_token = name_token[:break_index] + ',' + name_token[break_index:]
-        person = person.replace(name_token, fixed_name_token)
+def format_name(person):
 
-    # No need to go further if only one token
-
-    if len(tokens) == 1:
+    # email@address.com
+    if ' ' not in person.strip() and '@' in person:
         return person
 
-    # Last, First M.
-    if ' ' not in name_token:
-        current_name = tokens[0] + ', ' + tokens[1]
-        fixed_name = tokens[1] + ' ' + tokens[0]
-        person = person.replace(current_name, fixed_name)
+    # # First Last1234567890
+    # # First Last 1234567890
 
-    # Add the 'Name: ' tag
-    raise Exception()
+    match = alphanumeric_regex.match(person)
+
+    if match:
+        person = 'Name: {0}, Phone: {1}'.format(match.group(1), match.group(2))
+        return person
+
+    # # Last, First M.
+
+    match = last_first_regex.match(person)
+
+    if match:
+        person = 'Name: {0} {1}'.format(match.group(2), match.group(1))
+        return person
+
+    # Strip the name tag, and then add in our own
+
+    person = re.sub(r'^Name:? ??', '', person)
+    person = 'Name: ' + person
+
     return person
 
-# Takes a single person and puts commas in all the right places
-def add_commas(person):
-    pass
+# Formats the job title field
 
+def format_title(person):
+    parts = person.split(',')
+    if len(parts) == 1:
+        return person
+    title_part = parts[1]
+    match = title_regex.match(title_part)
+
+    if match:
+        parts[1] = 'Title: {0}'.format(match.group(1))
+        return ','.join(parts)
+
+    return person
+
+def format_fax_worker(part):
+    match = fax_regex.match(part)
+    if match:
+        return 'Fax: {0}'.format(match.group(1))
+    return part
+
+def format_phone_worker(part):
+    match = phone_regex.match(part)
+    if match:
+        return 'Phone: {0}'.format(match.group(1))
+    return part
+
+def format_email_worker(part):
+    match = email_regex.match(part)
+    if match:
+        return 'Email: {0}'.format(match.group(1))
+    return part
+
+def format_other(person):
+    parts = person.split(',')
+    parts = [format_fax_worker(part) for part in parts]
+    parts = [format_phone_worker(part) for part in parts]
+    parts = [format_email_worker(part) for part in parts]
+    return ','.join(parts)
+
+def format_data(person):
+    person = format_name(person)
+    person = format_title(person)
+    person = format_other(person)
+    return person
 
 # Takes a cleaned line and returns a list of all the people in it
 def get_people(line):
-    return '-'.split(line)
+    return line.split('-')
 
 # Takes a single person and returns a list of all the component fields
 def get_fields(person):
@@ -195,25 +141,48 @@ def get_fields(person):
     if return_empty:
         return ''
 
-    # Clean the names on the person
-    person = clean_names(person)
+    # Remove unnecessary spaces
+    person = ','.join([x.strip() for x in person.split(',')])
 
-    # Insert commas at the right places
-    person = add_commas(person)
-    return ','.split(person)
+    # Format the data on the person
+    person = format_data(person)
+
+    return person.split(',')
+
+field_names = {
+    'Name': 'name',
+    'Title': 'title',
+    'Phone': 'phone',
+    'Email': 'email',
+    'Fax': 'fax',
+}
 
 # Takes a list of component fields and turns them into a contact
 def process_fields(fields):
     # Give the names the correct title case
-    return ''
+    contact = Contact()
+    for field in fields:
+        key, value = [x.strip() for x in field.split(':')]
+        if key in ['Name', 'Title']:
+            value = value.title()
+        setattr(contact, field_names[key], value)
 
+    return contact
+
+# Return a list of contact objects
 def extract_contacts(line):
     # Clean the line to get it looking the way that we want
+
 
     # Replace all phone numbers or fax numbers with unformatted digits
     line = clean_phone_numbers(line)
 
+    # Replace ';' with '-' to facillitate splitting
+    line = line.replace(';', '-')
+
+
     # Now we process the cleaned line
+
 
     # Split the line into a list of different people, splitting at the '-' character
     people = get_people(line)
@@ -222,16 +191,13 @@ def extract_contacts(line):
     field_collections = [get_fields(person) for person in people if person]
 
     # Process each collection of fields into a contact
-    for field_collection in field_collections:
-        process_fields(field_collection)
+    return [process_fields(collection) for collection in field_collections]
 
 def contact(master, line):
-    tokenizer = Tokenizer(line)
-    contacts = extract_contacts(tokenizer)
+    contacts = extract_contacts(line)
     for contact in contacts:
         contact.save()
         master.contacts.add(contact)
 
-    return contacts
 
 

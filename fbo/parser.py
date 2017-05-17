@@ -1,166 +1,153 @@
-from collections import namedtuple
-import datetime
-from functools import partial
+import inspect
 import re
-
-from bs4 import BeautifulSoup
-
-from contact.models import Contact
-from models import FboMaster
 import sys
-import pprint
+
+from models import FboMaster
+
+import parse_helpers
 
 import pdb
+# Set the module name
 
-"""So the idea here is going to be to just use the list of all the fields in the fbo_master model.  If a field isn't in the fbo_master model then we can just log it and deal with it.  But all of the fields should be present"""
+thismodule = sys.modules[__name__]
 
-record_types = [
-    'presol',
-    'srcsgt',
-    'snote',
-    'combine',
-    'amdcss',
-    'mod',
-    'award',
-    'archive'
-]
+# Determine tag type
 
-# Helper methods for setting fields that are more complex
+## Field tags
+field_tag_regex = re.compile(r'<[A-Z]+>')
 
-MasterDateTuple = namedtuple('MasterDateTuple', ['master_id', 'date_field', 'year_field'])
-master_date_tuple = MasterDateTuple(None, None, None) # Used to store a partial function
+def contains_field_tag(line):
+    return bool(field_tag_regex.match(line))
 
-def process_date_tuple(master):
-    master.date = datetime.date(int(master_date_tuple.year_field), int(master_date_tuple.date_field[:2]), int(master_date_tuple.date_field[2:]))
+## Compound tags
+compound_tags = ['link', 'file']
 
-def handle_date(master, date):
-    """Creates the master/date tuple for this record"""
-    global master_date_tuple
-    master_date_tuple = master_date_tuple._replace(date_field=date)
-    if master_date_tuple.master_id == master.id and master_date_tuple.year_field is not None:
-        process_date_tuple(master)
-    else:
-        master_date_tuple = master_date_tuple._replace(master_id=master.id)
+def is_compound_tag(tag):
+    return tag in compound_tags
 
-def handle_year(master, year):
-    """If we already have a date for this record, then create the combined date"""
-    #Get the right prefix for the year
-
-    if int(year) > 90:
-       year = '19' + year
-    else:
-        year = '20' + year
-
-    # Do our normal thing
-
-    global master_date_tuple
-    master_date_tuple = master_date_tuple._replace(year_field=year)
-    if master.id == master_date_tuple.master_id and master_date_tuple.date_field is not None:
-        process_date_tuple(master)
-    else:
-        master_date_tuple = master_date_tuple._replace(master_id=master.id)
-
-def handle_respdate(master, text):
-    respYear = text[4:]
-    if int(respYear) > 90:
-       respYear = int('19' + respYear)
-    else:
-        respYear = int('20' + respYear)
-    respMonth = int(text[:2])
-    respDay = int(text[2:4])
-    master.response_date = datetime.date(respYear, respMonth, respDay)
-
-# Used to handle contacts by writing to a file that shows the contact data that we did not use
-
-def handle_contact(master, text):
-
-    new_contact = Contact()
-
-    contact_regex = re.compile(r'(?:Name: )?(?P<name>[a-zA-Z. ]+)(?:, (?:Title:)?(?P<title>[a-zA-Z ]+)?[&,])?(?:[, ]|(?:Phone(?::)? (?P<phone>[0-9\-() .]+))|(?:Fax(?::)? (?P<fax>[0-9\-() .]+))|(?:(?:Email(?::)? )?(?P<email>[a-zA-Z0-9@\.\-]+)))*')
-    contact = contact_regex.search(text)
-
-    if contact and len(contact.group('name')) <= 60:
-        new_contact.name = contact.group('name')
-        new_contact.title = contact.group('title')
-        new_contact.email = contact.group('email')
-        new_contact.phone = contact.group('phone')
-        try:
-            new_contact.save()
-            master.contacts.add(new_contact)
-        except:
-            pdb.set_trace()
-    else:
-        out = open('bad_contacts.txt', 'a')
-        out.write(text + '\n')
+## Complex tags
+complex_fields = [function[0] for function in inspect.getmembers(parse_helpers, inspect.isfunction)]
 
 
-# Define aliases for importing fields, includeing functions used to handle complicated inputs
+def is_complex_tag(tag):
+    return tag in complex_fields + compound_tags
+
+
+# ## Text tags
+# text_tag_regex = re.compile(r'<[a-z/]+>')
+
+# def contains_text_tag(line):
+    # return bool(text_tag_regex.match(line))
+
+# Field Aliases
 
 field_aliases = {
-    'date': handle_date,
-    'year': handle_year,
     'zip' : 'zip_code',
     'classcod' : 'class_code',
     'offadd' : 'office_address',
-    'respdate' : handle_respdate,
     'archdate' : 'archive_date',
-    'contact' : handle_contact,
     'desc' : 'description',
+    'popaddress' : 'pop_address',
+    'popcountry' : 'pop_country',
 }
 
-field_aliases_keys = field_aliases.keys()
+# Function for setting a field
 
-# Get a list of all the field names in the model
+def set_field(master, line, tag):
+    # Removes just the field tags so that we can keep all the html markup we are given
 
-field_names = [field.name for field in FboMaster._meta.get_fields()]
+    cleaned_line = clean_line(line)
 
-# Combine them to get the list of all tags that we are interested in
+    target_field_name = field_aliases[tag] if tag in field_aliases else tag
 
-combined_field_list = field_names + field_aliases_keys
+    # See if there is already anything in the field.  If so, append to that data.
 
-# Methods to get the list of all the relevant tags
+    existing_data = getattr(master, target_field_name)
 
-def flatten(l):
-    """Takes a list of lists and flattens it into a single list"""
-    return [item for sublist in l for item in sublist]
+    if not existing_data:
+        existing_data = ''
 
-def get_records(soup):
-    """Takes the soup and gets all of the nodes whose type is in the list of record types"""
-    return flatten([soup.find_all(record_type) for record_type in record_types])
+    new_data = existing_data + cleaned_line
 
-# The actual parsing method
+    setattr(master, target_field_name, new_data)
+
+# Tag manipulation
+
+def extract_tag(line):
+    tag_end_index = line.find('>')
+    if tag_end_index != -1:
+        return line[1:tag_end_index].lower()
+
+def get_tag_complement(tag):
+    return '</{0}>'.format(tag.upper())
+
+def clean_line(line):
+    return re.sub(field_tag_regex, '', line)
+
+
+# The main method
 
 def parse_file(file_path):
-    """So right now this is built to only extract one type of record, but we can definitely make it extract more"""
-    soup = BeautifulSoup(open(file_path))
-    records = get_records(soup)
-    for record in records:
-        master = FboMaster()
-        master.save()
-        master.solicitation_type = record.name
-        fields = filter(lambda x: x.name in combined_field_list, record(True))
-        for item in fields:
-            text = item.find(text=True, recursive=False).encode('utf-8').strip()
-            name = item.name
-            if not text:
+    index = 0
+    current_tag = ''
+    complement = ''
+    previous_line = ''
+    last_field_tag = ''
+    master = None
+
+    with open(file_path, 'r') as f:
+        lines = [line.strip('\n') for line in list(f)]
+        while index < len(lines):
+            line = lines[index]
+            tag = extract_tag(line)
+            if not line:
                 continue
-            if name in field_aliases_keys:
-                destination = field_aliases[name]
-                if type(destination) == str:
-                    try:
-                        setattr(master, field_aliases[name], text)
-                    except:
-                        print('Failed for {0}'.format(name))
-                        return
+
+            # 4 cases:
+
+            # 1) Current tag not set
+
+            if not current_tag:
+                current_tag = tag
+                complement = get_tag_complement(current_tag)
+                master = FboMaster()
+                master.save() # Necessary to add contacts later
+
+            # 2) Complement tag
+
+            elif line == complement:
+                current_tag = ''
+                master.save()
+
+            # 3) Field tag
+
+            elif contains_field_tag(line):
+                if is_complex_tag(tag):
+                    handler_function = getattr(parse_helpers, tag)
+
+                    # Tags that eat the next 2 lines:
+                    if is_compound_tag(tag):
+                        input_lines = [lines[index+1], lines[index+2]]
+                        cleaned_lines = [clean_line(line) for line in input_lines]
+                        index += 2
+                    # Normal tags, one line
+                    else:
+                        cleaned_lines = clean_line(line)
+
+                    handler_function(master, cleaned_lines)
+
                 else:
-                    destination(master, text)
-            elif name in field_names:
-                setattr(master, name, text)
+                    set_field(master, line, tag)
+                last_field_tag = tag
+
+
+            # 4) Text tag
+
             else:
-                print("Field name {0} not in field lists".format(name))
-        try:
-            master.save()
-        except:
-            pprint.pprint(sys.exc_info()[0])
-            pprint.pprint(master.__dict__)
-            return
+                set_field(master, line, last_field_tag)
+                pass
+
+            # Increment the index
+
+            index += 1
+

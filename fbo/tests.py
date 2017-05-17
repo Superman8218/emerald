@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.test import SimpleTestCase
 
 from models import FboMaster
-from jirachi import parse_file
+from parser import parse_file
 import parse_helpers
 
 import pdb
@@ -93,9 +93,3 @@ class TestHelpers(TestCase):
         line = '112116'
         parse_helpers.respdate(self.master, line)
         self.assertEqual(self.master.response_date, datetime.date(16, 11, 21))
-
-    def test_contact(self):
-        line = ''
-        parse_helpers.contact(self.master, line)
-        self.assertEqual(len(self.master.contacts.all()), 1)
-        self.assertEqual(self.master.contacts.all()[0].name, 'Placeholder Contact')
