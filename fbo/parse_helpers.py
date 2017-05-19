@@ -4,6 +4,8 @@ from contact.models import Contact
 
 import re
 
+from pudb import set_trace
+
 def date(master, line):
     month = int(line[:2])
     day = int(line[2:])
@@ -25,6 +27,14 @@ def respdate(master, line):
     day = int(line[2:4])
     year = int(line[4:])
     master.response_date = datetime.date(year, month, day)
+
+def archdate(master, line):
+    # MMDDYY
+    month = int(line[:2])
+    day = int(line[2:4])
+    year = int(line[4:])
+    master.archive_date = datetime.date(year, month, day)
+
 
 def link(master, lines):
     pass

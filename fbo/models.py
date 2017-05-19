@@ -31,7 +31,7 @@ class FboMaster(models.Model):
     url = models.URLField()
     setaside = models.CharField(max_length=100, null=True)
     pop_country = models.CharField(max_length=50, null=True)
-    pop_address = models.CharField(max_length=100, null=True)
+    pop_address = models.CharField(max_length=500, null=True)
     pop_zip = models.CharField(max_length=30, null=True)
     award_number = models.CharField(max_length=30, null=True)
     award_amount = models.IntegerField(null=True)

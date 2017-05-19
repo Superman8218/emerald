@@ -114,6 +114,21 @@ class TestExtractContacts(TestCase, CustomContactAssertions):
         answer = [one]
         self.assertContactsEqual(answer, contacts)
 
+    def test_double_name(self):
+        line = 'Hal Hayes 619-532-1251 Hal Hayes, Contract Specialist, harold.hayes@navy.mil,<a href="mailto:harold.hayes@navy.mil">harold.hayes@navy.mil</a>'
+
+        contacts = extract_contacts(line)
+        answer = [
+            Contact(
+                name = 'Hal Hayes',
+                phone = '6195321251',
+                title = 'Contract Specialist',
+                email = 'harold.hayes@navy.mil',
+            )
+        ]
+
+        self.assertContactsEqual(answer, contacts)
+
 class TestFormatName(TestCase):
     def test_normal(self):
         person = 'Tina L. Watsontarver, Contract Specialist, Email tina.watsontarver.1@us.af.mil, Phone (123)456-7890'

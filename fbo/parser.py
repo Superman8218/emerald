@@ -1,4 +1,5 @@
 import inspect
+import logging
 import re
 import sys
 
@@ -6,7 +7,10 @@ from models import FboMaster
 
 import parse_helpers
 
-import pdb
+from pudb import set_trace
+
+logger = logging.getLogger(__name__)
+
 # Set the module name
 
 thismodule = sys.modules[__name__]
@@ -49,6 +53,7 @@ field_aliases = {
     'desc' : 'description',
     'popaddress' : 'pop_address',
     'popcountry' : 'pop_country',
+    'popzip' : 'pop_zip',
 }
 
 # Function for setting a field
@@ -101,6 +106,7 @@ def parse_file(file_path):
             line = lines[index]
             tag = extract_tag(line)
             if not line:
+                index += 1
                 continue
 
             # 4 cases:
@@ -117,7 +123,10 @@ def parse_file(file_path):
 
             elif line == complement:
                 current_tag = ''
-                master.save()
+                try:
+                    master.save()
+                except Exception as ex:
+                    logger.error('Unable to save FboMaster record.\nFile: {0}\nSolnbr: {1}'.format(file_path, master.solnbr))
 
             # 3) Field tag
 

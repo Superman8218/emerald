@@ -1,0 +1,224 @@
+<COMBINE>
+<DATE>0508
+<YEAR>17
+<AGENCY>Department of the Navy
+<OFFICE>Naval Facilities Engineering Command
+<LOCATION>NAVFAC Southwest, Capital Improvement Contract Core
+<ZIP>92132
+<CLASSCOD>C
+<NAICS>541330
+<OFFADD>N62473 NAVFAC SOUTHWEST CAPITAL IMPROVEMENT CONTRACT CORE Attn Code RAQ20 1220 Pacific Highway San Diego, CA
+<SUBJECT>C--Structural Engineering Services Architect-Engineer (A-E) Indefinite Delivery Indefinite Quantity (IDIQ) Contract, NAVFAC SW, San Diego, CA, Small Business Set-Aside
+<SOLNBR>N6247317R4632
+<RESPDATE>060817
+<ARCHDATE>06232017
+<CONTACT>Hal Hayes 619-532-1251 Hal Hayes, Contract Specialist, harold.hayes@navy.mil
+
+<a href="mailto:harold.hayes@navy.mil">harold.hayes@navy.mil</a>
+<DESC>N62473-17-R-4632 INDEFINITE DELIVERY/INDEFINITE QUANTITY CONTRACT FOR ARCHITECT-ENGINEER SERVICES FOR STRUCTURAL ENGINEERING AT VARIOUS NAVY AND MARINE CORPS FACILITIES AND OTHER MILITARY INSTALLATIONS LOCATED IN THE NAVFAC SOUTHWEST AREA OF RESPONSIBILITY (AOR): CALIFORNIA, ARIZONA, NEVADA, COLORADO, NEW MEXICO AND UTAH.
+
+Description: ALL INFORMATION NEEDED FOR INTERESTED PARTIES TO SUBMIT A STANDARD FORM SF 330, ARCHITECT ENGINEER QUALIFICATIONS IS CONTAINED HEREIN. THERE IS NO SEPARATE REQUEST FOR PROPOSALS (RFP) PACKAGE TO DOWNLOAD.
+
+This procurement will result in one Indefinite Delivery/Indefinite Quantity (IDIQ) contract for multi-discipline Architect-Engineer (AE) services for Structural Engineering at various Navy and Marine Corps facilities and installations located in the NAVFAC Southwest Area of Operations (AOR), including California, Arizona, Nevada, Colorado, New Mexico, and Utah.
+ Projects may also occur within the NAVFAC Atlantic AOR as approved by the NAVFAC Southwest (SW) Chief of Contracting Office.  The preponderance of work will be in Southern and Central California.  These services will be procured in accordance with 40 USC Chapter 11, Selection of Architects and Engineers, as implemented by FAR Subpart 36.6. The IDIQ contract will be for a base period of one year and four one-year option periods (if exercised). The total fee for the contract term shall not exceed $30,000,000. The guaranteed minimum for the contract term (including option years) is $5,000.  Firm-fixed price task orders will be negotiated for this contract. The minimum value of individual task orders executed under this contract is $5,000 and the maximum value of $3,500,000 with no dollar limit per year.
+ Estimated start date is March 2018.
+
+This proposed contract is being solicited as a total Small Business Set-Aside. The Small Business size standard classification is North American Industrial Classification System (NAICS) Code 541330 (Engineering Services). The Government seeks the most highly qualified firm to perform the required services, based on the demonstrated competence and qualifications, in accordance with the selection criteria. The Offeror/Contractor must demonstrate adequate in-house staffing capable to self-perform at least 50 percent of the cost of the contract as required by FAR Clause 52.219014 (b)(1) Limitation on Subcontracting.
+
+The type of A-E services expected to be performed under this contract are primarily preparation of Design-Bid-Build (DBB) construction contract packages, including fully designed plans and specifications, preparation of Request for Proposals (RFP) packages for Design-Build (DB) projects, structural and/or seismic investigations, studies, evaluations, and recommendations for upgrades to existing facilities.
+ Additionally, antiterrorism design and design to prevent progressive collapse, innovative structural system design, and experience applying sustainability concepts may be required. 
+
+Primary A-E services will include preparation of fully designed plans and specifications for Design-Bid-Build construction projects; preparation of Request for Proposal (RFP) packages for Design-Build (DB) projects; structural and/or seismic investigations, studies, evaluations and recommendations for upgrades to existing facilities. Additionally, anti-terrorism design related to analysis to blast effects and design to prevent progressive collapse; innovative structural system design including seismic base isolation, seismic damping, passive dissipating systems, and use of fiber reinforced polymers may be required.
+
+Support A-E services may be required to perform technical reviews of government-prepared designs and design-build packages, post construction award services (PCAS), cost estimating, and coordination of various technical disciplines.
+
+Types of projects may include, but are not limited to, new construction, repair/renovation, and studies of commercial, institutional, industrial, operation and training, research and development, medical, and quality of life facilities.
+ 
+
+All contractors are advised that registration in System for Award Management (SAM) Database is required prior to award of a contract. Failure to register in the SAM Database may render your firm ineligible for award. For more information, check the SAM Web site: https://www.sam.gov.
+
+The awarded contract will be subject to specific provisions addressing the avoidance of organizational conflicts of interest, including NFAS 5252.209-9300, Organizational Conflicts of Interest. The prime firm for this contract will be required to perform throughout the contract term.
+
+Interviews may be scheduled with firms slated as the most highly qualified. Firms slated for interviews may be asked to clarify information contained in the SF330 submittal.
+ Elaborate presentations are not desired.
+
+SELECTION CRITERIA: Firms responding to this synopsis will be evaluated to determine the most highly qualified firms to perform the required services in accordance with the published selection criteria.  Failure to comply with instructions, or provide complete information may affect the firmâs evaluation or disqualify the firm from further consideration.  Criteria 1 and 2 are considered most important and of equal importance to each other; Criteria 3, 4, and 5 are of lesser importance and listed in descending order of importance; and Criterion 6 is of lesser importance and will be used as a tiebreaker among firms considered to be technically equal.
+ Evaluation of past performance and experience may include information provided by the firm, customer inquiries, Government databases, and publicly available sources. Failure to provide requested data, accessible points of contact, or valid phone numbers may result in a firm being considered less favorably in the evaluation. Specific selection criteria include:
+
+1.	Professional Qualifications
+2.	Specialized Experience and Technical Competence
+3.	Past Performance 
+4.	Quality Control 
+5.	Program Management and Capacity and Location 
+6.	Volume of Work
+
+Criterion 1âProfessional Qualifications (SF330, Part I, Sections E  and  G):
+
+Firms will be evaluated on professional qualifications, competence, and experience of the proposed key personnel in providing services to accomplish the tasks required under this contract, including participation in example projects in the SF330, Part 1, Section G.
+  Key personnel are individuals who will have major contract or project management responsibilities and/or will provide unusual or unique expertise. Specific disciplines/roles that must be included in key personnel are Program Manager, two Senior/Lead Structural Engineers, Design Quality Control Manager (DQCM), proposed Project or Task Order Managers as applicable.  Key personnel not providing structural engineering services will not be evaluated. 
+
+Submission Requirements:
+
+SF330, Part I, Section E. Provide resumes for all proposed key personnel that illustrate experience in the primary services for the relevant project types proposed under this contract. Non-relevant information will not be considered.
+ Resumes of personnel performing only support services (as listed in this contract) are not required and will not be considered. The Program Manager shall be a member of the prime A-E firm and a professionally registered Civil or Structural Engineer.  The Senior/Lead Structural Engineers and DQCM shall be members of the prime A-E firm and shall be a registered Structural Engineer (SE) in the state of California or other state which requires 16 hours of structural engineering testing for registration as a Structural Engineer.  Project or Task Order Managers shall be a professionally registered Civil or Structural Engineer and be a member of the prime A-E firm. See definitions at the end of this notice for registration and experience requirements.
+ Resumes of key personnel shall demonstrate their depth of experience in their respective roles.
+
+Each resume shall include a maximum of five (5) specific relevant projects and should indicate: professional registration, certification, licensure and/or accreditation in appropriate disciplines; cite recent (within the past five (5) years) and complete projects (see definition) - that exhibit specific experience in work relevant to the primary services required under this contract; and indicate proposed role and responsibility in this contract. Identifying only the individualâs job title will not provide sufficient information to determine their specific experience as it relates to services to be performed under this contract.
+ Submit a copy of the applicable current professional registration/accreditation certificate (personnel with registration in multiple states need only submit a copy from one state). Projects not meeting these requirements will not be considered. Indicate participation of key personnel in example projects in the SF330, Part I, Section G.
+
+
+Criterion 2 âSpecialized Experience and Technical Competence (SF330, Part I, Section F): 
+Firms will be evaluated on specialized experience in performance of services similar to those anticipated under this contract through evaluation of experience in: 
+
+1.	The proposed teamâs experience and technical competence in the primary A-E services for project types identified for this contract.
+2.	Experience applying sustainability concepts through an integrated, cost effective design approach and designing in accordance with recognized sustainability rating systems such as Green Globe, LEED, etc.
+
+Firms may be considered more favorably by demonstrating the following: 
+1.	Experience with structural design in California.
+
+Submission requirements: Provide a maximum of ten projects completed within the past five years immediately preceding the date of issuance of this notice that best demonstrate specialized experience of the proposed team in the areas outlined above.
+ Sufficient information to determine the date of completion of the project must be included in the project description or the project will not be considered. If more than ten projects are submitted, the Government will only evaluate the first ten projects in the order submitted.
+
+All projects provided in the SF330 must be completed by the actual office/branch/regional office/individual team member proposed to manage and perform work under this contract. Projects not meeting this requirement will be excluded from consideration in the evaluation. To enable verification, firms should include the DUNS number along with each firm name in the SF330 Part 1, Section F, block 25, âFirm Nameâ Include a contract number or project identification number in block 21.
+ Include an e-mail address and phone number for the point of contact in block 23(c). In block 24, include in the project description the contract period of performance, current contract value (A-E fee), and a summary of the work performed that demonstrates relevance to specialized experience as outlined above. For projects performed as a subcontractor or as a joint venture involving different partners, specifically indicate the value of the work performed by the firms proposed for this contract, and identify the specific roles and responsibilities performed by the firms on the project rather than the work performed on the project as a whole.  If the project description does not clearly delineate the work performed by the entity/entities offering/teaming on this contract, the project could be eliminated from consideration.
+
+NOTE: If the firm is a joint venture, projects performed by the joint venture should be submitted; however, if there are no projects performed by the joint venture, projects must be submitted for each joint venture partner individually, not to exceed a total of ten projects.
+ Firms failing to provide relevant projects from all joint venture partners will be considered to have not met the requirements of the criterion. In cases where the submitted project was performed by a JV, but all JV partners for that project are not on the team identified in Part I, Section C, specifically describe the relevant work performed by the JV partner(s) proposed for this contract.
+
+Projects shall be submitted on the SF-330 at Part I, Section F and shall be completed projects. Projects not completed will be excluded from evaluation consideration. For submittal purposes, a task order on an IDIQ contract is considered a project, as is a stand-alone contract award. Do not submit an IDIQ contract as an example project.
+ Instead, list relevant task orders or stand-alone contract awards that fit within the definition above. The Government will not evaluate information provided for an IDIQ contract. Examples of project work submitted that do not conform to this requirement will not be evaluated. 
+
+All information for Criterion 2 should be submitted in the SF330, Part I, Section F of the. The Government WILL NOT consider information submitted in addition to Part 1, Section F in evaluation of Criterion 2.
+
+Criterion 3âPast Performance (SF330, Part I, Section H):
+
+Firms will be evaluated on past performance with Government agencies and private industry in terms of work quality, compliance with schedules, cost control, and stakeholder/customer satisfaction.
+ Evaluating past performance and experience will include information provided in Past Performance Questionnaires (PPQs) or CPARS/ACASS for Criterion 2 projects and may include customer inquiries, Government databases, and other information available to the Government including contacts with points of contact in other criteria. NOTE: Past performance information for projects listed under Criterion 2 may be given greater weight.
+
+Submission Requirements:
+
+SUBMIT A COMPLETED CPARS/ACASS EVALUATION FOR EACH PROJECT UNDER CRITERION 2. IF A COMPLETED CPARS/ACASS EVALUATION IS NOT AVAILABLE, the Past Performance Questionnaire (PPQ) (Attachment (A)) included in this notice is provided for the firm or its team members to submit to the client for each project included under Criterion 2, Specialized Experience and Technical Competence.
+ DO NOT SUBMIT A PPQ WHEN A COMPLETED CPARS/ACASS IS AVAILABLE. Submitted CPARS/ACASS and PPQ evaluations will not be counted as part of the 30 page limitation and shall be attached to the SF330, behind the SF330 Part II document.
+
+IF A CPARS/ACASS EVALUATION IS NOT AVAILABLE, ensure correct phone numbers and email addresses are provided for the client point of contact. Completed PPQs should be submitted with your SF330. If the firm is unable to obtain a completed PPQ from a client for a project before the response date set forth in this notice, firms should complete and submit with their responses the first page of the PPQ (Attachment (A)), which will provide contract and client information for the respective project.
+ PPQ evaluations that are completed by a team member identified in Part I, Section C of the SF330 are considered interested parties to this solicitation and will not be evaluated. Firms may submit a PPQ previously submitted under a different Notice/RFP (legible copies are acceptable) as long as it is on the same form as posted with this Synopsis. Firms should follow up with clients/references to ensure timely submittal of questionnaires. If requested by the client, questionnaires may be submitted directly to the Governments point of contact, Naval Facilities Engineering Command Southwest, Code RAQ20.HH, Attn: Hal Hayes via email at Harold.hayes@navy.mil, prior to the response date. Firms shall not incorporate by reference into their response PPQs or CPARS previously submitted in response to other A/E services procurements.
+ However, this does not preclude the Government from utilizing previously submitted PPQ information in the past performance evaluation. 
+Firms may provide any information on problems encountered and the corrective actions taken on projects submitted under Criterion 2 Specialized Experience and Technical Competence.  Firms may also address any adverse past performance issues.  Information shall not exceed two double-sided pages (or four single-sided pages) in total.
+
+Awards, letters of commendation, certificates of appreciation, etc. shall not be submitted and will not be considered in the evaluation.
+
+Criterion 4âQuality Control Program (SF330, Part I, Section H):
+
+Firms will be evaluated on the strength of the quality control program proposed by the firm to ensure quality products and services under this contract, and means of ensuring quality services from their consultants/subcontractors.
+
+Submission Requirements:
+
+Describe the quality control program that will be utilized for all deliverables of this contract and the management approach for quality control processes and procedures.
+ The description shall:
+
+1.	Explain the quality control program, including an example of how the plan worked for one of the projects submitted as part of SF330, Section F, or how the plan will work if it has not been used previously. 
+2.	Provide a quality control process chart showing the inter-relationship of the management and team components.
+3.	Describe specific quality control processes and procedures proposed for this contract, specifically for ensuring the technical accuracy of design and report documents.
+4.	Identify the design quality control manager and any other key personnel responsible for the quality control program and a description of their roles and responsibilities. The DQCM shall be a registered Structural Engineer and a member of the prime A-E firm.
+5.	Describe how the firmâs quality control program extends to management of subcontractors.
+6.	For joint ventures or prime firms with multiple offices, describe which office will be responsible for the quality control program, and how the program will be implemented across the various team offices.
+ 
+
+Criterion 5âProgram Management and Capacity and Location (SF330, Part I, Section H): 
+
+Firms will be evaluated on the firmâs ability to plan for and manage work under the contract, the capacity to accomplish the work in the required time, the locations of the offices that will be performing the work under this contract, and demonstrated knowledge of the primary geographic areas in which projects could be located (NAVFAC Southwest AOR, but primarily Central and Southern California). 
+
+Submission Requirements: 
+
+1.	Provide an organizational chart for the team in the SF330, Part I, Section D and discuss the management plan for this contract and personnel roles in the organization. Identify on the submitted organization chart the relationships and lines of authority of the proposed team members, including key subcontractors.
+ Note: All individuals listed on the organization chart are not required to have a resume in Section E, such as administrative or lower level engineering positions. 
+2.	Describe the ability of the firm to manage, coordinate and work effectively with team members, both internal staff and subcontractors. Discuss the history of working relationships with team members, including joint venture partners where applicable. 
+3.	Describe the firmâs present workload and the availability of the project team (key personnel and subcontractors) for the specified contract performance period. Describe the ability of the firm to accomplish multiple task orders simultaneously and strategies to meet surges in unexpected workload demand.
+ Describe the ability of the firm to provide qualified backup staffing for key personnel to ensure continuity of services. General statements of availability/capacity may be considered less favorably.
+4.	Provide the location of the office(s) that will be performing the work, including main offices, branch offices, and offices of team members. Evaluation of firms will include consideration of the location of their offices and key personnel within the primary geographic area of the anticipated projects, primarily NAVFAC Southwest AOR. Provide a narrative describing the teamâs knowledge of the primary geographic areas in which projects could be located and the teamâs availability and ability to ensure timely response to requests for onsite support at Government installations throughout the NAVFAC SW AOR.
+ Firms with a main office outside Southern California shall address how they would effectively communicate, collaborate, and share data with clients and subcontractors.
+
+Criterion 6âVolume of Work (SF330, Part 1, Section H) 
+Firms will be evaluated in accordance with DOD Federal Acquisition Regulation Supplement (DFARS) Procedures, Guidance and Information (PGI) 236.602-1, from data extracted from the Federal Procurement Data System (FPDS). In the case of a joint venture (JV), data will be extracted for the JV and for each JV partner. Firms will be evaluated in terms of work previously awarded to the firm by DOD within the past twelve months with the objective of effecting an equitable distribution of contracts among qualified A and E firms including small, disadvantaged business firms, and firms that have not had prior DOD A and E contracts.
+ 
+
+Submission Requirements:
+
+Firms do not submit data for this factor.
+ 
+SF-330 SUBMISSION REQUIREMENTS:
+Architect-Engineer firms desiring to be considered for this contract must submit a completed SF-330 package. The SF-330 shall be typed, one sided, at least 11 point Times New Roman or larger. Part I shall not exceed thirty (30) single-sided 8.5 by 11 inch pages (the page limit does not include the Organizational Chart, ISRs, certificates, PPQs, licenses, nor does the page limit include cover sheets or dividers, provided that these do not contain any substantive information submitted in response to the synopsis or intended to demonstrate the qualifications of the firm). Part I pages shall be numbered sequentially.
+  The organizational chart in Section D may be one page single sided 11 by 17 foldout, using 11 point font or larger (font limitations do not apply to graphics, captions or tables).  The Organization Chart will not be counted against the 30-page limitation.  Please include your DUNS and CAGE numbers in Block 30 of the SF-330.
+In accordance with the FAR 36.601-4(b) contracts for architect-engineer services may only be awarded to firms permitted by law to practice the professions of architecture or engineering. Firms must submit proof that they are permitted by law as required by FAR 36.601-4(b). If a firm is in a jurisdiction that requires AE firm registration, the firm must provide proof of registration.
+ If a firm is in a jurisdiction that does not require AE firm registration, the firm must provide proof of eligibility to practice (e.g., a summary explaining under the laws of that jurisdiction.) This documentation is not counted as part of the 30-page limitation. Failure to submit the required proof could result in a firmâs elimination from consideration.  
+Firms who are offering as a joint venture should include with their submission a copy of the joint venture agreement. Failure to include the joint venture agreement may result in the firmâs elimination from further evaluation.
+Architect-engineer firms that meet the requirements described in this announcement are invited to submit one (1) original and four (4) hard copies of the SF-330 and one (1) CD (Adobe Acrobat .PDF format) to Naval Facilities Engineering Command Southwest, Code RAQ20.HH, Attn: Hal Hayes, 1220 Pacific Highway, San Diego, CA 92132.
+ Responses are due no later than no later than, 2:00P.M. Pacific Standard Time on June 8, 2017. THIS IS NOT A REQUEST FOR PROPOSAL.
+Late responses will be handled in accordance with FAR 52.215-1. The point of contact is Hal Hayes, Contract Specialist, at harold.hayes@navy,mil, 619-532-1251.  If an SF 254/SF 255 is submitted for this solicitation, it will not be reviewed or considered.  As required above, provide verifiable evidence that your firm is permitted by law to practice the professions of architecture or engineering (e.g., state registration number).  
+If hand-carrying or express mailing proposal, the firm is advised that the Contracting Officer is on a secured base. Anticipate delays in base access and plan accordingly.
+ Hand-carried proposals must be delivered to the mailroom. Government personnel will not pick up proposals at the gate. It is the contractorâs responsibility to ensure delivery to the location specified.
+An Offeror risks the late receipt and rejection of their SF330 package when delivery is delayed until the last few minutes before the deadline. Offerors intending to deliver the SF330 package in-person are cautioned that the NAVFAC Southwest facility is located in downtown San Diego. It is recommended that the Offeror allow for delays driving through downtown San Diego caused by traffic (both freeway and downtown), train/trolley crossings, parking at the pay lots/meters near the facility, and gaining access to a secure Government facility.
+ No parking or offloading of SF330s is available at the Government facility. SF330s shall be delivered to the mailroom in Building 128 and reasonable time shall be allowed for mailroom personnel to receive and time stamp the SF330. The stamp time is determined by the NAVFAC Southwest facility mailroom time stamp device only, not by any other time keeping device that the Offeror may use or own. Immediately upon proposal delivery, the Offeror shall leave the premises of the Government facility. An Offeror that does not leave the premises may be requested to leave or be escorted off the premises.  
+Electronic (E-mail, facsimile, etc.) submissions are not authorized.
+It is the offerorâs responsibility to check the NAVFAC electronic solicitation website NECO (Navy Electronic Commerce Online) at: https://www.neco.navy.mil for any revisions to this announcement or other notices.
+ Plan-holder list is available via the NECO website and an Interested Vendors List is available via the FedBizOpps website, www.fbo.gov, under this solicitation number.
+Inquiries concerning this procurement should include solicitation number and title and be forwarded via email to harold.hayes@navy.mil. ALL REQUEST FOR INFORMATION (RFIs) MUST BE SUBMITTED IN WRITING IN ORDER TO BE ANSWERED.  RFIs WILL BE ANSWERED VIA NECO AND FEDBIZOPS.  RFIs MUST BE SUBMITTED BY 01 JUNE 2017
+
+
+*** END OF ANNOUNCEMENT ***
+â
+DEFINITIONS OF TERMS:
+
+OFFEROR: Refers to the contractor submitting the proposal, including joint ventures, designated in Section C of Standard Form (SF) 330 (Architect-Engineer Qualifications) as the prime contractor.
+
+OFFERORâS TEAM: Refers to the Offeror (see definition) and the other firm(s)/entity(ies) proposed to perform the work of the contract together as a team, as listed in the Offerorâs submitted SF330, Section C.
+
+JOINT VENTURE (JV): A legal business entity formed between two or more companies (parties) to undertake the performance activities of a contract together.
+ 
+
+FIRM: Any individual, firm, partnership, corporation, association, or other legal entity permitted by law to practice the professions of architecture or engineering.
+
+BRANCH OFFICE: An office of a firm located separately from a firmâs other office(s) and having a separate address.
+
+PAST PERFORMANCE: Relates to how well an Offeror has performed; e.g., the quality of work accomplished, cost control, schedule compliance, customer satisfaction. Past performance is distinct from experience.
+
+RELEVANT or RELEVANT EXPERIENCE: Pertains to work performed by a firm, within the prescribed timeframe, which is the same or similar to the work that may be ordered under this contract in terms of size, scope, and complexity.
+ Experience is distinct from past performance (how well an Offeror has performed).
+
+PROJECT or SPECIFIC PROJECT: A single project contract or a single task order under an IDIQ or other multiple award type contracts; a design-build or a design-bid-build activity or task, with a single starting point and a single ending point. Combined projects (see definition) will not be considered.
+
+COMBINED PROJECT(S): Projects with multiple starting and ending points, performed under separate task orders, delivery orders, or multiple contracts combined in a single description. No credit will be given for work performed under IDIQ or other multiple-award type contracts in the aggregate (multiple projects completed under more than one task/delivery order).
+
+COMPLETE PROJECT: 100% plans and specifications signed by a professional Architect or Engineer and ready to advertise for construction with final cost estimate; 100% complete RFP/deliverable documents; or 100% complete study/investigation/report documents.
+ This does not include construction phase support services such as Post Construction Award Support (PCAS).
+
+RENOVATION/REPAIR: Refers to projects where the work primarily involves modification of existing facilities by renovation, repair, and alteration (work within the existing exterior walls and existing square footage of the facility).
+
+NEW CONSTRUCTION: Refers to projects where the work primarily involves building of entirely new facilities (or new additions/expansions to an existing facility where major components are provided as part of the new addition/expansion).  Complete repair/replacement of a facility is considered new construction.
+
+PROFESSIONAL REGISTRATION/ACCREDITATION: Professional registration/license/ accreditation in one or more of the 50 United States and its territories.
+ For the purposes of this procurement, âEvidence-basedâ design accreditations/certificates are not acceptable as professional credentials.
+
+KEY PERSONNEL: The personnel of the offerorâs team who are the registered/licensed/ accredited professionals in their respective disciplines, directly responsible for the design and management of the relevant contract work. These are the individuals for which resumes are being submitted.
+
+PROGRAM MANAGER (formerly Project Lead): The individual who is responsible for overall management of the A-E IDIQ contract. This individual shall be an employee of the prime A-E firm. This position is distinct from that of individuals who are responsible for managing individual task orders/projects under the IDIQ contract or special programs (QC, Sustainable Design, etc.).
+
+DESIGN-BUILD: Refers to combining design and construction in a single contract with one prime contractor.
+ For the purposes of this procurement, projects that require only shop drawing level effort are not considered design-build projects.
+
+DESIGN-BID-BUILD: Refers to the traditional project delivery method where design and construction are sequential and contracted for two separate contracts and two contractors. First contract is for A-E (design) services and the second contract is for construction.
+
+SELF-PERFORM: Refers to performing relevant architectural-engineering work in-house without subconsultants/subcontractors. Relevant work is that which is the same or similar to the primary services that may be ordered under this contract.
+
+
+<LINK>
+<URL>https://www.fbo.gov/spg/DON/NAVFAC/N68711AC/N6247317R4632/listing.html
+<DESC>Link To Document
+<EMAIL>
+<EMAIL>harold.hayes@navy.mil
+<DESC>harold.hayes@navy.mil
+<SETASIDE>Total Small Business
+<POPCOUNTRY>US
+<POPZIP>92132
+<POPADDRESS>1220 Pacific Highway, San Diego, CA
+</COMBINE>

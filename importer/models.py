@@ -5,6 +5,7 @@ from exceptions import NotImplementedError
 import logging
 import os
 import pytz
+import traceback
 import urllib2
 
 from django.db import models
@@ -12,7 +13,7 @@ from django.utils import timezone
 
 from managers import ImportHistoryManager
 
-import pdb
+from pudb import set_trace
 
 logger = logging.getLogger(__name__)
 
@@ -50,7 +51,6 @@ class Importer():
     def do_import(self):
         """Runs the whole import"""
 
-
         # Make sure storage_dir exists
         if not os.path.exists(self.storage_dir):
             os.makedirs(self.storage_dir)
@@ -71,7 +71,7 @@ class Importer():
             try:
                 self.process_single_date(next_file_dt)
             except Exception, err:
-                logger.error('Unable to process file date: {0}, {1}'.format(self.data_source, next_file_dt.strftime(self.url_date_format)))
+                logger.error('Unable to process file date: {0}, {1}\nStack Trace:\n{2}'.format(self.data_source, next_file_dt.strftime(self.url_date_format), traceback.format_exc()))
             next_file_dt = next_file_dt + timedelta(days=1)
 
     def download_file(self, file_dt):

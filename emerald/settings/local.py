@@ -41,10 +41,15 @@ LOGGING = {
             'level': 'DEBUG',
             'propogate': True,
         },
-    'importer': {
-        'handlers': ['info_log', 'error_log'],
-        'level': 'DEBUG',
-        'propogate': False,
+        'importer': {
+            'handlers': ['info_log', 'error_log'],
+            'level': 'DEBUG',
+            'propogate': False,
+        },
+        'fbo': {
+            'handlers': ['info_log', 'error_log'],
+            'level': 'DEBUG',
+            'propogate': False,
         },
     },
 }

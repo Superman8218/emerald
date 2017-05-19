@@ -3,6 +3,7 @@ import datetime
 from django.test import TestCase
 from django.test import SimpleTestCase
 
+from test_contacts import CustomContactAssertions
 from models import FboMaster
 from parser import parse_file
 import parse_helpers
@@ -68,6 +69,28 @@ class TestParser(TestCase):
 
     def test_popcountry(self):
         self.assertEqual(self.master.pop_country, 'US')
+
+class TestMultiLineContact(TestCase, CustomContactAssertions):
+    @classmethod
+    def setUpClass(cls):
+        test_file_path = 'fbo/test_files/multi_line_contacts.txt'
+        parse_file(test_file_path)
+        cls.master = FboMaster.objects.all()[0]
+
+    def test_contacts(self):
+
+        # Reminder to check the description on this one
+
+        answer = [
+            Contact(
+                name = 'Hal Hayes',
+                phone = '6195321251',
+                title = 'Contract Specialist',
+                email = 'harold.hayes@navy.mil',
+            )
+        ]
+        self.assertContactsEqual(answer, master.contacts)
+
 
 class TestHelpers(TestCase):
 
