@@ -8,6 +8,7 @@ django-pudb==0.1.0
 django-tables2==1.2.6
 django-widget-tweaks==1.4.1
 gunicorn==19.4.5
+pudb==2015.3
 psycopg2==2.6.1
 pytz==2016.7
 requests==2.9.1
