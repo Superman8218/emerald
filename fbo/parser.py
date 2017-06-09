@@ -101,6 +101,7 @@ def parse_file(file_path):
     master = None
 
     with open(file_path, 'r') as f:
+        set_trace()
         lines = [line.strip('\n') for line in list(f)]
         while index < len(lines):
             line = lines[index]

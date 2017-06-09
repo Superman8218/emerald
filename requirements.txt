@@ -8,8 +8,14 @@ django-pudb==0.1.0
 django-tables2==1.2.6
 django-widget-tweaks==1.4.1
 gunicorn==19.4.5
-pudb==2015.3
+numpy==1.12.1
+pandas==0.20.1
 psycopg2==2.6.1
+pudb==2015.3
+Pygments==2.2.0
+python-dateutil==2.6.0
 pytz==2016.7
 requests==2.9.1
+six==1.10.0
+urwid==1.3.1
 whitenoise==2.0.6

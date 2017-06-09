@@ -1,0 +1,2 @@
+SELECT distinct email_address from sam_samrecord WHERE duns in ('028619588', '600825587', '075672290', '096027870', '162304351');
+

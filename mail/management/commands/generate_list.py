@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         try:
-            generate_email_csv()
+            generate_email_csv('research/prospects.csv')
         except Exception as e:
             self.stdout.write(str(e))
             raise CommandError('Email List Generation Failed')

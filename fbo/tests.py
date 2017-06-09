@@ -8,6 +8,7 @@ from models import FboMaster
 from parser import parse_file
 import parse_helpers
 
+from pudb import set_trace
 
 class TestParser(TestCase):
 
@@ -24,6 +25,7 @@ class TestParser(TestCase):
         pass
 
     def test_date(self):
+        # set_trace()
         self.assertEqual(self.master.date, datetime.date(16, 11, 4))
 
     def test_agency(self):
