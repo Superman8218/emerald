@@ -30,6 +30,11 @@ label {
   color: #319b54;
   text-stroke: 2px black; }
 
+.logo-header {
+  background-color: #50C878;
+  height: 70px;
+  margin-bottom: 1cm; }
+
 .nav-link {
   color: white; }
 
